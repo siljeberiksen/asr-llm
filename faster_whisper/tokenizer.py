@@ -85,7 +85,7 @@ class Tokenizer:
 
     def encode(self, text: str) -> List[int]:
         return self.tokenizer.encode(text, add_special_tokens=False).ids
-
+    # Decoding
     def decode(self, tokens: List[int]) -> str:
         text_tokens = [token for token in tokens if token < self.eot]
         print(f"this is the Tokenizer decoding tokens: {text_tokens}")

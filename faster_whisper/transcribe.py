@@ -538,7 +538,7 @@ class BatchedInferencePipeline:
         )
 
         return segments, info
-
+## Gives the segmeents
     def _batched_segments_generator(
         self, features, segments_metadata, batch_size, options, log_progress
     ):
@@ -642,6 +642,7 @@ class WhisperModel:
         self.device = device
         # set the random seed to make sure consistency across runs
         ctranslate2.set_random_seed(42)
+        print("path", model_path)
         self.model = ctranslate2.models.Whisper(
             model_path,
             device=self.device,
@@ -650,8 +651,9 @@ class WhisperModel:
             intra_threads=cpu_threads,
             inter_threads=num_workers,
             files=files,
-            **model_kwargs,
+            **model_kwargs   
         )
+        print("kwarg2", model_kwargs)
 
         tokenizer_file = os.path.join(model_path, "tokenizer.json")
         if tokenizer_bytes:
@@ -1110,7 +1112,9 @@ class WhisperModel:
             seek += segment_size
 
         return current_segments, seek, single_timestamp_ending
+    
 
+    #This is where it is generated
     def generate_segments(
         self,
         features: torch.Tensor,
@@ -1274,6 +1278,7 @@ class WhisperModel:
                     # fast-forward to the next segment boundary
                     seek += segment_size
                     continue
+            print("result", result)
 
             tokens = result.sequences_ids[0]
 
@@ -1443,6 +1448,7 @@ class WhisperModel:
         tokenizer: Tokenizer,
         options: TranscriptionOptions,
     ) -> Tuple[ctranslate2.models.WhisperGenerationResult, float, float, float]:
+        ##Goes here from generate sequence
         decode_result = None
         all_results = []
         below_cr_threshold_results = []
@@ -1485,6 +1491,9 @@ class WhisperModel:
                 print(f"{k}: {v}")
             print("-" * 30)
 
+            ##This is where beams seams to be used:(
+            #TODO
+
             result = self.model.generate(
                 encoder_output,
                 [prompt],
@@ -1498,8 +1507,10 @@ class WhisperModel:
                 suppress_tokens=options.suppress_tokens,
                 max_initial_timestamp_index=max_initial_timestamp_index,
                 **kwargs,
-            )[0]
-
+            )
+            print(result)
+            result = result[0]
+            ##Lost the beams here
             print(f"Result after cTranslate2:\n{result}")
             tokens = result.sequences_ids[0]
 
