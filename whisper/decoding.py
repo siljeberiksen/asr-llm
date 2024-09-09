@@ -758,6 +758,12 @@ class DecodingTask:
             for s in tokens
         ]
 
+        #This is where the different sentences from the beam search can be found
+        for token in tokens:
+            print("kuuuul")
+            text_test = [tokenizer.decode(t).strip() for t in token]
+            print(text_test)
+
         # select the top-ranked sample in each group
         selected = self.sequence_ranker.rank(tokens, sum_logprobs)
         print("tokens:",tokens, "sum_log_prob\n\n\n", sum_logprobs)
