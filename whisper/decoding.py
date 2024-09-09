@@ -757,6 +757,7 @@ class DecodingTask:
             [t[self.sample_begin : (t == tokenizer.eot).nonzero()[0, 0]] for t in s]
             for s in tokens
         ]
+        print("tokens", tokens)
 
         #This is where the different sentences from the beam search can be found
         for token in tokens:
@@ -766,10 +767,13 @@ class DecodingTask:
 
         # select the top-ranked sample in each group
         selected = self.sequence_ranker.rank(tokens, sum_logprobs)
-        print("tokens:",tokens, "sum_log_prob\n\n\n", sum_logprobs)
+        #print("tokens:",tokens, "sum_log_prob\n\n\n", sum_logprobs)
         tokens: List[List[int]] = [t[i].tolist() for i, t in zip(selected, tokens)]
         texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
-
+        #print("text", texts)
+        #texts =[tokenizer.decode(t).strip() for t in tokens[0]]
+        #texts = [[tokenizer.decode(t).strip()] for t in tokens[0]]
+        print(texts)
         sum_logprobs: List[float] = [lp[i] for i, lp in zip(selected, sum_logprobs)]
         avg_logprobs: List[float] = [
             lp / (len(t) + 1) for t, lp in zip(tokens, sum_logprobs)
