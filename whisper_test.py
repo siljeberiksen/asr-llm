@@ -27,7 +27,8 @@ def hf_to_whisper_states(text):
     text = re.sub('proj_out.weight', 'decoder.token_embedding.weight', text)
     return text
 # Load Hugging Face model
-model_name = "NbAiLabBeta/nb-whisper-base"
+model_name = "NbAiLabBeta/nb-whisper-small-verbatim"
+#NbAiLabBeta/nb-whisper-small-verbatim
 hf_model = WhisperForConditionalGeneration.from_pretrained(model_name)
 # Get Hugging Face model's state_dict
 hf_state_dict = hf_model.state_dict()
@@ -35,7 +36,7 @@ hf_state_dict = hf_model.state_dict()
 # Convert Hugging Face state dict keys to Whisper's format
 whisper_state_dict = {hf_to_whisper_states(k): v for k, v in hf_state_dict.items()}
 
-whisper_model = load_model("base")  # or
+whisper_model = load_model("small") 
 
 # Update Whisper model's state dict with the converted Hugging Face state dict
 whisper_model.load_state_dict(whisper_state_dict)
@@ -59,4 +60,4 @@ whisper_model.load_state_dict(whisper_state_dict)
 
 
 result = whisper_model.transcribe("data/king.mp3", beam_size=5, without_timestamps=True)
-print(result)
+print("result", result)

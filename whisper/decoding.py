@@ -210,7 +210,6 @@ class MaximumLikelihoodRanker(SequenceRanker):
 
         # get the sequence with the highest score
         lengths = [[len(t) for t in s] for s in tokens]
-        print("Er du her????")
         return [np.argmax(scores(p, l)) for p, l in zip(sum_logprobs, lengths)]
 
 
@@ -314,9 +313,6 @@ class BeamSearchDecoder(TokenDecoder):
         self.patience = patience or 1.0
         self.max_candidates: int = round(beam_size * self.patience)
         self.finished_sequences = None
-
-        print("BEEEEAM")
-
         assert (
             self.max_candidates > 0
         ), f"Invalid beam size ({beam_size}) or patience ({patience})"
@@ -541,6 +537,7 @@ class DecodingTask:
         self.initial_tokens: Tuple[int] = self._get_initial_tokens()
         self.sample_begin: int = len(self.initial_tokens)
         self.sot_index: int = self.initial_tokens.index(tokenizer.sot)
+             # Initialize initial tokens based on the conversation token
 
         # inference: implements the forward pass through the decoder, including kv caching
         self.inference = PyTorchInference(model, len(self.initial_tokens))
@@ -549,7 +546,6 @@ class DecodingTask:
         self.sequence_ranker = MaximumLikelihoodRanker(options.length_penalty)
 
         # decoder: implements how to select the next tokens, given the autoregressive distribution
-        print("Her da!!")
         if options.beam_size is not None:
             self.decoder = BeamSearchDecoder(
                 options.beam_size, tokenizer.eot, self.inference, options.patience
@@ -717,7 +713,7 @@ class DecodingTask:
         return tokens, sum_logprobs, no_speech_probs
 
     @torch.no_grad()
-    def run(self, mel: Tensor) -> List[DecodingResult]:
+    def run(self, mel: Tensor, context) -> List[DecodingResult]:
         self.decoder.reset()
         tokenizer: Tokenizer = self.tokenizer
         n_audio: int = mel.shape[0]
@@ -757,23 +753,28 @@ class DecodingTask:
             [t[self.sample_begin : (t == tokenizer.eot).nonzero()[0, 0]] for t in s]
             for s in tokens
         ]
-        print("tokens", tokens)
 
         #This is where the different sentences from the beam search can be found
+        beam_options = []
         for token in tokens:
-            print("kuuuul")
             text_test = [tokenizer.decode(t).strip() for t in token]
-            print(text_test)
+            beam_options.append(text_test)
 
+        
         # select the top-ranked sample in each group
         selected = self.sequence_ranker.rank(tokens, sum_logprobs)
+        with open("result/result.txt", "a") as myfile:
+            myfile.write(f"Context: {context}\n")
+            myfile.write(f"Choices: {beam_options}\n")
+                    
         #print("tokens:",tokens, "sum_log_prob\n\n\n", sum_logprobs)
         tokens: List[List[int]] = [t[i].tolist() for i, t in zip(selected, tokens)]
         texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
-        #print("text", texts)
+        for something in texts:
+            context.append(something)
+
         #texts =[tokenizer.decode(t).strip() for t in tokens[0]]
         #texts = [[tokenizer.decode(t).strip()] for t in tokens[0]]
-        print(texts)
         sum_logprobs: List[float] = [lp[i] for i, lp in zip(selected, sum_logprobs)]
         avg_logprobs: List[float] = [
             lp / (len(t) + 1) for t, lp in zip(tokens, sum_logprobs)
@@ -790,7 +791,7 @@ class DecodingTask:
         if len(set(map(len, fields))) != 1:
             raise RuntimeError(f"inconsistent result lengths: {list(map(len, fields))}")
 
-        return [
+        return ([
             DecodingResult(
                 audio_features=features,
                 language=language,
@@ -804,13 +805,14 @@ class DecodingTask:
             for text, language, tokens, features, avg_logprob, no_speech_prob in zip(
                 *fields
             )
-        ]
+        ],context)
 
 
 @torch.no_grad()
 def decode(
     model: "Whisper",
     mel: Tensor,
+    context,
     options: DecodingOptions = DecodingOptions(),
     **kwargs,
 ) -> Union[DecodingResult, List[DecodingResult]]:
@@ -839,6 +841,5 @@ def decode(
     if kwargs:
         options = replace(options, **kwargs)
 
-    result = DecodingTask(model, options).run(mel)
-
-    return result[0] if single else result
+    (result,context) = DecodingTask(model, options).run(mel, context)
+    return (result[0], context) if single else (result,context)

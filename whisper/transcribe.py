@@ -150,7 +150,7 @@ def transcribe(
     if word_timestamps and task == "translate":
         warnings.warn("Word-level timestamps on translations may not be reliable.")
 
-    def decode_with_fallback(segment: torch.Tensor) -> DecodingResult:
+    def decode_with_fallback(segment: torch.Tensor, context) -> DecodingResult:
         temperatures = (
             [temperature] if isinstance(temperature, (int, float)) else temperature
         )
@@ -167,8 +167,8 @@ def transcribe(
                 kwargs.pop("best_of", None)
 
             options = DecodingOptions(**kwargs, temperature=t)
-            decode_result = model.decode(segment, options)
-
+            (decode_result, context_result) = model.decode(segment, context, options)
+            context.append(context)
             needs_fallback = False
             if (
                 compression_ratio_threshold is not None
@@ -229,6 +229,7 @@ def transcribe(
         total=content_frames, unit="frames", disable=verbose is not False
     ) as pbar:
         last_speech_timestamp = 0.0
+        context = []
         while seek < content_frames:
             time_offset = float(seek * HOP_LENGTH / SAMPLE_RATE)
             mel_segment = mel[:, seek : seek + N_FRAMES]
@@ -237,7 +238,7 @@ def transcribe(
             mel_segment = pad_or_trim(mel_segment, N_FRAMES).to(model.device).to(dtype)
 
             decode_options["prompt"] = all_tokens[prompt_reset_since:]
-            result: DecodingResult = decode_with_fallback(mel_segment)
+            result: DecodingResult = decode_with_fallback(mel_segment, context)
             tokens = torch.tensor(result.tokens)
 
             if no_speech_threshold is not None:
