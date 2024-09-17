@@ -273,7 +273,6 @@ class GreedyDecoder(TokenDecoder):
     def __init__(self, temperature: float, eot: int):
         self.temperature = temperature
         self.eot = eot
-        print("Gready")
 
     def update(
         self, tokens: Tensor, logits: Tensor, sum_logprobs: Tensor
@@ -763,16 +762,18 @@ class DecodingTask:
         
         # select the top-ranked sample in each group
         selected = self.sequence_ranker.rank(tokens, sum_logprobs)
-        with open("result/result.txt", "a") as myfile:
-            myfile.write(f"Context: {context}\n")
-            myfile.write(f"Choices: {beam_options}\n")
-                    
         #print("tokens:",tokens, "sum_log_prob\n\n\n", sum_logprobs)
         tokens: List[List[int]] = [t[i].tolist() for i, t in zip(selected, tokens)]
         texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
-        for something in texts:
-            context.append(something)
+        if(len(beam_options[0])!=1):
+            #Should have LM here
+            with open("result/result.txt", "a") as myfile:
+                myfile.write(f"Context: {context}\n")
+                myfile.write(f"Choices: {beam_options}\n")
+            context.append(texts[0])
+                    
 
+        
         #texts =[tokenizer.decode(t).strip() for t in tokens[0]]
         #texts = [[tokenizer.decode(t).strip()] for t in tokens[0]]
         sum_logprobs: List[float] = [lp[i] for i, lp in zip(selected, sum_logprobs)]
@@ -790,7 +791,6 @@ class DecodingTask:
         )
         if len(set(map(len, fields))) != 1:
             raise RuntimeError(f"inconsistent result lengths: {list(map(len, fields))}")
-
         return ([
             DecodingResult(
                 audio_features=features,

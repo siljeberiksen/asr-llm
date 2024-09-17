@@ -168,7 +168,7 @@ def transcribe(
 
             options = DecodingOptions(**kwargs, temperature=t)
             (decode_result, context_result) = model.decode(segment, context, options)
-            context.append(context)
+            context = context_result
             needs_fallback = False
             if (
                 compression_ratio_threshold is not None
