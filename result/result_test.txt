@@ -1,0 +1,21 @@
+[
+    {
+        "context": [
+            "stortingets møte er lovlig satt ærede medrepresentanter tidligere stortingsrepresentant for senterpartiet aslaug fadum døde 13.11.2016 91 år gammel aslaug fadum ble født i sem i vestfold i 1925",
+            "et langt og innholdsrikt liv i arbeid for senterpartiet men også for en rekke organisasjoner én av dem var bygdekvinnelaget hvor hun hadde flere ulike verv aslaug fadum var senterpartiets representant fra vestfold på stortinget i perioden 1973 til 1977 hun satt i sosialkomiteen selv om hun nok hadde hatt lyst til og mere lyst til å sitte i det som den gang het industrikomiteen som sosialpolitisk talskvinne",
+            "markerte hun seg på en lang rekke felt både innenfor familiepolitikk barnehager eldreomsorg og helse hun var også svært opptatt av næringslivspolitikk landbruk og sjøfolkenes virkår som stortingsrepresentant hadde hun en bred lokalpolitisk bakgrunn hun kom med i kommunestyret i tidligere sem kommune i 1967 som representant for senterpartiet og satt der til hun ble innvalgt på stortinget i 1973 i perioden nittensyttini",
+            "var hun medlem av fylkestinget i vestfold hun sa selv i et intervju at å delta i organisasjonsarbeid og politikk er opplæring i kunsten å samarbeide utdanning var ingen selvfølge da aslaug fadum vokste opp det var kanskje grunnen til at hun engasjerte seg sterkt i voksenopplæring og i studieforbundsvirksomhet etter at hun gikk av på stortinget hun var leder av bygdefolkets studieforbund senterforbund senter på",
+            "partiets studieforbund og sentralstyremedlem i partiet fra 1979 til 1983 i 1984 ble hun tildelt senterpartiets hedersmerke aslaug fadum hadde også en rekke verv innen næringslivet bl a satte hun i statoils sitt styre store deler av nittenåtti-tallet det var en svært viktig periode for norsk oljevirksomhet bl a ble statoil splittet opp og sd",
+            "øe etablert i denne perioden aslaug fadum gikk grundig inn i sakene og hun sto for en praktisk politikk hvor ønsket var å skape resultater det nøt hun stor respekt for hun var hardt arbeidende og i vestfold senterparti oppsto uttrykket fadum-dagene for de dagene da hun reiste rundt i fylket det var reisedager som varte fra tidlig morgen til langt til midnatt"
+        ],
+        "choices": [
+            [
+                "aslaug fadum med stor takknemlighet for det arbeidet hun la ned for stortinget og lyser fred over hennes minne",
+                "aslaug fadum med stor takknemlighet for det arbeidet hun la ned for stortinget og lyser fred over hennes minne",
+                "aslaug fadum med stor takknemlighet for det arbeidet hun la ned for stortinget og lyser fred over hennes minne",
+                "aslaug fadum med stor takknemlighet for det arbeidet hun la ned for stortinget og lyser fred over hennes minne",
+                "aslaug fadum med stor takknemlighet for det arbeidet hun la ned for stortinget og lyser fred over hennes minne"
+            ]
+        ]
+    }
+]

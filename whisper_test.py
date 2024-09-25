@@ -44,4 +44,5 @@ whisper_model = load_model("small")
 whisper_model.load_state_dict(whisper_state_dict)
 
 
-result = whisper_model.transcribe("NPSC_1/20170216/20170216-095707.wav", beam_size=5, without_timestamps=True)
+#result = whisper_model.transcribe("NPSC_1/20170216/20170216-095707.wav", beam_size=5, without_timestamps=True)
+result = whisper_model.transcribe("resources/king.mp3", beam_size=5, without_timestamps=True)
