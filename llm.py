@@ -94,6 +94,7 @@ def read_file(file_path):
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
+            print(data)
     except FileNotFoundError:
         data = []  # If file doesn't exist, initialize with an empty list
     return data
@@ -102,23 +103,22 @@ def read_file(file_path):
 def choose_best_sentence(context, choices):
     # Prepare the input for the LLM
     #prompt = "Given the context bellow, choose the most fitting sentence from the option set\n"
-    prompt = "Gitt konteksten nedenfor, velg den mest passende setningen i alternativsettet nedenfor"
-    #prompt += f"Context: {' '.join(context)}\n"
-    prompt += "Kontekst: Solenergi er en av de raskest voksende kildene til fornybar energi, spesielt i områder med mye sollys.\n"
+    prompt = "Gitt konteksten nedenfor, velg den mest passende setningen i alternativsettet nedenfor \n"
+    prompt += f"Konteks: {' '.join(context)}\n"
+    #prompt += "Kontekst: Solenergi er en av de raskest voksende kildene til fornybar energi, spesielt i områder med mye sollys.\n"
     
-    # for i, choice_group in enumerate(choices):
-    #     prompt += f"\nOption Set:\n"
-    #     for j, choice in enumerate(choice_group):
-    #         prompt += f"{j+1}: {choice}\n"
-    prompt += """ 
-    Alternativ sett: 
-    1. "Det er mest effektivt i områder med mye regn."\n
-    2. "Det brukes mest i regioner med sterk vind."\n
-    3. "Det er mest effektivt på steder med mye sollys."\n
-    4. "Det fungerer godt i kalde og mørke omgivelser."\n
-    5. "Det er mest produktivt om vinteren."\n
+    prompt += f"\nAlternativ sett:\n"
+    for j, choice in enumerate(choices):
+        prompt += f"{j+1}: {choice}\n"
+    # prompt += """ 
+    # Alternativ sett: 
+    # 1. "Det er mest effektivt i områder med mye regn."\n
+    # 2. "Det brukes mest i regioner med sterk vind."\n
+    # 3. "Det er mest effektivt på steder med mye sollys."\n
+    # 4. "Det fungerer godt i kalde og mørke omgivelser."\n
+    # 5. "Det er mest produktivt om vinteren."\n
 
-    """
+    # """
     # examplar =  """
     # \n Context: nordmenn er nordlendinger trøndere sørlendinger og folk fra alle andre regioner
     # nordmenn er også innvandret fra afghanistan pakistan og polen sverige somalia og syria
@@ -139,7 +139,7 @@ def choose_best_sentence(context, choices):
 
     # prompt += "Here is an example of expected input and output:" + examplar
 
-    print(prompt)
+    print("Prompt:", prompt)
     # prompt += "\nThe most suitable choice is:"
     print(pred(prompt))
 
@@ -166,7 +166,7 @@ def choose_best_sentence(context, choices):
 
 
 
-data = read_file("result/result_test.txt")
+data = read_file("result/result2.txt")
 best_sentences = []    
 for i, entry in enumerate(data):
         context = entry['context']

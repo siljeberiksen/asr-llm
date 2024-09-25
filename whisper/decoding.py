@@ -1,4 +1,5 @@
 from dataclasses import dataclass, field, replace
+import json
 from typing import TYPE_CHECKING, Dict, Iterable, List, Optional, Sequence, Tuple, Union
 
 import numpy as np
@@ -767,9 +768,15 @@ class DecodingTask:
         texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
         if(len(beam_options[0])!=1):
             #Should have LM here
-            with open("result/result.txt", "a") as myfile:
-                myfile.write(f"Context: {context}\n")
-                myfile.write(f"Choices: {beam_options}\n")
+            with open('result/result2.txt', 'r') as file:
+                data = json.load(file)
+            new_entry = {
+                "context": context,
+                "choices": beam_options[0]
+            }
+            data.append(new_entry)
+            with open("result/result2.txt", "w") as myfile:
+                json.dump(data, myfile, indent=4, ensure_ascii=False)
             context.append(texts[0])
                     
 
