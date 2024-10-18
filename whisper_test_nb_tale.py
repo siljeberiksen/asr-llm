@@ -64,7 +64,7 @@ for true_transcription_data in true_transcriptions_data:
     beams_wer=[]
     beams_cer=[]
     beams = []
-    with open('result/nb_samtale_without_llm_tiny.json', 'r') as file:
+    with open('result/nb_samtale_without_llm_tiny_2.json', 'r') as file:
         beam_options = json.load(file)[-1]["choices"]
         for beam_option in beam_options:
             beams_wer.append(wer(true_transcription_data["transcription"].lower(), beam_option.lower()))
@@ -78,10 +78,10 @@ for true_transcription_data in true_transcriptions_data:
             "wer_result": wer(true_transcription_data["transcription"].lower(), result["text"].lower()),
             "cer_result": cer(true_transcription_data["transcription"].lower(), result["text"].lower())
         }
-    with open("result/wer_nb_samtale_5_tiny.json", 'r') as file:
+    with open("result/wer_nb_samtale_5_tiny_2.json", 'r') as file:
         wer_data = json.load(file)
     wer_data.append(new_instance)
-    with open("result/wer_nb_samtale_5_tiny.json", 'w') as file:
+    with open("result/wer_nb_samtale_5_tiny_2.json", 'w') as file:
         json.dump(wer_data, file, indent=4)
 
     new_instance_beams = {
@@ -91,8 +91,8 @@ for true_transcription_data in true_transcriptions_data:
         "true_transcription": true_transcription_data['transcription'],
         "transcribed": result["text"]
     }
-    with open("result/beams_nb_samtale_5_tiny.json", 'r') as file:
+    with open("result/beams_nb_samtale_5_tiny_2.json", 'r') as file:
         wer_data = json.load(file)
     wer_data.append(new_instance_beams)
-    with open("result/beams_nb_samtale_5_tiny.json", 'w') as file:
+    with open("result/beams_nb_samtale_5_tiny_2.json", 'w') as file:
         json.dump(wer_data, file, indent=4)

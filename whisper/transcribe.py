@@ -48,6 +48,7 @@ def transcribe(
     word_timestamps: bool = False,
     prepend_punctuations: str = "\"'“¿([{-",
     append_punctuations: str = "\"'.。,，!！?？:：”)]}、",
+    context: Optional[str] = [],
     **decode_options,
 ):
     """
@@ -102,6 +103,8 @@ def transcribe(
     decode_options: dict
         Keyword arguments to construct `DecodingOptions` instances
 
+    context: Optional[str]
+        Optional context of the conversation so far
     Returns
     -------
     A dictionary containing the resulting text ("text") and segment-level details ("segments"), and
@@ -229,7 +232,7 @@ def transcribe(
         total=content_frames, unit="frames", disable=verbose is not False
     ) as pbar:
         last_speech_timestamp = 0.0
-        context = []
+        #context = []
         while seek < content_frames:
             time_offset = float(seek * HOP_LENGTH / SAMPLE_RATE)
             mel_segment = mel[:, seek : seek + N_FRAMES]

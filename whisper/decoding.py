@@ -778,7 +778,7 @@ class DecodingTask:
             # with open("result/nb_samtale_without llm.txt", "w") as myfile:
             #     json.dump(data, myfile, indent=4, ensure_ascii=False)
             # context.append(texts[0])
-            with open('result/nb_samtale_without_llm_tiny.json', 'r', encoding='utf-8') as file:
+            with open('result/nb_samtale_without_llm_tiny_2.json', 'r', encoding='utf-8') as file:
                 data = json.load(file)
             
             # Create a new entry with context and choices
@@ -791,7 +791,7 @@ class DecodingTask:
             data.append(new_entry)
             
             # Write the updated data back to the JSON file
-            with open('result/nb_samtale_without_llm_tiny.json', 'w', encoding='utf-8') as myfile:
+            with open('result/nb_samtale_without_llm_tiny_2.json', 'w', encoding='utf-8') as myfile:
                 json.dump(data, myfile, indent=4, ensure_ascii=False)
 
                     
