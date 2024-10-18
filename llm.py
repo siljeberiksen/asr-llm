@@ -104,7 +104,7 @@ def choose_best_sentence(context, choices):
     # Prepare the input for the LLM
     #prompt = "Given the context bellow, choose the most fitting sentence from the option set\n"
     prompt = "Gitt konteksten nedenfor, velg den mest passende setningen i alternativsettet nedenfor \n"
-    prompt += f"Konteks: {' '.join(context)}\n"
+    prompt += f"Kontekst: {' '.join(context)}\n"
     #prompt += "Kontekst: Solenergi er en av de raskest voksende kildene til fornybar energi, spesielt i områder med mye sollys.\n"
     
     prompt += f"\nAlternativ sett:\n"

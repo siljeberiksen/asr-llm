@@ -768,16 +768,32 @@ class DecodingTask:
         texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
         if(len(beam_options[0])!=1):
             #Should have LM here
-            with open('result/result2.txt', 'r') as file:
+            # with open('result/nb_samtale_without llm.txt', 'r') as file:
+            #     data = json.load(file)
+            # new_entry = {
+            #     "context": context,
+            #     "choices": beam_options[0]
+            # }
+            # data.append(new_entry)
+            # with open("result/nb_samtale_without llm.txt", "w") as myfile:
+            #     json.dump(data, myfile, indent=4, ensure_ascii=False)
+            # context.append(texts[0])
+            with open('result/nb_samtale_without_llm_tiny.json', 'r', encoding='utf-8') as file:
                 data = json.load(file)
+            
+            # Create a new entry with context and choices
             new_entry = {
                 "context": context,
                 "choices": beam_options[0]
             }
+    
+            # Append the new entry to the existing data
             data.append(new_entry)
-            with open("result/result2.txt", "w") as myfile:
+            
+            # Write the updated data back to the JSON file
+            with open('result/nb_samtale_without_llm_tiny.json', 'w', encoding='utf-8') as myfile:
                 json.dump(data, myfile, indent=4, ensure_ascii=False)
-            context.append(texts[0])
+
                     
 
         
