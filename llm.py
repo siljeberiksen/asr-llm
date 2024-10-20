@@ -62,8 +62,12 @@ def pred(
 
     response = requests.post(url, headers=headers, data=json.dumps(data)).json()
     response = response["content"]
+    print("seeeeeeeee",response)
     if evaluate:
-        return parse_llm_output(response)
+        try:
+            return parse_llm_output(response)
+        except:
+            pred(instruction, evaluate=True)
     return response
 
 def parse_llm_output(response: str):
@@ -83,6 +87,8 @@ def parse_llm_output(response: str):
     response = response.replace("true", "True")
     response = response.replace("null", "None")
 
+    response = response.lower()
+
     obj = eval(response)
     if isinstance(obj, dict):
         # unify keys in case of capitalization.
@@ -94,7 +100,6 @@ def read_file(file_path):
     try:
         with open(file_path, 'r') as file:
             data = json.load(file)
-            print(data)
     except FileNotFoundError:
         data = []  # If file doesn't exist, initialize with an empty list
     return data
@@ -103,13 +108,22 @@ def read_file(file_path):
 def choose_best_sentence(context, choices):
     # Prepare the input for the LLM
     #prompt = "Given the context bellow, choose the most fitting sentence from the option set\n"
-    prompt = "Gitt konteksten nedenfor, velg den mest passende setningen i alternativsettet nedenfor \n"
-    prompt += f"Kontekst: {' '.join(context)}\n"
+   # prompt = "Velg blant de alternative settene og gi meg et svar som passer til kontektsen."
+    prompt = "Velg en setningen i alternativ settet nedenfor gitt konteksten. Setningen skal IKKE endres. \n"
+
+
+    #den mest passende setningen i alternativsettet nedenfor, gitt konteksten. Returner kun en av setningene fra alternativsettet, og det skal ikke gjøres noen omskriving. \n"
+    prompt += f"Alternativ sett:\n"
+    for j, choice in enumerate(choices):
+        prompt += f"{j+1}. {choice}\n"
+
+    print(context)
+    prompt += f"Kontekst: [{','.join(context)}]\n"
     #prompt += "Kontekst: Solenergi er en av de raskest voksende kildene til fornybar energi, spesielt i områder med mye sollys.\n"
     
-    prompt += f"\nAlternativ sett:\n"
-    for j, choice in enumerate(choices):
-        prompt += f"{j+1}: {choice}\n"
+    # prompt += f"Alternativ sett:\n"
+    # for j, choice in enumerate(choices):
+    #     prompt += f"{j+1}. {choice}\n"
     # prompt += """ 
     # Alternativ sett: 
     # 1. "Det er mest effektivt i områder med mye regn."\n
@@ -141,7 +155,7 @@ def choose_best_sentence(context, choices):
 
     print("Prompt:", prompt)
     # prompt += "\nThe most suitable choice is:"
-    print(pred(prompt))
+    return pred(prompt, evaluate=True)
 
     # # Define the payload
     # payload = {
@@ -166,14 +180,14 @@ def choose_best_sentence(context, choices):
 
 
 
-data = read_file("result/result2.txt")
-best_sentences = []    
-for i, entry in enumerate(data):
-        context = entry['context']
-        choices = entry['choices']
-        print(f"Processing entry {i + 1}...")
-        best_choice = choose_best_sentence(context, choices)
-        best_sentences.append(best_choice)
-        print(f"Best choice for entry {i + 1}: {best_choice}")
+# data = read_file("result/result2.txt")
+# best_sentences = []    
+# for i, entry in enumerate(data):
+#         context = entry['context']
+#         choices = entry['choices']
+#         print(f"Processing entry {i + 1}...")
+#         best_choice = choose_best_sentence(context, choices)
+#         best_sentences.append(best_choice)
+#         print(f"Best choice for entry {i + 1}: {best_choice}")
 
-print(best_sentences)
+# print("svaaaar", best_sentences)

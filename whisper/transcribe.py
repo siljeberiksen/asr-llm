@@ -281,6 +281,7 @@ def transcribe(
                     end_timestamp_pos = (
                         sliced_tokens[-1].item() - tokenizer.timestamp_begin
                     )
+                    print("result", result)
                     current_segments.append(
                         new_segment(
                             start=time_offset + start_timestamp_pos * time_precision,
@@ -382,6 +383,7 @@ def transcribe(
         text=tokenizer.decode(all_tokens[len(initial_prompt_tokens) :]),
         segments=all_segments,
         language=language,
+        context=context
     )
 
 

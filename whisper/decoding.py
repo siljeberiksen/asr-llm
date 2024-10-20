@@ -8,6 +8,8 @@ import torch.nn.functional as F
 from torch import Tensor
 from torch.distributions import Categorical
 
+from llm import choose_best_sentence
+
 from .audio import CHUNK_LENGTH
 from .tokenizer import Tokenizer, get_tokenizer
 from .utils import compression_ratio
@@ -760,12 +762,16 @@ class DecodingTask:
             text_test = [tokenizer.decode(t).strip() for t in token]
             beam_options.append(text_test)
 
+        print(beam_options)
+        texts= [choose_best_sentence(context, beam_options[0])]
+        print("text", texts)
         
         # select the top-ranked sample in each group
         selected = self.sequence_ranker.rank(tokens, sum_logprobs)
         #print("tokens:",tokens, "sum_log_prob\n\n\n", sum_logprobs)
         tokens: List[List[int]] = [t[i].tolist() for i, t in zip(selected, tokens)]
-        texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
+        #texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
+        print("text", texts)
         if(len(beam_options[0])!=1):
             #Should have LM here
             # with open('result/nb_samtale_without llm.txt', 'r') as file:
@@ -778,7 +784,7 @@ class DecodingTask:
             # with open("result/nb_samtale_without llm.txt", "w") as myfile:
             #     json.dump(data, myfile, indent=4, ensure_ascii=False)
             # context.append(texts[0])
-            with open('result/nb_samtale_without_llm_tiny_2.json', 'r', encoding='utf-8') as file:
+            with open('result/nb_samtale_llm_tiny.json', 'r', encoding='utf-8') as file:
                 data = json.load(file)
             
             # Create a new entry with context and choices
@@ -791,7 +797,7 @@ class DecodingTask:
             data.append(new_entry)
             
             # Write the updated data back to the JSON file
-            with open('result/nb_samtale_without_llm_tiny_2.json', 'w', encoding='utf-8') as myfile:
+            with open('result/nb_samtale_llm_tiny.json', 'w', encoding='utf-8') as myfile:
                 json.dump(data, myfile, indent=4, ensure_ascii=False)
 
                     
@@ -804,16 +810,21 @@ class DecodingTask:
             lp / (len(t) + 1) for t, lp in zip(tokens, sum_logprobs)
         ]
 
+        print("texts", texts)
+        print("tokensss", tokenizer.encode(texts[0]))
+        print(tokens)
+
         fields = (
             texts,
             languages,
-            tokens,
+            [tokenizer.encode(texts[0])],
             audio_features,
             avg_logprobs,
             no_speech_probs,
         )
         if len(set(map(len, fields))) != 1:
             raise RuntimeError(f"inconsistent result lengths: {list(map(len, fields))}")
+        print("teeext", texts)
         return ([
             DecodingResult(
                 audio_features=features,
