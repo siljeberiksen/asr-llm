@@ -1,0 +1,405 @@
+[
+    {
+        "sentence_order": 0,
+        "audio_file": "data/train/bm/nb-1_0008970-0013860.wav",
+        "beams": [
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbiblioteket"
+        ],
+        "true_transcription": "hallo og velkommen hit til Nasjonalbiblioteket.",
+        "transcribed": "]hallo og velkommen hit til nasjonalbiblioteket"
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "data/train/bm/nb-1_0013860-0023250.wav",
+        "beams": [
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her"
+        ],
+        "true_transcription": "det er kulturnatt, og det skjer en br\u00e5te ting over hele byen, og det gj\u00f8r det ekstra hyggelig \u00e5 se at dokker\\dere er her.",
+        "transcribed": ": 3. det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her"
+    },
+    {
+        "sentence_order": 2,
+        "audio_file": "data/test/bm/nb-1_0023250-0035540.wav",
+        "beams": [
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyr og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyre og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 menyen"
+        ],
+        "true_transcription": "vi har ett arrangement til i kveld klokka tjueen null null om norsk fankultur og Wenche Myhre og det hele, men aller f\u00f8rst har vi noe ganske anna p\u00e5 menyen.",
+        "transcribed": ": vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 menyen"
+    },
+    {
+        "sentence_order": 3,
+        "audio_file": "data/train/bm/nb-1_0035540-0048330.wav",
+        "beams": [
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto s\u00e5 mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter"
+        ],
+        "true_transcription": "vi snakker matkultur og det eksotiske \u00e5ttitallet, da avokado, ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 4,
+        "audio_file": "data/train/bm/nb-1_0048330-0061020.wav",
+        "beams": [
+            "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid er"
+        ],
+        "true_transcription": "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re, kulinariske fortid er.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 0,
+        "audio_file": "data/train/bm/nb-1_0008970-0013860.wav",
+        "beams": [
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbiblioteket"
+        ],
+        "true_transcription": "hallo og velkommen hit til Nasjonalbiblioteket.",
+        "transcribed": ". 4. hallo og velkommen hit til nasjonalbiblioteket "
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "data/train/bm/nb-1_0013860-0023250.wav",
+        "beams": [
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her"
+        ],
+        "true_transcription": "det er kulturnatt, og det skjer en br\u00e5te ting over hele byen, og det gj\u00f8r det ekstra hyggelig \u00e5 se at dokker\\dere er her.",
+        "transcribed": ". 3. "
+    },
+    {
+        "sentence_order": 0,
+        "audio_file": "data/train/bm/nb-1_0008970-0013860.wav",
+        "beams": [
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbiblioteket"
+        ],
+        "true_transcription": "hallo og velkommen hit til Nasjonalbiblioteket.",
+        "transcribed": ". 2. hallo og velkommen hit til nasjonalbiblioteket 10. hallo og velkommen hit til nasjonalbiblioteket"
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "data/train/bm/nb-1_0013860-0023250.wav",
+        "beams": [
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her"
+        ],
+        "true_transcription": "det er kulturnatt, og det skjer en br\u00e5te ting over hele byen, og det gj\u00f8r det ekstra hyggelig \u00e5 se at dokker\\dere er her.",
+        "transcribed": ". 3. det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her "
+    },
+    {
+        "sentence_order": 0,
+        "audio_file": "data/train/bm/nb-1_0008970-0013860.wav",
+        "beams": [
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbiblioteket"
+        ],
+        "true_transcription": "hallo og velkommen hit til Nasjonalbiblioteket.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "data/train/bm/nb-1_0013860-0023250.wav",
+        "beams": [
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her"
+        ],
+        "true_transcription": "det er kulturnatt, og det skjer en br\u00e5te ting over hele byen, og det gj\u00f8r det ekstra hyggelig \u00e5 se at dokker\\dere er her.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 0,
+        "audio_file": "data/train/bm/nb-1_0008970-0013860.wav",
+        "beams": [
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbiblioteket"
+        ],
+        "true_transcription": "hallo og velkommen hit til Nasjonalbiblioteket.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "data/train/bm/nb-1_0013860-0023250.wav",
+        "beams": [
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her"
+        ],
+        "true_transcription": "det er kulturnatt, og det skjer en br\u00e5te ting over hele byen, og det gj\u00f8r det ekstra hyggelig \u00e5 se at dokker\\dere er her.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 2,
+        "audio_file": "data/test/bm/nb-1_0023250-0035540.wav",
+        "beams": [
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyr og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyre og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 menyen"
+        ],
+        "true_transcription": "vi har ett arrangement til i kveld klokka tjueen null null om norsk fankultur og Wenche Myhre og det hele, men aller f\u00f8rst har vi noe ganske anna p\u00e5 menyen.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 3,
+        "audio_file": "data/train/bm/nb-1_0035540-0048330.wav",
+        "beams": [
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto s\u00e5 mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter"
+        ],
+        "true_transcription": "vi snakker matkultur og det eksotiske \u00e5ttitallet, da avokado, ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 0,
+        "audio_file": "data/train/bm/nb-1_0008970-0013860.wav",
+        "beams": [
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbiblioteket"
+        ],
+        "true_transcription": "hallo og velkommen hit til Nasjonalbiblioteket.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "data/train/bm/nb-1_0013860-0023250.wav",
+        "beams": [
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her"
+        ],
+        "true_transcription": "det er kulturnatt, og det skjer en br\u00e5te ting over hele byen, og det gj\u00f8r det ekstra hyggelig \u00e5 se at dokker\\dere er her.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 2,
+        "audio_file": "data/test/bm/nb-1_0023250-0035540.wav",
+        "beams": [
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyr og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyre og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 menyen"
+        ],
+        "true_transcription": "vi har ett arrangement til i kveld klokka tjueen null null om norsk fankultur og Wenche Myhre og det hele, men aller f\u00f8rst har vi noe ganske anna p\u00e5 menyen.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 3,
+        "audio_file": "data/train/bm/nb-1_0035540-0048330.wav",
+        "beams": [
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto s\u00e5 mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter"
+        ],
+        "true_transcription": "vi snakker matkultur og det eksotiske \u00e5ttitallet, da avokado, ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 4,
+        "audio_file": "data/train/bm/nb-1_0048330-0061020.wav",
+        "beams": [
+            "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid er"
+        ],
+        "true_transcription": "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re, kulinariske fortid er.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 5,
+        "audio_file": "data/train/bm/nb-1_0061020-0077880.wav",
+        "beams": [
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist martha breen og samtaleleder og bursdagsbarn monica helvik",
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist martha breen og samtaleleder og bursdagsbarn monica helvik",
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist marthad breen og samtaleleder og bursdagsbarn monica helvik",
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist marthad breen og samtaleleder og bursdagsbarn monica helvik",
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist martha breen og samtaleleder og bursdagsbarn monica helvik"
+        ],
+        "true_transcription": "den prisbel\u00f8nte kokk Harald Osa, forfatter og journalist Torgrim Eggen, forfatter og journalist Marta Breen og samtaleleder og bursdagsbarn Monica Helvig.",
+        "transcribed": ","
+    },
+    {
+        "sentence_order": 0,
+        "audio_file": "data/train/bm/nb-1_0008970-0013860.wav",
+        "beams": [
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbiblioteket"
+        ],
+        "true_transcription": "hallo og velkommen hit til Nasjonalbiblioteket.",
+        "transcribed": "nasjonalbiblioteket"
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "data/train/bm/nb-1_0013860-0023250.wav",
+        "beams": [
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her",
+            "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 hva dere er her"
+        ],
+        "true_transcription": "det er kulturnatt, og det skjer en br\u00e5te ting over hele byen, og det gj\u00f8r det ekstra hyggelig \u00e5 se at dokker\\dere er her.",
+        "transcribed": "det er kulturnatt og det skjer en br\u00e5te ting over hele byen og det gj\u00f8r det ekstra hyggelig \u00e5 sj\u00e5 at dere er her."
+    },
+    {
+        "sentence_order": 2,
+        "audio_file": "data/test/bm/nb-1_0023250-0035540.wav",
+        "beams": [
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyr og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyre og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21 null null om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 meny",
+            "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 menyen"
+        ],
+        "true_transcription": "vi har ett arrangement til i kveld klokka tjueen null null om norsk fankultur og Wenche Myhre og det hele, men aller f\u00f8rst har vi noe ganske anna p\u00e5 menyen.",
+        "transcribed": "vi har et arrangement til i kveld klokka 21.00 om norsk femkultur og vinkemyret og det hele men aller f\u00f8rst har vi noen ganske anna p\u00e5 menyen."
+    },
+    {
+        "sentence_order": 3,
+        "audio_file": "data/train/bm/nb-1_0035540-0048330.wav",
+        "beams": [
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto s\u00e5 mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter",
+            "vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter"
+        ],
+        "true_transcription": "vi snakker matkultur og det eksotiske \u00e5ttitallet, da avokado, ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter.",
+        "transcribed": " 6. vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter."
+    },
+    {
+        "sentence_order": 4,
+        "audio_file": "data/train/bm/nb-1_0048330-0061020.wav",
+        "beams": [
+            "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid e",
+            "og mer spennende enn kokte poteter t\u00f8r jeg alts\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re kulinariske fortid er"
+        ],
+        "true_transcription": "og mer spennende enn kokte poteter t\u00f8r jeg ogs\u00e5 p\u00e5st\u00e5 at panelet som skal sause og sylte og sne i den n\u00e6re, kulinariske fortid er.",
+        "transcribed": " 6. vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter."
+    },
+    {
+        "sentence_order": 5,
+        "audio_file": "data/train/bm/nb-1_0061020-0077880.wav",
+        "beams": [
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist martha breen og samtaleleder og bursdagsbarn monica helvik",
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist martha breen og samtaleleder og bursdagsbarn monica helvik",
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist marthad breen og samtaleleder og bursdagsbarn monica helvik",
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist marthad breen og samtaleleder og bursdagsbarn monica helvik",
+            "den prisbel\u00f8nte kokk harald osa forfatter og journalist torgrim eggen forfatter og journalist martha breen og samtaleleder og bursdagsbarn monica helvik"
+        ],
+        "true_transcription": "den prisbel\u00f8nte kokk Harald Osa, forfatter og journalist Torgrim Eggen, forfatter og journalist Marta Breen og samtaleleder og bursdagsbarn Monica Helvig.",
+        "transcribed": " 6. vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter."
+    },
+    {
+        "sentence_order": 6,
+        "audio_file": "data/train/bm/nb-1_0077880-0080515.wav",
+        "beams": [
+            "gi den en varm applaus",
+            "gi den en varm applaus",
+            "gi dem en varm applaus",
+            "i den en varm applaus",
+            "gi dem en varm applaus"
+        ],
+        "true_transcription": "gi dem en varm applaus!",
+        "transcribed": " 6. vi snakker matkultur og det eksotiske \u00e5ttitallet da avokado ris og pasta br\u00e5tt framsto som mer spennende enn kokte poteter."
+    },
+    {
+        "sentence_order": 7,
+        "audio_file": "data/background_noise/nb-1_0080520-0093830.wav",
+        "beams": [
+            "sett da",
+            "sett da",
+            "sett da",
+            "sett da",
+            "sett da"
+        ],
+        "true_transcription": "%noise",
+        "transcribed": "det var en tid da folk begynte \u00e5 eksperimentere med nye smaker og ingredienser."
+    },
+    {
+        "sentence_order": 8,
+        "audio_file": "data/train/bm/nb-1_0093850-0100800.wav",
+        "beams": [
+            "tusen takk lars",
+            "tusen takk, lars",
+            "tusen takk lars",
+            "tusen takk lars",
+            "tusen takk lars"
+        ],
+        "true_transcription": "tusen takk %eee Lars.",
+        "transcribed": "tusen takk, lars"
+    },
+    {
+        "sentence_order": 0,
+        "audio_file": "data/train/bm/nb-1_0008970-0013860.wav",
+        "beams": [
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbibliokket",
+            "hallo og velkommen hit til nasjonalbiblioteket",
+            "hallo og velkommen hit til nasjonalbiblioteket"
+        ],
+        "true_transcription": "hallo og velkommen hit til Nasjonalbiblioteket.",
+        "transcribed": "nasjonalbiblioteket"
+    }
+]

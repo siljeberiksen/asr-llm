@@ -67,6 +67,8 @@ def pred(
         try:
             return parse_llm_output(response)
         except:
+            print("ERROR")
+            print(response)
             pred(instruction, evaluate=True)
     return response
 
@@ -109,16 +111,28 @@ def choose_best_sentence(context, choices):
     # Prepare the input for the LLM
     #prompt = "Given the context bellow, choose the most fitting sentence from the option set\n"
    # prompt = "Velg blant de alternative settene og gi meg et svar som passer til kontektsen."
-    prompt = "Velg en setningen i alternativ settet nedenfor gitt konteksten. Setningen skal IKKE endres. \n"
+    # prompt = "Velg en setningen i alternativ settet nedenfor gitt konteksten. Setningen skal IKKE endres. \n"
 
 
-    #den mest passende setningen i alternativsettet nedenfor, gitt konteksten. Returner kun en av setningene fra alternativsettet, og det skal ikke gjøres noen omskriving. \n"
-    prompt += f"Alternativ sett:\n"
-    for j, choice in enumerate(choices):
-        prompt += f"{j+1}. {choice}\n"
+    # #den mest passende setningen i alternativsettet nedenfor, gitt konteksten. Returner kun en av setningene fra alternativsettet, og det skal ikke gjøres noen omskriving. \n"
+    # prompt += f"Alternativ sett:\n"
+    # for j, choice in enumerate(choices):
+    #     prompt += f"{j+1}. {choice}\n"
 
-    print(context)
-    prompt += f"Kontekst: [{','.join(context)}]\n"
+    # print(context)
+    # prompt += f"Kontekst: [{','.join(context)}]\n"
+
+
+    #New test prompt
+    prompt = "Du fungerer som utvelger i en beam search-prosess for en ASR-modell.\n"
+    prompt += "Basert på den følgende konteksten:\n"
+    prompt += f"Kontekst: [{', '.join(context)}]\n"
+    prompt += "Velg den setningen fra alternativsettet som mest sannsynlig følger etter konteksten. Velg nøyaktig én setning uten å endre den.\n"
+    prompt += "Alternativer:\n"
+    for i, choice in enumerate(choices, 1):
+        prompt += f"{i}. {choice}\n"
+
+
     #prompt += "Kontekst: Solenergi er en av de raskest voksende kildene til fornybar energi, spesielt i områder med mye sollys.\n"
     
     # prompt += f"Alternativ sett:\n"
