@@ -16,16 +16,16 @@ cer_actual = []
 first_started = False
 length = 1
 difference_beams = []
+differnece_beams_cer =[]
 for data in wer_data:
-    if(data["sentence_order"] == 0 and first_started):
+    if "nb-8" in data["audio_file"]:
         break
-    if(data["sentence_order"] == 0):
-        first_started = True
     wer_best_beam.append(min(data["wer"]))
     cer_best_beam.append(min(data["cer"]))
     wer_worst_beam.append(max(data["wer"]))
     cer_worst_beam.append(max(data["cer"]))
     difference_beams.append(max(data["wer"])-min(data["wer"]))
+    differnece_beams_cer.append(max(data["cer"])-min(data["cer"]))
 
     wer_acutal.append(data["wer_result"])
     cer_actual.append(data["cer_result"])
@@ -37,11 +37,15 @@ wer_avg= wer_sum / length
 cer_avg = wer_sum / length
 
 x =  list(range(1, length))
-print(sum(difference_beams)/length)
-print(difference_beams)
+print("Average", sum(difference_beams)/length)
+#print(difference_beams)
+
 print(length)
 
-print(difference_beams.count(0))
+print("Count", difference_beams.count(0))
+
+print("Average cer", sum(differnece_beams_cer)/length)
+print("Count", differnece_beams_cer.count(0))
 
 plt.plot(x, wer_best_beam, label='Best beam option', color='blue', linestyle='--')
 plt.plot(x, wer_worst_beam, label='Worst beam option', color='red', linestyle='--')

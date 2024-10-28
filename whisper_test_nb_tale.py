@@ -75,17 +75,22 @@ for true_transcription_data in true_transcriptions_data:
     #     continue
     if(true_transcription_data["segment_order"])==0:
         context=[]
+    with open('result/beam_nb_samtale_llm_5_tiny_10_prompt_3.json', 'r') as file:
+        last_element = json.load(file)[-1]
+    if(true_transcription_data['file_name'] == last_element["audio_file"] and not last_element_passed):
+        last_element_passed=True
+        context = last_element["context"]
+        continue
+    if(not last_element_passed):
+        continue
     result = whisper_model.transcribe(f"nb_samtale/{true_transcription_data['file_name']}", beam_size=5, without_timestamps=True, context=context)
-    print("result", result)
-    if(len(context) > 10):
-        context.pop(0)
-    context.append(result["text"])
+
 
         
     beams_wer=[]
     beams_cer=[]
     beams = []
-    with open('result/nb_samtale_llm_tiny_10_prompt_2.json', 'r') as file:
+    with open('result/nb_samtale_llm_tiny_10_prompt_3.json', 'r') as file:
         beam_options = json.load(file)[-1]["choices"]
         for beam_option in beam_options:
             beams_wer.append(wer(true_transcription_data["transcription"].lower(), beam_option.lower()))
@@ -99,10 +104,10 @@ for true_transcription_data in true_transcriptions_data:
             "wer_result": wer(true_transcription_data["transcription"].lower(), result["text"].lower()),
             "cer_result": cer(true_transcription_data["transcription"].lower(), result["text"].lower())
         }
-    with open("result/wer_nb_samtale_llm_5_tiny_10_prompt_2.json", 'r') as file:
+    with open("result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json", 'r') as file:
         wer_data = json.load(file)
     wer_data.append(new_instance)
-    with open("result/wer_nb_samtale_llm_5_tiny_10.json_prompt_2", 'w') as file:
+    with open("result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json", 'w') as file:
         json.dump(wer_data, file, indent=4)
 
     new_instance_beams = {
@@ -110,10 +115,14 @@ for true_transcription_data in true_transcriptions_data:
         "audio_file": true_transcription_data['file_name'],
         "beams": beams,
         "true_transcription": true_transcription_data['transcription'],
-        "transcribed": result["text"]
+        "transcribed": result["text"],
+        "context": context
     }
-    with open("result/beam_nb_samtale_llm_5_tiny_10_prompt_2.json", 'r') as file:
+    with open("result/beam_nb_samtale_llm_5_tiny_10_prompt_3.json", 'r') as file:
         wer_data = json.load(file)
     wer_data.append(new_instance_beams)
-    with open("result/beam_nb_samtale_llm_5_tiny_10_prompt_2.json", 'w') as file:
+    with open("result/beam_nb_samtale_llm_5_tiny_10_prompt_3.json", 'w') as file:
         json.dump(wer_data, file, indent=4)
+    if(len(context) >= 10):
+        context.pop(0)
+    context.append(result["text"])
