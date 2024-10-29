@@ -47,6 +47,9 @@ print("Count", difference_beams.count(0))
 print("Average cer", sum(differnece_beams_cer)/length)
 print("Count", differnece_beams_cer.count(0))
 
+print(wer_sum/length)
+print(cer_sum/length)
+
 plt.plot(x, wer_best_beam, label='Best beam option', color='blue', linestyle='--')
 plt.plot(x, wer_worst_beam, label='Worst beam option', color='red', linestyle='--')
 plt.plot(x, wer_acutal, label='Actual output', color='green', linestyle='--')
