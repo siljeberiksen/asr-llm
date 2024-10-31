@@ -6,3 +6,4 @@ transformers
 tiktoken
 numba
 python-dotenv
+matplotlib

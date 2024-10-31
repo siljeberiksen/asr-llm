@@ -67,4 +67,4 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
         context.append(result["text"])
 
 whisper_model = initialize_Whisper_model()   
-run_experiment('../result/nb_samtale_llm_tiny_10_prompt_3.json', '../result/beam_nb_samtale_llm_5_tiny_10_prompt_3.json',"../result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json", whisper_model)
+run_experiment('../result/nb_samtale_experiment_1_llm.json', '../result/beam_nb_samtale_experiment_1_llm.json',"../result/wer_nb_samtale_experiment_1_llm.json", whisper_model)

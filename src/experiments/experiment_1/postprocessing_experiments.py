@@ -7,7 +7,7 @@ import statistics
 #"result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json
 
 def find_empty_instances(file_name):
-    with open(f'../../result/{file_name}', 'r') as file:
+    with open(f'../result/{file_name}', 'r') as file:
         beam_data = json.load(file)
     empty_instances = []
     for data in beam_data:
@@ -16,11 +16,10 @@ def find_empty_instances(file_name):
     return empty_instances
 
 def post_process(file_name, empty_instances = []):
-    with open(f'../../result/{file_name}', 'r') as file:
+    with open(f'../result/{file_name}', 'r') as file:
         wer_data = json.load(file)
 
     print("Processing: ", file_name)
-
     wer_best_beam = []
     cer_best_beam = []
     wer_worst_beam = []
@@ -73,10 +72,10 @@ def post_process(file_name, empty_instances = []):
     print("average wer", wer_sum/length)
     print("average cer", cer_sum/length)
 
-post_process("wer_nb_samtale_5_tiny_2.json")
-post_process("wer_nb_samtale_llm_5_tiny_10_prompt_3.json")
+post_process("wer_nb_samtale_experiment_1.json")
+post_process("wer_nb_samtale_experiment_1_llm.json")
 
 print("\n\n\nWithout empty instances")
-empty_instances = find_empty_instances("beam_nb_samtale_llm_5_tiny_10_prompt_3.json")
-post_process("wer_nb_samtale_5_tiny_2.json", empty_instances)
-post_process("wer_nb_samtale_llm_5_tiny_10_prompt_3.json", empty_instances)
+empty_instances = find_empty_instances("beam_nb_samtale_experiment_1_llm.json")
+post_process("wer_nb_samtale_experiment_1.json", empty_instances)
+post_process("wer_nb_samtale_experiment_1_llm.json", empty_instances)

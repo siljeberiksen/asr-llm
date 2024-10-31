@@ -60,4 +60,4 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
             json.dump(wer_data, file, indent=4)
 
 whisper_model = initialize_Whisper_model()   
-run_experiment('../result/nb_samtale_llm_tiny_10_prompt_3.json', '../result/beam_nb_samtale_llm_5_tiny_10_prompt_3.json',"../result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json", whisper_model)
+run_experiment('../result/nb_samtale_experiment_1.json', '../result/beam_nb_samtale_experiment.json',"../result/wer_nb_samtale_experiment_1.json", whisper_model)
