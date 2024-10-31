@@ -15,6 +15,7 @@ The project is organized into Python modules for modularity and clarity, includi
 
 1. **Set Up the Server**: Ensure that the LLM server is running in the background.
 2. **Environment Configuration**: Include the parameters `HOSTNAME` and `PORT` in an `.env` file located in the `src` folder.
+3. **Download test data**: In experiments outlined NB Samtale is used - https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-85/
 
 ### Running an Experiment
 
