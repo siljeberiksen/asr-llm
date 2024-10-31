@@ -1,12 +1,12 @@
 import json
+import os
 import re
 import requests
 
 
-HOSTNAME = "129.241.113"
-PORT = 8081
-#url = f"http://{HOSTNAME}:{PORT}/completion"  # llama.cpp server
-url = "http://129.241.113.29:8081/completion"
+HOSTNAME = os.environ["HOSTNAME"]
+PORT = os.environ["PORT"]
+url = f"http://{HOSTNAME}:{PORT}/completion"  # llama.cpp server
 headers = {"Content-Type": "application/json"}
 
 only_string_schema = {
