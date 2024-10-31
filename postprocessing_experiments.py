@@ -1,8 +1,10 @@
 
 import json
 import matplotlib.pyplot as plt
+import statistics
 
-with open("result/wer_nb_samtale_5_tiny_2.json", 'r') as file:
+#with open("result/wer_nb_samtale_5_tiny_2.json", 'r') as file:
+with open("result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json", 'r') as file:
     wer_data = json.load(file)
 
 wer_best_beam = []
@@ -17,9 +19,12 @@ first_started = False
 length = 1
 difference_beams = []
 differnece_beams_cer =[]
+count_files = 0
 for data in wer_data:
-    if "nb-8" in data["audio_file"]:
+    if count_files > 7:
         break
+    if(data["sentence_order"]==0):
+        count_files +=1
     wer_best_beam.append(min(data["wer"]))
     cer_best_beam.append(min(data["cer"]))
     wer_worst_beam.append(max(data["wer"]))
@@ -46,6 +51,11 @@ print("Count", difference_beams.count(0))
 
 print("Average cer", sum(differnece_beams_cer)/length)
 print("Count", differnece_beams_cer.count(0))
+median_value = statistics.median(wer_acutal)
+print("median_wer", median_value)
+
+median_value= statistics.median(cer_actual)
+print("median_cer", median_value)
 
 print(wer_sum/length)
 print(cer_sum/length)
