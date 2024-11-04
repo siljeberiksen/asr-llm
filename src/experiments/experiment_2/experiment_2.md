@@ -2,7 +2,7 @@
 
 ## Dataset
 
-Utilzing nb samtale
+Utilzing NPSC 2: https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-84/#dublin-core-(dc)
 
 ## Hyperparameters
 

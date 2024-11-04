@@ -789,6 +789,23 @@ class DecodingTask:
             tokens: List[List[int]] = [t[i].tolist() for i, t in zip(selected, tokens)]
             texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
 
+            if(len(beam_options[0])!=1):
+                with open('../result/npsc_samtale_experiment_2.json', 'r', encoding='utf-8') as file:
+                    data = json.load(file)
+                
+                # Create a new entry with context and choices
+                new_entry = {
+                    "context": context,
+                    "choices": beam_options[0]
+                }
+        
+                # Append the new entry to the existing data
+                data.append(new_entry)
+                
+                # Write the updated data back to the JSON file
+                with open('../result/npsc_samtale_experiment_2.json', 'w', encoding='utf-8') as myfile:
+                    json.dump(data, myfile, indent=4, ensure_ascii=False)
+
         
         #texts =[tokenizer.decode(t).strip() for t in tokens[0]]
         #texts = [[tokenizer.decode(t).strip()] for t in tokens[0]]
