@@ -769,7 +769,7 @@ class DecodingTask:
             texts= [choose_best_sentence(context, beam_options[0])]
         
             if(len(beam_options[0])!=1):
-                with open('../result/nb_samtale_llm_tiny_10_prompt_3.json', 'r', encoding='utf-8') as file:
+                with open('../result/npsc_samtale_experiment_2_llm.json', 'r', encoding='utf-8') as file:
                     data = json.load(file)
                 
                 # Create a new entry with context and choices
@@ -782,7 +782,7 @@ class DecodingTask:
                 data.append(new_entry)
                 
                 # Write the updated data back to the JSON file
-                with open('../result/nb_samtale_llm_tiny_10_prompt_3.json', 'w', encoding='utf-8') as myfile:
+                with open('../result/npsc_samtale_experiment_2_llm.json', 'w', encoding='utf-8') as myfile:
                     json.dump(data, myfile, indent=4, ensure_ascii=False)
             tokens = [tokenizer.encode(texts[0])]
         else:

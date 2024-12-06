@@ -8,3 +8,4 @@ numba
 python-dotenv
 matplotlib
 jiwer
+pandas
