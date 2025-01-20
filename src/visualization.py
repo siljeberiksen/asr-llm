@@ -66,19 +66,25 @@ formatter = mdates.DateFormatter("%Y")  # Format x-axis as years
 locator = mdates.YearLocator()  # Show ticks at yearly intervals
 ax.xaxis.set_major_formatter(formatter)
 ax.xaxis.set_major_locator(locator)
-
+plt.yscale('log')
 # Plot the data
 ax.plot(df['Date'], df['Parameters (B)'], marker='o', label="Parameters Growth")
 
 # Annotate each point with a label
 for i, (model, params, date) in enumerate(zip(df['Model'], df['Parameters (B)'], df["Date"])):
     # Adjust offsets for overlapping labels
-    offset = 30 if i % 2 == 0 else 5  # Alternate offsets
+    offset = 30 if i % 2 == 0 else 15  # Alternate offsets
     if model == "Megatron-LM":
-        offset = 50
+        offset = 65
     if model == "T5":
         offset = 80
     if model == "PaLM":
+        offset = -15
+
+    if model == "LLaMA 3":
+        offset = -20
+
+    if model =="Chinchilla":
         offset = -20
 
     ax.annotate(
