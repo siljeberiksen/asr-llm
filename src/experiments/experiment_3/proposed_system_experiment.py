@@ -4,6 +4,7 @@ from asr.asr_model_initialization import initialize_Whisper_model
 from jiwer import wer, cer
 import os
 
+from codecarbon import EmissionsTracker
 
 def run_experiment(result_file, beam_file, wer_file, whisper_model):
     true_transcriptions_data = []
@@ -29,17 +30,20 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
             continue
         if(not last_element_passed):
             continue
-
+        tracker = EmissionsTracker(project_name="experiment_3")
+        tracker.start()
+        filename=true_transcription_data['audio']
+        tracker.start_task(filename)
         if (os.path.isfile(os.path.join("../NPSC/NPSC_1", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, experiment_number=3)
         elif (os.path.isfile(os.path.join("../NPSC/NPSC_2", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, experiment_number=3)
         elif (os.path.isfile(os.path.join("../NPSC/NPSC_3", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, experiment_number=3)
         elif  (os.path.isfile(os.path.join("../NPSC/NPSC_4", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, experiment_number=3)
         else:
-            result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, experiment_number=3)
             
         beams_wer=[]
         beams_cer=[]
@@ -91,5 +95,12 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
         if(len(context) >= 10):
             context.pop(0)
         context.append(result["text"])
+        
+        emissions: float = tracker.stop_task()
+
+        tracker.stop()
+
+        #time_used = tracker.stop_time - tracker.start_time
+
 whisper_model = initialize_Whisper_model()   
 run_experiment('../result/npsc_samtale_experiment_3_llm.json', '../result/beam_npsc_experiment_3_llm.json',"../result/wer_npsc_experiment_3_llm.json", whisper_model)

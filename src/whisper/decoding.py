@@ -715,7 +715,7 @@ class DecodingTask:
         return tokens, sum_logprobs, no_speech_probs
 
     @torch.no_grad()
-    def run(self, mel: Tensor, context, integrate_llm ) -> List[DecodingResult]:
+    def run(self, mel: Tensor, context, integrate_llm, port, experiment_number) -> List[DecodingResult]:
         self.decoder.reset()
         tokenizer: Tokenizer = self.tokenizer
         n_audio: int = mel.shape[0]
@@ -766,10 +766,10 @@ class DecodingTask:
         selected = self.sequence_ranker.rank(tokens, sum_logprobs)
 
         if(integrate_llm):
-            texts= [choose_best_sentence(context, beam_options[0])]
+            texts= [choose_best_sentence(context, beam_options[0],port)]
         
             if(len(beam_options[0])!=1):
-                with open('../result/npsc_samtale_experiment_3_llm.json', 'r', encoding='utf-8') as file:
+                with open(f'../result/npsc_samtale_experiment_{experiment_number}_llm.json', 'r', encoding='utf-8') as file:
                     data = json.load(file)
                 
                 # Create a new entry with context and choices
@@ -782,7 +782,7 @@ class DecodingTask:
                 data.append(new_entry)
                 
                 # Write the updated data back to the JSON file
-                with open('../result/npsc_samtale_experiment_3_llm.json', 'w', encoding='utf-8') as myfile:
+                with open(f'../result/npsc_samtale_experiment_{experiment_number}_llm.json', 'w', encoding='utf-8') as myfile:
                     json.dump(data, myfile, indent=4, ensure_ascii=False)
             tokens = [tokenizer.encode(texts[0])]
         else:
@@ -790,7 +790,7 @@ class DecodingTask:
             texts: List[str] = [tokenizer.decode(t).strip() for t in tokens]
 
             if(len(beam_options[0])!=1):
-                with open('../result/npsc_samtale_experiment_3.json', 'r', encoding='utf-8') as file:
+                with open(f'../result/npsc_samtale_experiment_{experiment_number}.json', 'r', encoding='utf-8') as file:
                     data = json.load(file)
                 
                 # Create a new entry with context and choices
@@ -803,7 +803,7 @@ class DecodingTask:
                 data.append(new_entry)
                 
                 # Write the updated data back to the JSON file
-                with open('../result/npsc_samtale_experiment_3.json', 'w', encoding='utf-8') as myfile:
+                with open(f'../result/npsc_samtale_experiment_{experiment_number}.json', 'w', encoding='utf-8') as myfile:
                     json.dump(data, myfile, indent=4, ensure_ascii=False)
 
         
@@ -846,6 +846,8 @@ def decode(
     mel: Tensor,
     context,
     integrate_llm,
+    port,
+    experiment_number,
     options: DecodingOptions = DecodingOptions(),
     **kwargs,
 ) -> Union[DecodingResult, List[DecodingResult]]:
@@ -874,5 +876,5 @@ def decode(
     if kwargs:
         options = replace(options, **kwargs)
 
-    (result,context) = DecodingTask(model, options).run(mel, context, integrate_llm)
-    return (result[0], context) if single else (result,context, integrate_llm)
+    (result,context) = DecodingTask(model, options).run(mel, context, integrate_llm, port, experiment_number)
+    return (result[0], context) if single else (result,context, integrate_llm, port, experiment_number)

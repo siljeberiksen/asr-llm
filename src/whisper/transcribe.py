@@ -50,6 +50,8 @@ def transcribe(
     append_punctuations: str = "\"'.。,，!！?？:：”)]}、",
     context: Optional[str] = [],
     integrate_llm: bool = False,
+    port: int = 8081,
+    experiment_number:int = 1,
     **decode_options,
 ):
     """
@@ -109,6 +111,12 @@ def transcribe(
 
     integrate_llm: Optional[str]
         Optional variable that, when set to true, uses LLM as beam search selector
+
+    port: Optional[int]
+        Optional variable that decides what port to call llm, port 8081 is set as defult
+    
+    experiment_number: Optional[int]
+        Optional variable that decides what file context is saved to
     Returns
     -------
     A dictionary containing the resulting text ("text") and segment-level details ("segments"), and
@@ -157,7 +165,7 @@ def transcribe(
     if word_timestamps and task == "translate":
         warnings.warn("Word-level timestamps on translations may not be reliable.")
 
-    def decode_with_fallback(segment: torch.Tensor, context, integrate_llm) -> DecodingResult:
+    def decode_with_fallback(segment: torch.Tensor, context, integrate_llm, port, experiment_number) -> DecodingResult:
         temperatures = (
             [temperature] if isinstance(temperature, (int, float)) else temperature
         )
@@ -174,7 +182,7 @@ def transcribe(
                 kwargs.pop("best_of", None)
 
             options = DecodingOptions(**kwargs, temperature=t)
-            (decode_result, context_result) = model.decode(segment, context, integrate_llm, options)
+            (decode_result, context_result) = model.decode(segment, context, integrate_llm, port, experiment_number, options)
             context = context_result
             needs_fallback = False
             if (
@@ -245,7 +253,7 @@ def transcribe(
             mel_segment = pad_or_trim(mel_segment, N_FRAMES).to(model.device).to(dtype)
 
             decode_options["prompt"] = all_tokens[prompt_reset_since:]
-            result: DecodingResult = decode_with_fallback(mel_segment, context, integrate_llm)
+            result: DecodingResult = decode_with_fallback(mel_segment, context, integrate_llm, port, experiment_number)
             tokens = torch.tensor(result.tokens)
 
             if no_speech_threshold is not None:
