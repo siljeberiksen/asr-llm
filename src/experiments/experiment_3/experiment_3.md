@@ -37,3 +37,8 @@ nb_samtale_experiment_2.json
 
 wer_nb_samtale_experiment_1_llm.json
 wer_nb_samtale_experiment_2.json
+
+Burde fjerne fra resultat, og regne ut hva cer er igjen
+Selected Transcription:
+<option1> osv
+alle svar med :

@@ -1,0 +1,370 @@
+[
+    {
+        "context": [],
+        "choices": [
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt"
+        ]
+    },
+    {
+        "context": [],
+        "choices": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bjørdal og trond giske som har vært permitterte har igjen tatt sete"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete"
+        ],
+        "choices": [
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentant utar nå sete",
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentant tar nå sete"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete"
+        ],
+        "choices": [
+            "det er for vest-agder fylke ånen værdal",
+            "den er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete"
+        ],
+        "choices": [
+            "det er for vest-agder fylke ånen værdal",
+            "den er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete"
+        ],
+        "choices": [
+            "det er for vest-agder fylke ånen værdal",
+            "den er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal"
+        ],
+        "choices": [
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset"
+        ],
+        "choices": [
+            "for buskerud fylke laverand kjærulf",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kjerreulv",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kjære ulv"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf"
+        ],
+        "choices": [
+            "for oslo an katrine sjøjhammer",
+            "for oslo an katrine sjøhammer",
+            "for oslo an katrine sjøshammer",
+            "for oslo an katrine sjøshamner",
+            "for oslo an katrine sjøhammer"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer"
+        ],
+        "choices": [
+            "for rogaland fylke siske knutsen hegdal",
+            "for rogaland fylke syssel knutsen hegdal",
+            "for rogaland fylke siske knutsen hegdal",
+            "for rogaland fylke syssel knutsen hegdal",
+            "for rogaland fylke siskel knutsen hegdal"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal"
+        ],
+        "choices": [
+            "for sognefjordane fylke jenny følging",
+            "for sogn og fjordane fylke jenny følging",
+            "forsagne fjordane fylke jenny følging",
+            "for sogn og fjordane fylke jenny følger",
+            "for sogn og fjordane i fylke jenny følging"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging"
+        ],
+        "choices": [
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbun steinnes",
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbund steinnes"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes"
+        ],
+        "choices": [
+            "for sør-trøndelag fylke ferhat guven",
+            "for sør-trøndelag fylke ferhat guven",
+            "for sør-trøndelag fylke fairhatgh guven",
+            "for sør-trøndelag fylke fer-hat-guven",
+            "for sør-trøndelag fylke fer-hat-guven"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven"
+        ],
+        "choices": [
+            "og for østfold fylke håvard jensen",
+            "og for østfold fylke håvard jensen",
+            "og for østfold fylke håvard jensen",
+            "og for østfold fylke håvard jensen",
+            "og for østfold fylke håvard jensen"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen"
+        ],
+        "choices": [
+            "statsråd vent høie vil overbringe tre kongelige proposisjoner",
+            "statsråd venn tøye vil overbringe tre kongelige proposisjoner",
+            "statsråd ven tøye vil overbringe tre kongelige proposisjoner",
+            "statsråd vent høie vil overbringe tre kongelige proposisjoner",
+            "statsråd venn tøye vil overbringe tre kongelige proposisjon"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd ven tøye vil overbringe tre kongelige proposisjoner"
+        ],
+        "choices": [
+            "høie vær så god",
+            "høie vær så god",
+            "høie vær så god",
+            "høie vær så god",
+            "høie vær så god"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd ven tøye vil overbringe tre kongelige proposisjoner",
+            "høie vær så god"
+        ],
+        "choices": [
+            "president på denne regjeringen er det næroverbringet tre kommelige proposisjoner",
+            "president på denne regjeringen er det næroverbringet tre kongelige proposisjoner",
+            "president på en av regjeringen er det næroverbringet tre kommelige proposisjoner",
+            "president på en av regjeringen er det nærover bringet tre kongelige proposisjoner",
+            "president på en av regjeringene er det nærover bringet tre kongelige proposisjoner"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd ven tøye vil overbringe tre kongelige proposisjoner",
+            "høie vær så god",
+            "president på denne regjeringen er det næroverbringet tre kongelige proposisjoner"
+        ],
+        "choices": [
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven",
+            "oppheving av lov om ferie for fisker og endringer i ferieloven",
+            "oppheving av lov om ferie for fiskere og endringer i ferieloven",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd ven tøye vil overbringe tre kongelige proposisjoner",
+            "høie vær så god",
+            "president på denne regjeringen er det næroverbringet tre kongelige proposisjoner",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven"
+        ],
+        "choices": [
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarebetal på prisopplysninger",
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarebetalingsprisopplysninger",
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarepartannens prisopplysninger",
+            "endring i markedsføringsloven unntak for rett i tilsyn i dagligvarepartannens prisopplysninger",
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarebetalingsprisopplysningene"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd ven tøye vil overbringe tre kongelige proposisjoner",
+            "høie vær så god",
+            "president på denne regjeringen er det næroverbringet tre kongelige proposisjoner",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven",
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarebetal på prisopplysninger"
+        ],
+        "choices": [
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talernes dag av tredje september 2016",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016"
+        ]
+    },
+    {
+        "context": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "det er for vest-agder fylke ånen værdal",
+            "for akershus fylke kjartan bærland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny følging",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd ven tøye vil overbringe tre kongelige proposisjoner",
+            "høie vær så god",
+            "president på denne regjeringen er det næroverbringet tre kongelige proposisjoner",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven",
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarebetal på prisopplysninger",
+            "Our consent to enter into an agreement between Norway and Finland on fishing in the waters of third September 2016"
+        ],
+        "choices": [
+            "proposisjonene vil bli mannet på reglementsmessig måte",
+            "proposisjonene vil bli mandet på reglementsmessig måte",
+            "proposisjonene vil bli mandet på reglementsmessig måte",
+            "proposisjonene vil bli mandet på reglementsmessig måte",
+            "proposisjonene vil bli mandet på reglementsmessig måte"
+        ]
+    }
+]

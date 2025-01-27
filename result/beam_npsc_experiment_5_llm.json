@@ -1,0 +1,422 @@
+[
+    {
+        "sentence_order": 0,
+        "audio_file": "20170207/audio/20170207-095506_302650_306000.wav",
+        "beams": [
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt"
+        ],
+        "true_transcription": "Stortingets m\u00f8te er lovlig satt",
+        "transcribed": "stortingets m\u00f8te er lovlig satt",
+        "context": []
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "20170207/audio/20170207-095506_306010_314020.wav",
+        "beams": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete"
+        ],
+        "true_transcription": "representantene Fredric Helen Fredric Holen Bj\u00f8rdal og Trond Giske som har v\u00e6rt permitterte har igjen tatt sete",
+        "transcribed": "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+        "context": []
+    },
+    {
+        "sentence_order": 2,
+        "audio_file": "20170207/audio/20170207-095506_314020_316850.wav",
+        "beams": [
+            "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            "f\u00f8lgende vararepresentant utar n\u00e5 sete",
+            "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            "f\u00f8lgende vararepresentant tar n\u00e5 sete"
+        ],
+        "true_transcription": "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+        "transcribed": "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete"
+        ]
+    },
+    {
+        "sentence_order": 3,
+        "audio_file": "20170207/audio/20170207-095506_316850_319910.wav",
+        "beams": [
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "den er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal"
+        ],
+        "true_transcription": "det er for Vest-Agder fylke \u00c5nen Werdal",
+        "transcribed": "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete"
+        ]
+    },
+    {
+        "sentence_order": 4,
+        "audio_file": "20170207/audio/20170207-095506_319910_323640.wav",
+        "beams": [
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for akershus fylke kjartan b\u00e6rland og are helset"
+        ],
+        "true_transcription": "for Akershus fylke Kjartan Berland og Are Helseth",
+        "transcribed": "for akershus fylke kjartan b\u00e6rland og are helset",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal"
+        ]
+    },
+    {
+        "sentence_order": 5,
+        "audio_file": "20170207/audio/20170207-095506_323640_326500.wav",
+        "beams": [
+            "for buskerud fylke laverand kj\u00e6rulf",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kjerreulv",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kj\u00e6re ulv"
+        ],
+        "true_transcription": "for Buskerud fylke Lavrans Kierulf",
+        "transcribed": "for buskerud fylke laverand kjerreulf",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset"
+        ]
+    },
+    {
+        "sentence_order": 6,
+        "audio_file": "20170207/audio/20170207-095506_326500_330050.wav",
+        "beams": [
+            "for oslo an katrine sj\u00f8jhammer",
+            "for oslo an katrine sj\u00f8hammer",
+            "for oslo an katrine sj\u00f8shammer",
+            "for oslo an katrine sj\u00f8shamner",
+            "for oslo an katrine sj\u00f8hammer"
+        ],
+        "true_transcription": "for Oslo Ann Kathrine Skj\u00f8rshammer",
+        "transcribed": "for oslo an katrine sj\u00f8hammer",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf"
+        ]
+    },
+    {
+        "sentence_order": 7,
+        "audio_file": "20170207/audio/20170207-095506_330050_334620.wav",
+        "beams": [
+            "for rogaland fylke siske knutsen hegdal",
+            "for rogaland fylke syssel knutsen hegdal",
+            "for rogaland fylke siske knutsen hegdal",
+            "for rogaland fylke syssel knutsen hegdal",
+            "for rogaland fylke siskel knutsen hegdal"
+        ],
+        "true_transcription": "for Rogaland fylke Sissel Knutsen Hegdal",
+        "transcribed": "for rogaland fylke siske knutsen hegdal",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer"
+        ]
+    },
+    {
+        "sentence_order": 8,
+        "audio_file": "20170207/audio/20170207-095506_334620_337340.wav",
+        "beams": [
+            "for sognefjordane fylke jenny f\u00f8lging",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "forsagne fjordane fylke jenny f\u00f8lging",
+            "for sogn og fjordane fylke jenny f\u00f8lger",
+            "for sogn og fjordane i fylke jenny f\u00f8lging"
+        ],
+        "true_transcription": "for Sogn og Fjordane fylke Jenny F\u00f8lling",
+        "transcribed": "for sogn og fjordane fylke jenny f\u00f8lging",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal"
+        ]
+    },
+    {
+        "sentence_order": 9,
+        "audio_file": "20170207/audio/20170207-095506_337340_340830.wav",
+        "beams": [
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbun steinnes",
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbund steinnes"
+        ],
+        "true_transcription": "for Troms fylke Sigmund Steinnes",
+        "transcribed": "for troms fylke sigbun steinnes",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging"
+        ]
+    },
+    {
+        "sentence_order": 10,
+        "audio_file": "20170207/audio/20170207-095506_340830_344290.wav",
+        "beams": [
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "for s\u00f8r-tr\u00f8ndelag fylke fairhatgh guven",
+            "for s\u00f8r-tr\u00f8ndelag fylke fer-hat-guven",
+            "for s\u00f8r-tr\u00f8ndelag fylke fer-hat-guven"
+        ],
+        "true_transcription": "for S\u00f8r-Tr\u00f8ndelag fylke Ferhat G\u00fcven",
+        "transcribed": "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes"
+        ]
+    },
+    {
+        "sentence_order": 11,
+        "audio_file": "20170207/audio/20170207-095506_344290_347450.wav",
+        "beams": [
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "og for \u00f8stfold fylke h\u00e5vard jensen"
+        ],
+        "true_transcription": "og for \u00d8stfold fylke H\u00e5vard Jensen",
+        "transcribed": "og for \u00f8stfold fylke h\u00e5vard jensen",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven"
+        ]
+    },
+    {
+        "sentence_order": 12,
+        "audio_file": "20170207/audio/20170207-095506_347450_351970.wav",
+        "beams": [
+            "statsr\u00e5d vent h\u00f8ie vil overbringe tre kongelige proposisjoner",
+            "statsr\u00e5d venn t\u00f8ye vil overbringe tre kongelige proposisjoner",
+            "statsr\u00e5d ven t\u00f8ye vil overbringe tre kongelige proposisjoner",
+            "statsr\u00e5d vent h\u00f8ie vil overbringe tre kongelige proposisjoner",
+            "statsr\u00e5d venn t\u00f8ye vil overbringe tre kongelige proposisjon"
+        ],
+        "true_transcription": "Stats\u00e5rd Bent H\u00f8ie vil overbringe tre kongelige proposisjoner",
+        "transcribed": "statsr\u00e5d ven t\u00f8ye vil overbringe tre kongelige proposisjoner",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "og for \u00f8stfold fylke h\u00e5vard jensen"
+        ]
+    },
+    {
+        "sentence_order": 13,
+        "audio_file": "20170207/audio/20170207-095506_351970_353230.wav",
+        "beams": [
+            "h\u00f8ie v\u00e6r s\u00e5 god",
+            "h\u00f8ie v\u00e6r s\u00e5 god",
+            "h\u00f8ie v\u00e6r s\u00e5 god",
+            "h\u00f8ie v\u00e6r s\u00e5 god",
+            "h\u00f8ie v\u00e6r s\u00e5 god"
+        ],
+        "true_transcription": "H\u00f8ie v\u00e6r s\u00e5 god",
+        "transcribed": "h\u00f8ie v\u00e6r s\u00e5 god",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "statsr\u00e5d ven t\u00f8ye vil overbringe tre kongelige proposisjoner"
+        ]
+    },
+    {
+        "sentence_order": 14,
+        "audio_file": "20170207/audio/20170207-095506_357290_362100.wav",
+        "beams": [
+            "president p\u00e5 denne regjeringen er det n\u00e6roverbringet tre kommelige proposisjoner",
+            "president p\u00e5 denne regjeringen er det n\u00e6roverbringet tre kongelige proposisjoner",
+            "president p\u00e5 en av regjeringen er det n\u00e6roverbringet tre kommelige proposisjoner",
+            "president p\u00e5 en av regjeringen er det n\u00e6rover bringet tre kongelige proposisjoner",
+            "president p\u00e5 en av regjeringene er det n\u00e6rover bringet tre kongelige proposisjoner"
+        ],
+        "true_transcription": "president p\u00e5 vegne av regjeringen har jeg den \u00e6re \u00e5 overbringe tre kongelige proposisjoner",
+        "transcribed": "president p\u00e5 denne regjeringen er det n\u00e6roverbringet tre kongelige proposisjoner",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "statsr\u00e5d ven t\u00f8ye vil overbringe tre kongelige proposisjoner",
+            "h\u00f8ie v\u00e6r s\u00e5 god"
+        ]
+    },
+    {
+        "sentence_order": 15,
+        "audio_file": "20170207/audio/20170207-095506_362100_366580.wav",
+        "beams": [
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven",
+            "oppheving av lov om ferie for fisker og endringer i ferieloven",
+            "oppheving av lov om ferie for fiskere og endringer i ferieloven",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven"
+        ],
+        "true_transcription": "opphevinga av lov om ferie for fiskere og endringer i ferieloven",
+        "transcribed": "oppheving av loven ferie for fiskere og endringer i ferieloven",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "statsr\u00e5d ven t\u00f8ye vil overbringe tre kongelige proposisjoner",
+            "h\u00f8ie v\u00e6r s\u00e5 god",
+            "president p\u00e5 denne regjeringen er det n\u00e6roverbringet tre kongelige proposisjoner"
+        ]
+    },
+    {
+        "sentence_order": 16,
+        "audio_file": "20170207/audio/20170207-095506_366580_373580.wav",
+        "beams": [
+            "endring i markedsf\u00f8ringsloven unntar jeg for rett i tilsyn i dagligvarebetal p\u00e5 prisopplysninger",
+            "endring i markedsf\u00f8ringsloven unntar jeg for rett i tilsyn i dagligvarebetalingsprisopplysninger",
+            "endring i markedsf\u00f8ringsloven unntar jeg for rett i tilsyn i dagligvarepartannens prisopplysninger",
+            "endring i markedsf\u00f8ringsloven unntak for rett i tilsyn i dagligvarepartannens prisopplysninger",
+            "endring i markedsf\u00f8ringsloven unntar jeg for rett i tilsyn i dagligvarebetalingsprisopplysningene"
+        ],
+        "true_transcription": "endring i markedsf\u00f8ringsloven unntak for rett til til innsyn i dagligvareportalens prisopplysninger",
+        "transcribed": "endring i markedsf\u00f8ringsloven unntar jeg for rett i tilsyn i dagligvarebetal p\u00e5 prisopplysninger",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "statsr\u00e5d ven t\u00f8ye vil overbringe tre kongelige proposisjoner",
+            "h\u00f8ie v\u00e6r s\u00e5 god",
+            "president p\u00e5 denne regjeringen er det n\u00e6roverbringet tre kongelige proposisjoner",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven"
+        ]
+    },
+    {
+        "sentence_order": 17,
+        "audio_file": "20170207/audio/20170207-095506_373580_381450.wav",
+        "beams": [
+            "v\u00e5r samtykke til inng\u00e5r alts\u00e5 av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "v\u00e5r samtykke til inng\u00e5r alts\u00e5 av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "v\u00e5r samtykke til inng\u00e5r alts\u00e5 av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "v\u00e5r samtykke til inng\u00e5r alts\u00e5 av avtale mellom norge og finland om fiske i talernes dag av tredje september 2016",
+            "v\u00e5r samtykke til inng\u00e5r alts\u00e5 av avtale mellom norge og finland om fiske i talerstag tredje september 2016"
+        ],
+        "true_transcription": "og samtykke til inng\u00e5else av avtale mellom Norge og Finland om fiske i tanavassdraget av 30. september 2016",
+        "transcribed": "Our consent to enter into an agreement between Norway and Finland on fishing in the waters of third September 2016",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "statsr\u00e5d ven t\u00f8ye vil overbringe tre kongelige proposisjoner",
+            "h\u00f8ie v\u00e6r s\u00e5 god",
+            "president p\u00e5 denne regjeringen er det n\u00e6roverbringet tre kongelige proposisjoner",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven",
+            "endring i markedsf\u00f8ringsloven unntar jeg for rett i tilsyn i dagligvarebetal p\u00e5 prisopplysninger"
+        ]
+    },
+    {
+        "sentence_order": 18,
+        "audio_file": "20170207/audio/20170207-095506_381590_386200.wav",
+        "beams": [
+            "proposisjonene vil bli mannet p\u00e5 reglementsmessig m\u00e5te",
+            "proposisjonene vil bli mandet p\u00e5 reglementsmessig m\u00e5te",
+            "proposisjonene vil bli mandet p\u00e5 reglementsmessig m\u00e5te",
+            "proposisjonene vil bli mandet p\u00e5 reglementsmessig m\u00e5te",
+            "proposisjonene vil bli mandet p\u00e5 reglementsmessig m\u00e5te"
+        ],
+        "true_transcription": "proposisjonene vil bli behandlet p\u00e5 reglementsmessig m\u00e5te",
+        "transcribed": "proposisjonene vil bli mandet p\u00e5 reglementsmessig m\u00e5te",
+        "context": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for buskerud fylke laverand kjerreulf",
+            "for oslo an katrine sj\u00f8hammer",
+            "for rogaland fylke siske knutsen hegdal",
+            "for sogn og fjordane fylke jenny f\u00f8lging",
+            "for troms fylke sigbun steinnes",
+            "for s\u00f8r-tr\u00f8ndelag fylke ferhat guven",
+            "og for \u00f8stfold fylke h\u00e5vard jensen",
+            "statsr\u00e5d ven t\u00f8ye vil overbringe tre kongelige proposisjoner",
+            "h\u00f8ie v\u00e6r s\u00e5 god",
+            "president p\u00e5 denne regjeringen er det n\u00e6roverbringet tre kongelige proposisjoner",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven",
+            "endring i markedsf\u00f8ringsloven unntar jeg for rett i tilsyn i dagligvarebetal p\u00e5 prisopplysninger",
+            "Our consent to enter into an agreement between Norway and Finland on fishing in the waters of third September 2016"
+        ]
+    }
+]

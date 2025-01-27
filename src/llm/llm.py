@@ -92,6 +92,8 @@ def parse_llm_output(response: str):
     response = response.replace("null", "None")
     response = response.replace("The selected top1 ASR transcription", "")
     response = response.replace("The selected top-1 ASR transcription", "")
+    response = response.replace("Selected Transcription:", "")
+    response = response.replace("Selected Transcription", "")
 
     #response = response.lower()
 
@@ -105,7 +107,8 @@ def parse_llm_output(response: str):
         extracted_text = match.group(1)
         print("extracted", extracted_text)
         cleantext = re.sub(CLEANR, '', extracted_text)
-        print("cleannn", cleantext)
+        print("cleannn", cleantext.strip())
+        cleantext = re.sub(r'^.*?:', '', cleantext)
         if('<option1>' in cleantext):
             raise Exception("Parsing error")
         if ('<option2>' in cleantext):
@@ -118,7 +121,8 @@ def parse_llm_output(response: str):
             raise Exception("Parsing error")
         if('print(' in cleantext):
             raise Exception("Parsing error")
-        print("hatttttttttt")
+        if(not cleantext):
+             raise Exception("Empty string")
         return cleantext.strip()
     else:
         raise Exception("No option returned")

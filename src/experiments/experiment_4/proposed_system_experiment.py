@@ -20,6 +20,7 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
             else:
                 last_element = {"audio_file":None}
                 last_element_passed=True
+
     for true_transcription_data in true_transcriptions_data:
         if(true_transcription_data["sentence_order"])==0:
             context=[]
@@ -31,12 +32,16 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
             continue
 
         if (os.path.isfile(os.path.join("../NPSC/NPSC_1", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False)
         elif (os.path.isfile(os.path.join("../NPSC/NPSC_2", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False)
         elif (os.path.isfile(os.path.join("../NPSC/NPSC_3", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False)
         elif  (os.path.isfile(os.path.join("../NPSC/NPSC_4", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False)
         else:
-            result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True)
+            result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False)
+
+        print("hallo", result)
+whisper_model = initialize_Whisper_model()   
+run_experiment("","","", whisper_model)
