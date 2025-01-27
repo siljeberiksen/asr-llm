@@ -6,7 +6,7 @@ import os
 
 from codecarbon import EmissionsTracker
 
-def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len):
+def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len, tracker):
     true_transcriptions_data = []
     with open('../NPSC/NPSC_1/NPSC_2_0_test.jsonl', 'r', encoding='utf-8') as file:
         for line in file:
@@ -30,9 +30,7 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len)
             continue
         if(not last_element_passed):
             continue
-        tracker = EmissionsTracker(project_name="experiment_5")
         filename=true_transcription_data['audio']
-        print(filename)
         tracker.start()
         tracker.start_task(filename)
         if (os.path.isfile(os.path.join("../NPSC/NPSC_1", true_transcription_data['audio']))):
@@ -103,5 +101,5 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len)
 
         #time_used = tracker.stop_time - tracker.start_time
 
-whisper_model = initialize_Whisper_model()   
-run_experiment('../result/npsc_samtale_experiment_5_llm.json', '../result/beam_npsc_experiment_5_llm.json',"../result/wer_npsc_experiment_5_llm.json", whisper_model, 100)
+# whisper_model = initialize_Whisper_model()   
+# run_experiment('../result/npsc_samtale_experiment_5_llm.json', '../result/beam_npsc_experiment_5_llm.json',"../result/wer_npsc_experiment_5_llm.json", whisper_model, 100)

@@ -182,7 +182,7 @@ def transcribe(
                 kwargs.pop("best_of", None)
 
             options = DecodingOptions(**kwargs, temperature=t)
-            (decode_result, context_result) = model.decode(segment, context, integrate_llm, port, experiment_number, options)
+            (decode_result, context_result, probs) = model.decode(segment, context, integrate_llm, port, experiment_number, options)
             context = context_result
             needs_fallback = False
             if (
@@ -203,7 +203,7 @@ def transcribe(
             if not needs_fallback:
                 break
 
-        return decode_result
+        return (decode_result, probs)
 
     seek = 0
     input_stride = exact_div(
@@ -253,9 +253,8 @@ def transcribe(
             mel_segment = pad_or_trim(mel_segment, N_FRAMES).to(model.device).to(dtype)
 
             decode_options["prompt"] = all_tokens[prompt_reset_since:]
-            result: DecodingResult = decode_with_fallback(mel_segment, context, integrate_llm, port, experiment_number)
+            (result, probs) = decode_with_fallback(mel_segment, context, integrate_llm, port, experiment_number)
             tokens = torch.tensor(result.tokens)
-
             if no_speech_threshold is not None:
                 # no voice activity check
                 should_skip = result.no_speech_prob > no_speech_threshold
@@ -395,7 +394,8 @@ def transcribe(
         text=tokenizer.decode(all_tokens[len(initial_prompt_tokens) :]),
         segments=all_segments,
         language=language,
-        context=context
+        context=context,
+        probs=probs
     )
 
 
