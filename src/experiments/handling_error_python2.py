@@ -4,7 +4,7 @@ import sys
 import traceback
 from codecarbon import EmissionsTracker
 
-tracker = EmissionsTracker(project_name="experiment_3")
+tracker = EmissionsTracker(project_name="experiment_5")
 
 try:
         from asr.asr_model_initialization import initialize_Whisper_model
@@ -25,6 +25,7 @@ except Exception as e:
     print(traceback.format_exc())
         
         # Optional: Add a delay before restarting
+    tracker.stop()
     time.sleep(2)
         
         # Restart the script

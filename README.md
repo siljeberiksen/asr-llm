@@ -24,3 +24,14 @@ To run Experiment 1, execute the following command from the `src` folder:
 ```bash
 python3 -m experiments.experiment_1.proposed_system_experiment
 ```
+
+### Running an experiment on a server
+
+As the experiments do not require supervision, a way to make the exeriment run even when not using own computer is to run it from a server.
+Steps to doing this:
+
+1. Clone the git project to the server
+
+2. Download all training files intp NPSC folder
+
+3. Run commands using tmux, nohup or window to let the program run even when current bash session is closed

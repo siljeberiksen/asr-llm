@@ -37,3 +37,5 @@ nb_samtale_experiment_2.json
 
 wer_nb_samtale_experiment_1_llm.json
 wer_nb_samtale_experiment_2.json
+
+(There were some that was said to be experiment_3, but is actually number 5)

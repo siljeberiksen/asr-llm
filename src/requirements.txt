@@ -7,6 +7,6 @@ tiktoken
 numba
 python-dotenv
 matplotlib
-jiwer
 pandas
-codecadrbon
+codecarbon
+importlib-resources
