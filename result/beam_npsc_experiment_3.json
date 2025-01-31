@@ -1,0 +1,127 @@
+[
+    {
+        "sentence_order": 0,
+        "audio_file": "20170207/audio/20170207-095506_302650_306000.wav",
+        "beams": [
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt"
+        ],
+        "true_transcription": "Stortingets m\u00f8te er lovlig satt",
+        "transcribed": " stortingets m\u00f8te er lovlig satt",
+        "context": []
+    },
+    {
+        "sentence_order": 1,
+        "audio_file": "20170207/audio/20170207-095506_306010_314020.wav",
+        "beams": [
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete"
+        ],
+        "true_transcription": "representantene Fredric Helen Fredric Holen Bj\u00f8rdal og Trond Giske som har v\u00e6rt permitterte har igjen tatt sete",
+        "transcribed": " representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+        "context": [
+            " stortingets m\u00f8te er lovlig satt"
+        ]
+    },
+    {
+        "sentence_order": 2,
+        "audio_file": "20170207/audio/20170207-095506_314020_316850.wav",
+        "beams": [
+            "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            "f\u00f8lgende vararepresentant utar n\u00e5 sete",
+            "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            "f\u00f8lgende vararepresentant tar n\u00e5 sete"
+        ],
+        "true_transcription": "f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+        "transcribed": " f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+        "context": [
+            " stortingets m\u00f8te er lovlig satt",
+            " representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete"
+        ]
+    },
+    {
+        "sentence_order": 3,
+        "audio_file": "20170207/audio/20170207-095506_316850_319910.wav",
+        "beams": [
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "den er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            "det er for vest-agder fylke \u00e5nen v\u00e6rdal"
+        ],
+        "true_transcription": "det er for Vest-Agder fylke \u00c5nen Werdal",
+        "transcribed": " det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+        "context": [
+            " stortingets m\u00f8te er lovlig satt",
+            " representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            " f\u00f8lgende vararepresentanter tar n\u00e5 sete"
+        ]
+    },
+    {
+        "sentence_order": 4,
+        "audio_file": "20170207/audio/20170207-095506_319910_323640.wav",
+        "beams": [
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for akershus fylke kjartan b\u00e6rland og are helset",
+            "for akershus fylke kjartan b\u00e6rland og are helset"
+        ],
+        "true_transcription": "for Akershus fylke Kjartan Berland og Are Helseth",
+        "transcribed": " for akershus fylke kjartan b\u00e6rland og are helset",
+        "context": [
+            " stortingets m\u00f8te er lovlig satt",
+            " representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            " f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            " det er for vest-agder fylke \u00e5nen v\u00e6rdal"
+        ]
+    },
+    {
+        "sentence_order": 5,
+        "audio_file": "20170207/audio/20170207-095506_323640_326500.wav",
+        "beams": [
+            "for buskerud fylke laverand kj\u00e6rulf",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kjerreulv",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kj\u00e6re ulv"
+        ],
+        "true_transcription": "for Buskerud fylke Lavrans Kierulf",
+        "transcribed": " for buskerud fylke laverand kj\u00e6re ulv",
+        "context": [
+            " stortingets m\u00f8te er lovlig satt",
+            " representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            " f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            " det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            " for akershus fylke kjartan b\u00e6rland og are helset"
+        ]
+    },
+    {
+        "sentence_order": 6,
+        "audio_file": "20170207/audio/20170207-095506_326500_330050.wav",
+        "beams": [
+            "for oslo an katrine sj\u00f8jhammer",
+            "for oslo an katrine sj\u00f8hammer",
+            "for oslo an katrine sj\u00f8shammer",
+            "for oslo an katrine sj\u00f8shamner",
+            "for oslo an katrine sj\u00f8hammer"
+        ],
+        "true_transcription": "for Oslo Ann Kathrine Skj\u00f8rshammer",
+        "transcribed": " for oslo an katrine sj\u00f8hammer",
+        "context": [
+            " stortingets m\u00f8te er lovlig satt",
+            " representantene fredric helen fredric holen bj\u00f8rdal og trond giske som har v\u00e6rt permitterte har igjen tatt sete",
+            " f\u00f8lgende vararepresentanter tar n\u00e5 sete",
+            " det er for vest-agder fylke \u00e5nen v\u00e6rdal",
+            " for akershus fylke kjartan b\u00e6rland og are helset",
+            " for buskerud fylke laverand kj\u00e6re ulv"
+        ]
+    }
+]

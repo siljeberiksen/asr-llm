@@ -1,0 +1,99 @@
+[
+    {
+        "context": [],
+        "choices": [
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt"
+        ]
+    },
+    {
+        "context": [
+            " stortingets møte er lovlig satt"
+        ],
+        "choices": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bjørdal og trond giske som har vært permitterte har igjen tatt sete"
+        ]
+    },
+    {
+        "context": [
+            " stortingets møte er lovlig satt",
+            " representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete"
+        ],
+        "choices": [
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentant utar nå sete",
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentant tar nå sete"
+        ]
+    },
+    {
+        "context": [
+            " stortingets møte er lovlig satt",
+            " representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            " følgende vararepresentanter tar nå sete"
+        ],
+        "choices": [
+            "det er for vest-agder fylke ånen værdal",
+            "den er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal"
+        ]
+    },
+    {
+        "context": [
+            " stortingets møte er lovlig satt",
+            " representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            " følgende vararepresentanter tar nå sete",
+            " det er for vest-agder fylke ånen værdal"
+        ],
+        "choices": [
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset"
+        ]
+    },
+    {
+        "context": [
+            " stortingets møte er lovlig satt",
+            " representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            " følgende vararepresentanter tar nå sete",
+            " det er for vest-agder fylke ånen værdal",
+            " for akershus fylke kjartan bærland og are helset"
+        ],
+        "choices": [
+            "for buskerud fylke laverand kjærulf",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kjerreulv",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kjære ulv"
+        ]
+    },
+    {
+        "context": [
+            " stortingets møte er lovlig satt",
+            " representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            " følgende vararepresentanter tar nå sete",
+            " det er for vest-agder fylke ånen værdal",
+            " for akershus fylke kjartan bærland og are helset",
+            " for buskerud fylke laverand kjære ulv"
+        ],
+        "choices": [
+            "for oslo an katrine sjøjhammer",
+            "for oslo an katrine sjøhammer",
+            "for oslo an katrine sjøshammer",
+            "for oslo an katrine sjøshamner",
+            "for oslo an katrine sjøhammer"
+        ]
+    }
+]
