@@ -48,7 +48,4 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
 #whisper_model = initialize_Whisper_model()   
 #run_experiment('../result/npsc_samtale_experiment_4_llm.json', '../result/beam_npsc_experiment_4_llm.json',"../result/wer_npsc_experiment_4_llm.json", whisper_model)
 
-print(pred("Hallo"))
-print("hallo")
-
 returnLogits()
