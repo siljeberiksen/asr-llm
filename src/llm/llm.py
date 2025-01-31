@@ -40,9 +40,9 @@ schemas = {
 }
 
 import llama_cpp
-
-model = llama_cpp.Llama(model_path="path/to/model", logits_all=True)
-print(model("The quick brown fox jumps ", stop=["."])["choices"][0]["text"])
+def returnLogits():
+    model = llama_cpp.Llama(model_path="path/to/model", logits_all=True)
+    print(model("The quick brown fox jumps ", stop=["."])["choices"][0]["text"])
 
 def pred(
     instruction,

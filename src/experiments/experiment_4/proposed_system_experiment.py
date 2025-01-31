@@ -4,7 +4,7 @@ from asr.asr_model_initialization import initialize_Whisper_model
 from jiwer import wer, cer
 import os
 
-from llm.llm import pred
+from llm.llm import pred, returnLogits
 
 
 def run_experiment(result_file, beam_file, wer_file, whisper_model):
@@ -50,3 +50,5 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
 
 print(pred("Hallo"))
 print("hallo")
+
+returnLogits()
