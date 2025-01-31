@@ -71,6 +71,7 @@ def post_process(file_name, empty_instances = []):
 
     print("average wer", wer_sum/length)
     print("average cer", cer_sum/length)
+    
 
 post_process("wer_nb_samtale_experiment_1.json")
 post_process("wer_nb_samtale_experiment_1_llm.json")

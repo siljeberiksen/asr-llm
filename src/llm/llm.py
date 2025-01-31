@@ -39,6 +39,11 @@ schemas = {
     "both": both_schema
 }
 
+import llama_cpp
+
+model = llama_cpp.Llama(model_path="path/to/model", logits_all=True)
+print(model("The quick brown fox jumps ", stop=["."])["choices"][0]["text"])
+
 def pred(
     instruction,
     max_tokens=1000,
@@ -62,12 +67,14 @@ def pred(
         "n_predict": max_tokens,
         "temperature": temp,
         "repeat_penalty": 1.2,  # 1.1 default,
+        "logits_all": True
     }
     if use_schema:
         data["json_schema"] = schemas[use_schema]
     print("poooooort", port)
     url = f"http://{HOSTNAME}:{port}/completion"  # llama.cpp server
     response = requests.post(url, headers=headers, data=json.dumps(data)).json()
+    print(response)
     response = response["content"]
     if evaluate:
         return parse_llm_output(response)

@@ -3,6 +3,8 @@ import json
 import matplotlib.pyplot as plt
 import statistics
 
+from src.visualization.postprocessing_emissions import runEmissionPostProcessing
+
 #with open("result/wer_nb_samtale_5_tiny_2.json", 'r') as file:
 #"result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json
 
@@ -72,10 +74,12 @@ def post_process(file_name, empty_instances = []):
     print("average wer", wer_sum/length)
     print("average cer", cer_sum/length)
 
-post_process("wer_nb_samtale_experiment_1.json")
-post_process("wer_nb_samtale_experiment_1_llm.json")
+#post_process("wer_npsc_samtale_experiment_2.json")
+post_process("wer_npsc_experiment_3_llm.json")
 
 print("\n\n\nWithout empty instances")
-empty_instances = find_empty_instances("beam_nb_samtale_experiment_1_llm.json")
-post_process("wer_nb_samtale_experiment_1.json", empty_instances)
-post_process("wer_nb_samtale_experiment_1_llm.json", empty_instances)
+empty_instances = find_empty_instances("beam_npsc_experiment_3_llm.json")
+#post_process("wer_nb_samtale_experiment_2.json", empty_instances)
+post_process("wer_npsc_experiment_3_llm.json", empty_instances)
+
+runEmissionPostProcessing("experiment_3")
