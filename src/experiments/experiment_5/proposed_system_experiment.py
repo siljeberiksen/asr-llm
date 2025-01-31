@@ -26,7 +26,7 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
             context=[]
         if(true_transcription_data['audio'] == last_element["audio_file"] and not last_element_passed):
             last_element_passed=True
-            context = last_element["context"]
+            context = last_element["context"] + [last_element["transcribed"]]
             continue
         if(not last_element_passed):
             continue
