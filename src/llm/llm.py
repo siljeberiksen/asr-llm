@@ -5,6 +5,7 @@ import os
 import re
 import requests
 from dotenv import load_dotenv
+import torch
 load_dotenv() 
 
 HOSTNAME = os.environ["HOSTNAME"]
@@ -42,7 +43,17 @@ schemas = {
 import llama_cpp
 def returnLogits():
     model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
-    print(model("An unexpected event occurred when ", stop=["."],logprobs=True,  top_k=40, temperature=0.7, top_logprobs=20))
+    tokens = model("An unexpected event occurred when ", stop=["."],logprobs=True,  top_k=40, temperature=0.7)
+    # Evaluate the model to get logits
+    model.eval(tokens)
+
+    # Retrieve all token logits
+    all_logits = model._logits  # Raw logits for all vocabulary tokens
+
+    # Convert logits to probabilities
+    logits_tensor = torch.tensor(all_logits)  # Convert to Tensor
+    probs = torch.softmax(logits_tensor, dim=-1)  # Convert to probabilities
+    print(probs)
 
 def pred(
     instruction,
