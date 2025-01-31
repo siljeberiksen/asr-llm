@@ -42,7 +42,7 @@ schemas = {
 import llama_cpp
 def returnLogits():
     model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
-    print(model("The quick brown fox jumps ", stop=["."],logprobs=True,  top_k=40, temperature=0.7))
+    print(model("An unexpected event occurred when ", stop=["."],logprobs=True,  top_k=40, temperature=0.7))
 
 def pred(
     instruction,
