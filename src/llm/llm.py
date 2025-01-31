@@ -5,7 +5,6 @@ import os
 import re
 import requests
 from dotenv import load_dotenv
-import torch
 load_dotenv() 
 
 HOSTNAME = os.environ["HOSTNAME"]
@@ -43,30 +42,8 @@ schemas = {
 import llama_cpp
 def returnLogits():
     model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
-    tokens = model("An unexpected event occurred when ", stop=["."],logprobs=True,  top_k=40, temperature=0.7)
-    # Evaluate the model to get logits
-    # Tokenize input
-    prompt = "An unexpected event occurred when "
-    tokens = model.tokenize(prompt.encode("utf-8"))
-
-    # Run model on input tokens
-    model.eval(tokens)
-
-    # Retrieve logits
-    logits = torch.tensor(model._logits)  # Shape: (sequence_length, vocab_size)
-
-    # Get logits for the last generated token
-    last_logits = logits[-1]  # Last row corresponds to most recent prediction
-
-    # Sort logits (greedy decoding)
-    sorted_indices = torch.argsort(last_logits, descending=True)
-
-    # Print the top 5 most likely tokens
-    for i in range(5):
-        token_id = sorted_indices[i].item()
-        token_str = model.detokenize([token_id]).decode("utf-8")
-        token_logit = last_logits[token_id].item()
-        print(f"{i+1}. Token: {token_str} (Logit: {token_logit})")
+    out = model.create_completion("The capital of France is", max_tokens=1, logprobs=10)
+    print(out)
 
 def pred(
     instruction,
