@@ -77,9 +77,11 @@ def post_process(file_name, empty_instances = []):
 #post_process("wer_npsc_samtale_experiment_2.json")
 post_process("wer_npsc_experiment_3_llm.json")
 
-print("\n\n\nWithout empty instances")
+print("\nnWithout empty instances")
 empty_instances = find_empty_instances("beam_npsc_experiment_3_llm.json")
-#post_process("wer_nb_samtale_experiment_2.json", empty_instances)
 post_process("wer_npsc_experiment_3_llm.json", empty_instances)
+
+print("\n\n\nBASELINE")
+post_process("wer_npsc_experiment_3.json")
 
 runEmissionPostProcessing("experiment_3")
