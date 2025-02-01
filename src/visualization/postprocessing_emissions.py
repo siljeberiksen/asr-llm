@@ -7,22 +7,20 @@ def runEmissionPostProcessing(experiment_name):
     # Display the first few rows
     results = df.project_name.apply(lambda a: experiment_name in a)
     df_filtered = df[results]
-
-    print(df_filtered)
-    print(df)
-    print(df.columns)
-    print(df["run_id"])
-    for row in df["run_id"]:
+    count = 0
+    for row in df_filtered["run_id"]:
         try:
-            with open(f'./src/emission_data/emission_base_{row}', "r", encoding="utf-8") as file:
+            print(row)
+            with open(f'emission_data/emissions_{row}.csv', "r", encoding="utf-8") as file:
                 content = file.read()  # Read the entire file
-            print("content", content)
+                print(content)
+            count += 1
         except:
-            print("NOOOOO")
-        print(row)
-    print("Duration", sum(df["duration"]))
-    print("Emission", sum(df["emissions"]))
-    print("CPU energy", sum(df["cpu_energy"]))
-    print("GPU energy", sum(df["gpu_energy"]))
-    print("RAM energy", sum(df["ram_energy"]))
-    print(df.columns)
+            content = 0
+       
+    print(count)
+    print("Duration", sum(df_filtered["duration"]))
+    print("Emission", sum(df_filtered["emissions"]))
+    print("CPU energy", sum(df_filtered["cpu_energy"]))
+    print("GPU energy", sum(df_filtered["gpu_energy"]))
+    print("RAM energy", sum(df_filtered["ram_energy"]))

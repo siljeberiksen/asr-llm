@@ -15,7 +15,7 @@ try:
         
         # Run experiment
         whisper_model = initialize_Whisper_model()   
-        run_experiment('../result/npsc_samtale_experiment_6_llm.json', '../result/beam_npsc_experiment_6_llm.json',"../result/wer_npsc_experiment_6_llm.json", whisper_model, 100, tracker)
+        run_experiment('../result/npsc_samtale_experiment_6_llm.json', '../result/beam_npsc_experiment_6_llm.json',"../result/wer_npsc_experiment_6_llm.json", whisper_model, 50, tracker)
         # If no exception occurs, break the loop and finish
         print("Script completed successfully.")
 

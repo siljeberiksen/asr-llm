@@ -3,7 +3,7 @@ import json
 import matplotlib.pyplot as plt
 import statistics
 
-from src.visualization.postprocessing_emissions import runEmissionPostProcessing
+from visualization.postprocessing_emissions import runEmissionPostProcessing
 
 #with open("result/wer_nb_samtale_5_tiny_2.json", 'r') as file:
 #"result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json
@@ -81,7 +81,18 @@ print("\nnWithout empty instances")
 empty_instances = find_empty_instances("beam_npsc_experiment_3_llm.json")
 post_process("wer_npsc_experiment_3_llm.json", empty_instances)
 
+print("\nEmissions")
+runEmissionPostProcessing("experiment_3")
+
 print("\n\n\nBASELINE")
+
 post_process("wer_npsc_experiment_3.json")
 
-runEmissionPostProcessing("experiment_3")
+print("\nnWithout empty instances")
+empty_instances = find_empty_instances("beam_npsc_experiment_3_llm.json")
+post_process("wer_npsc_experiment_3.json", empty_instances)
+
+print("\nEmissions")
+runEmissionPostProcessing("experiment_3_baseline")
+
+
