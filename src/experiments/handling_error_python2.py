@@ -8,7 +8,7 @@ tracker = EmissionsTracker(project_name="experiment_5")
 
 try:
         from asr.asr_model_initialization import initialize_Whisper_model
-        from experiments.experiment_5.proposed_system_experiment import run_experiment
+        from experiments.experiment_6.proposed_system_experiment import run_experiment
 
         # Your main script logic here
         print("Running the script...")
