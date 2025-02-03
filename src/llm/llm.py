@@ -5,8 +5,6 @@ import os
 import re
 import requests
 from dotenv import load_dotenv
-
-from llama import Llama
 load_dotenv() 
 
 HOSTNAME = os.environ["HOSTNAME"]
@@ -171,9 +169,9 @@ def try_streaming_output():
         except requests.exceptions.JSONDecodeError:
             print("Error: Response is not valid JSON")
             print("Raw response:", response.text)
-
+import llama_cpp
 def model_logits():
-    model = Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
+    model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
     out = model.create_completion("The capital of France is", max_tokens=1, logprobs=20)
     print(out)
             
