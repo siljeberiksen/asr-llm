@@ -655,7 +655,23 @@ class Llama:
                     self._ctx.get_logits(), shape=(rows * cols,)
                 )
                 self.scores[n_past : n_past + n_tokens, :].reshape(-1)[::] = logits
-                print("logits!!", logits)
+    
+                with open("../result/logits_files/logit_test.json", "r") as f:
+                    data = json.load(f)
+                
+                # Create a new entry with context and choices
+                new_entry = {
+                    "logit": logits,
+                }
+        
+                # Append the new entry to the existing data
+                data.append(new_entry)
+                
+                # Write the updated data back to the JSON file
+                with open("../result/logits_files/logit_test.json", "w") as file:
+                    json.dump(data, file, indent=4, ensure_ascii=False)
+    
+
                 print("score", self.scores)
             else:
                 # rows = 1
