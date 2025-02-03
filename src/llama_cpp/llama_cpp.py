@@ -35,6 +35,8 @@ _lib_base_name = "llama"
 _override_base_path = os.environ.get("LLAMA_CPP_LIB_PATH")
 _base_path = pathlib.Path(os.path.abspath(os.path.dirname(__file__))) / "lib" if _override_base_path is None else pathlib.Path(_override_base_path)
 # Load the library
+print("name", _lib_base_name)
+print("path", _base_path)
 _lib = load_shared_library(_lib_base_name, _base_path)
 
 ctypes_function = ctypes_function_for_shared_library(_lib)
