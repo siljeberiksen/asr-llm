@@ -6,7 +6,7 @@ import re
 import requests
 from dotenv import load_dotenv
 
-from llama_cpp_copy.llama import Llama
+from llama_cpp.llama import Llama
 load_dotenv() 
 
 HOSTNAME = os.environ["HOSTNAME"]
