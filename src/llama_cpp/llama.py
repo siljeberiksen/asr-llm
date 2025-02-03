@@ -656,6 +656,7 @@ class Llama:
                 )
                 self.scores[n_past : n_past + n_tokens, :].reshape(-1)[::] = logits
                 print("logits!!", logits)
+                print("score", self.scores)
             else:
                 # rows = 1
                 # cols = self._n_vocab
