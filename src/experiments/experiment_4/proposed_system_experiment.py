@@ -45,7 +45,11 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
             result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False, experiment_number=4)
 
         print("hallo", result)
-#whisper_model = initialize_Whisper_model()   
+whisper_model = initialize_Whisper_model()   
+tokenizer = whisper_model.tokenizer
+print(tokenizer)
+whisper_vocab = tokenizer.get_vocab()
+print(whisper_vocab)
 #run_experiment('../result/npsc_samtale_experiment_4_llm.json', '../result/beam_npsc_experiment_4_llm.json',"../result/wer_npsc_experiment_4_llm.json", whisper_model)
 
 #returnLogits()
