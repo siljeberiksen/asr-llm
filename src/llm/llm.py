@@ -42,7 +42,7 @@ schemas = {
 import llama_cpp
 def returnLogits():
     model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
-    out = model.create_completion("The capital of France is", max_tokens=1, logprobs=10)
+    out = model.create_completion("The capital of France is", max_tokens=1, logprobs=20)
     print(out)
 
 def pred(

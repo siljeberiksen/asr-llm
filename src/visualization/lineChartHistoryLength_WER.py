@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 
 # Data for the line chart
-x_labels = ["10", "50", "100", "1000"]  # Categorical x-axis labels
-WER = [30, 40, 50, 60]
-CER = [25, 35, 45, 44]
+x_labels = ["0", "10", "100"]  # Categorical x-axis labels
+WER = [14.8, 75 , 30.4]
+CER = [6.7, 71 , 21.9]
 
 # Create positions for equal spacing
 positions = range(len(x_labels))
