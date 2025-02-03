@@ -61,8 +61,10 @@ def load_shared_library(lib_base_name: str, base_path: pathlib.Path):
         cdll_args["winmode"] = ctypes.RTLD_GLOBAL
 
     # Try to load the shared library, handling potential errors
+
     for lib_path in lib_paths:
         print("lib_path", lib_path)
+        lib_path="/work/siljberi/asr-llm/src/llama_cpp/lib/libllama.dylib"
         if lib_path.exists():
             try:
                 return ctypes.CDLL(str(lib_path), **cdll_args)  # type: ignore
