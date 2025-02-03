@@ -143,7 +143,40 @@ def read_file(file_path):
     except FileNotFoundError:
         data = []  # If file doesn't exist, initialize with an empty list
     return data
-    
+
+def try_streaming_output():
+    headers = {"Content-Type": "application/json"}
+    url = f"http://{HOSTNAME}:{8082}/completion"
+
+    data = {
+        "prompt": "Building a website can be done in 10 simple steps",
+        "n_predict":1000,
+        "temperature": 0.1,
+        "repeat_penalty": 1.2,  # 1.1 default,
+        "logits_all": True,
+        "n_probs": 100
+    }
+
+    response = requests.post(url, headers=headers, data=json.dumps(data))
+    if response.status_code != 200:
+        print(f"Error: Received HTTP {response.status_code}")
+        #print("Response Text:", response.text)  # Print raw response
+    else:
+        try:
+            # ✅ Read the response safely
+            json_data = response.json()
+            print("check out", json_data["completion_probabilities"])
+            for probability in json_data["completion_probabilities"]:
+                print("probability", probability)
+        except requests.exceptions.JSONDecodeError:
+            print("Error: Response is not valid JSON")
+            print("Raw response:", response.text)
+
+def model_logits():
+    model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
+    out = model("The capital of France is")
+    print(out.logits[:, -1, :])
+            
 
 def choose_best_sentence(context, choices, port=8081):
     prompt = "You are an ASR transcript selector." 

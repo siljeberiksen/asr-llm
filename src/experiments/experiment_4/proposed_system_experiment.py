@@ -4,7 +4,7 @@ from asr.asr_model_initialization import initialize_Whisper_model
 from jiwer import wer, cer
 import os
 
-from llm.llm import pred, returnLogits
+from llm.llm import model_logits, pred, returnLogits, try_streaming_output
 
 
 def run_experiment(result_file, beam_file, wer_file, whisper_model):
@@ -48,4 +48,6 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model):
 #whisper_model = initialize_Whisper_model()   
 #run_experiment('../result/npsc_samtale_experiment_4_llm.json', '../result/beam_npsc_experiment_4_llm.json',"../result/wer_npsc_experiment_4_llm.json", whisper_model)
 
-returnLogits()
+#returnLogits()
+#try_streaming_output()
+model_logits()
