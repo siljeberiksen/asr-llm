@@ -174,9 +174,9 @@ def try_streaming_output():
 
 def model_logits():
     model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
-    out = model("The capital of France is")
+    out = model.create_completion("The capital of France is", max_tokens=1, logprobs=20)
+    raw_logits = model._llama.llama_get_logits()
     print(out)
-    print(out.logits[:, -1, :])
             
 
 def choose_best_sentence(context, choices, port=8081):
