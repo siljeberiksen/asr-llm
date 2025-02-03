@@ -659,10 +659,12 @@ class Llama:
                 new_entry = {
                     "logits": logits.tolist()
                 }
+
+                print(new_entry)
     
                 with open("../result/logits_files/logit_test.json", "r") as f:
                     try:
-                        data = json.load(f)  # ✅ Correct method for reading JSON from file
+                        data = json.load(f)  
                         print("Successfully loaded JSON:", data)
                         data.append(new_entry)
                         with open("../result/logits_files/logit_test.json", "w") as file:
