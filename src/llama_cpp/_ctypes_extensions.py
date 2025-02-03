@@ -64,7 +64,7 @@ def load_shared_library(lib_base_name: str, base_path: pathlib.Path):
 
     for lib_path in lib_paths:
         print("lib_path", lib_path)
-        lib_path=pathlib.Path("/work/siljberi/asr-llm/src/llama_cpp/lib/libllama.dylib").resolve()
+        lib_path=pathlib.Path("/work/siljberi/asr-llm/src/env/lib/python3.8/site-packages/llama_cpp/lib/libllama.so").resolve()
         if lib_path.exists():
             try:
                 return ctypes.CDLL(str(lib_path), **cdll_args)  # type: ignore
