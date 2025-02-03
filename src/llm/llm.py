@@ -5,6 +5,8 @@ import os
 import re
 import requests
 from dotenv import load_dotenv
+
+from llama_cpp_copy.llama import Llama
 load_dotenv() 
 
 HOSTNAME = os.environ["HOSTNAME"]
@@ -39,9 +41,8 @@ schemas = {
     "both": both_schema
 }
 
-import llama_cpp
 def returnLogits():
-    model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
+    model = Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
     out = model.create_completion("The capital of France is", max_tokens=1, logprobs=20)
     print(out)
 
@@ -163,7 +164,6 @@ def try_streaming_output():
         #print("Response Text:", response.text)  # Print raw response
     else:
         try:
-            # ✅ Read the response safely
             json_data = response.json()
             print("check out", json_data["completion_probabilities"])
             for probability in json_data["completion_probabilities"]:
@@ -173,9 +173,8 @@ def try_streaming_output():
             print("Raw response:", response.text)
 
 def model_logits():
-    model = llama_cpp.Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
+    model = Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
     out = model.create_completion("The capital of France is", max_tokens=1, logprobs=20)
-    raw_logits = model._llama.llama_get_logits()
     print(out)
             
 
