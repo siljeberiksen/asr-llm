@@ -655,6 +655,7 @@ class Llama:
                     self._ctx.get_logits(), shape=(rows * cols,)
                 )
                 self.scores[n_past : n_past + n_tokens, :].reshape(-1)[::] = logits
+                print("logits!!", logits)
             else:
                 # rows = 1
                 # cols = self._n_vocab
