@@ -661,7 +661,7 @@ class Llama:
                 
                 # Create a new entry with context and choices
                 new_entry = {
-                    "logit": logits.tolist(),
+                    "logit": logits.tolist()
                 }
         
                 # Append the new entry to the existing data
