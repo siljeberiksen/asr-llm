@@ -657,7 +657,7 @@ class Llama:
                 self.scores[n_past : n_past + n_tokens, :].reshape(-1)[::] = logits
     
                 with open("../result/logits_files/logit_test.json", "r") as f:
-                    data = json.load(f)
+                    data = json.loads(f)
                 
                 # Create a new entry with context and choices
                 new_entry = {
