@@ -10,10 +10,8 @@ def runEmissionPostProcessing(experiment_name):
     count = 0
     for row in df_filtered["run_id"]:
         try:
-            print(row)
             with open(f'emission_data/emissions_{row}.csv', "r", encoding="utf-8") as file:
                 content = file.read()  # Read the entire file
-                print(content)
             count += 1
         except:
             content = 0
