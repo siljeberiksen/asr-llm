@@ -1,4 +1,8 @@
-# Experiment 2
+# Experiment 10
+
+## Model used
+
+Meta-Llama-3.1-8B-Instruct-Q6_K_L.gguf
 
 ## Dataset
 
@@ -7,7 +11,7 @@ Utilzing NPSC 3
 ## Hyperparameters
 
 - beam size = 5
-- context size = 10
+- context size = 100
 
 ## Prompt
 
@@ -29,16 +33,13 @@ Do NOT include your reasoning
 
 ## Resulting files
 
-beam_npsc_experiment_3_llm.json
-beam_npsc_experiment_3.json
+beam_nb_samtale_experiment_8_llm.json
+beam_nb_samtale_experiment_3.json
 
-npsc_samtale_experiment_3_llm.json
-npsc_samtale_experiment_3.json
+nb_samtale_experiment_8_llm.json
+nb_samtale_experiment_3.json
 
-wer_npsc_samtale_experiment_3_llm.json
-wer_npsc_samtale_experiment_3.json
+wer_nb_samtale_experiment_8_llm.json
+wer_nb_samtale_experiment_3.json
 
-Burde fjerne fra resultat, og regne ut hva cer er igjen
-Selected Transcription:
-<option1> osv
-alle svar med :
+(There were some that was said to be experiment_3, but is actually number 5)

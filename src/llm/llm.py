@@ -10,10 +10,14 @@ load_dotenv()
 HOSTNAME = os.environ["HOSTNAME"]
 PORT = os.environ["PORT"]
 headers = {"Content-Type": "application/json"}
-
+ 
 only_string_schema = {
     "type": "string"
 }
+
+#TODO Add object
+
+#TODO Test schema that have to use one of the
 only_number_schema = {
     "type": "number",
     "enum": [1, 2, 3, 4, 5]

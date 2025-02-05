@@ -1,4 +1,4 @@
-# Experiment 2
+# Experiment 5
 
 ## Dataset
 
@@ -29,13 +29,13 @@ Do NOT include your reasoning
 
 ## Resulting files
 
-beam_nb_samtale_experiment_3_llm.json
-beam_nb_samtale_experiment_2.json
+beam_npsc_experiment_5_llm.json
+beam_npsc_experiment_3.json
 
-nb_samtale_experiment_1_llm.json
-nb_samtale_experiment_2.json
+npsc_samtale_experiment_5_llm.json
+npsc_samtale_experiment_3.json
 
-wer_nb_samtale_experiment_1_llm.json
-wer_nb_samtale_experiment_2.json
+wer_npsc_samtale_experiment_5_llm.json
+wer_npsc_samtale_experiment_3.json
 
 (There were some that was said to be experiment_3, but is actually number 5)
