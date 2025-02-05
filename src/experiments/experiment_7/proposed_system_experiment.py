@@ -28,7 +28,7 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
             last_element_passed=True
             prev_context = last_element["context"]
             while(len(prev_context) >= 10):
-                prev_context.pop()
+                prev_context.pop(0)
             context = last_element["context"] + [last_element["transcribed"]]
             continue
         if(not last_element_passed):
