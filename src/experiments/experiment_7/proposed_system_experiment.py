@@ -91,6 +91,8 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
         wer_data.append(new_instance_beams)
         with open(beam_file, 'w') as file:
             json.dump(wer_data, file, indent=4)
+        print("lengthhhhhhhh", len(context))
+        print(context_len)
         if(len(context) >= context_len):
             context.pop(0)
         context.append(result["text"])
