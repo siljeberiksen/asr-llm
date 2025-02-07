@@ -26,7 +26,10 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
             context=[]
         if(true_transcription_data['audio'] == last_element["audio_file"] and not last_element_passed):
             last_element_passed=True
-            context = last_element["context"] + [last_element["transcribed"]]
+            prev_context = last_element["context"]
+            while(len(prev_context) >= 10):
+                prev_context.pop(0)
+            context = prev_context + [last_element["transcribed"]]
             continue
         if(not last_element_passed):
             continue
@@ -91,7 +94,7 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
         wer_data.append(new_instance_beams)
         with open(beam_file, 'w') as file:
             json.dump(wer_data, file, indent=4)
-        if(len(context) >= context_len):
+        while(len(context) >= context_len):
             context.pop(0)
         context.append(result["text"])
         
