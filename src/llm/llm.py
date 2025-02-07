@@ -47,7 +47,7 @@ both_schema = {
 }
 
 schemas = {
-    "default": only_string_schema,
+    "default": only_string_schema_object,
     "number_only": only_number_schema,
     "both": both_schema
 }
