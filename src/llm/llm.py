@@ -15,6 +15,15 @@ only_string_schema = {
     "type": "string"
 }
 
+only_string_schema_object = {
+    "type": "object",
+    "properties": {
+        "transcript":{
+            "type": "string"
+        }
+    }
+}
+
 #TODO Add object
 
 #TODO Test schema that have to use one of the
@@ -38,7 +47,7 @@ both_schema = {
 }
 
 schemas = {
-    "default": only_string_schema,
+    "default": only_string_schema_object,
     "number_only": only_number_schema,
     "both": both_schema
 }
