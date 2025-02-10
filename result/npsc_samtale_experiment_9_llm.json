@@ -1,1 +1,1290 @@
-[]
+[
+    {
+        "context": [],
+        "choices": [
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt",
+            "stortingets møte er lovlig satt"
+        ]
+    },
+    {
+        "context": [
+            ""
+        ],
+        "choices": [
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredric helen fredric holen bjørdal og trond giske som har vært permitterte har igjen tatt sete",
+            "representantene fredrik helen fredrik olen bjørdal og trond giske som har vært permitterte har igjen tatt sete"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete"
+        ],
+        "choices": [
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentant utar nå sete",
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentanter tar nå sete",
+            "følgende vararepresentant tar nå sete"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete"
+        ],
+        "choices": [
+            "det er for vest-agder fylke ånen værdal",
+            "den er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal",
+            "det er for vest-agder fylke ånen værdal"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete"
+        ],
+        "choices": [
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset",
+            "for akershus fylke kjartan bærland og are helset"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset"
+        ],
+        "choices": [
+            "for buskerud fylke laverand kjærulf",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kjerreulv",
+            "for buskerud fylke laverand kjerreulf",
+            "for buskerud fylke laverand kjære ulv"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv"
+        ],
+        "choices": [
+            "for oslo an katrine sjøjhammer",
+            "for oslo an katrine sjøhammer",
+            "for oslo an katrine sjøshammer",
+            "for oslo an katrine sjøshamner",
+            "for oslo an katrine sjøhammer"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer"
+        ],
+        "choices": [
+            "for rogaland fylke siske knutsen hegdal",
+            "for rogaland fylke syssel knutsen hegdal",
+            "for rogaland fylke siske knutsen hegdal",
+            "for rogaland fylke syssel knutsen hegdal",
+            "for rogaland fylke siskel knutsen hegdal"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal"
+        ],
+        "choices": [
+            "for sognefjordane fylke jenny følging",
+            "for sogn og fjordane fylke jenny følging",
+            "forsagne fjordane fylke jenny følging",
+            "for sogn og fjordane fylke jenny følger",
+            "for sogn og fjordane i fylke jenny følging"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal"
+        ],
+        "choices": [
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbun steinnes",
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbun steines",
+            "for troms fylke sigbund steinnes"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes"
+        ],
+        "choices": [
+            "for sør-trøndelag fylke ferhat guven",
+            "for sør-trøndelag fylke ferhat guven",
+            "for sør-trøndelag fylke fairhatgh guven",
+            "for sør-trøndelag fylke fer-hat-guven",
+            "for sør-trøndelag fylke fer-hat-guven"
+        ]
+    },
+    {
+        "context": [
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete",
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven"
+        ],
+        "choices": [
+            "og for østfold fylke håvard jensen",
+            "og for østfold fylke håvard jensen",
+            "og for østfold fylke håvard jensen",
+            "og for østfold fylke håvard jensen",
+            "og for østfold fylke håvard jensen"
+        ]
+    },
+    {
+        "context": [
+            "følgende vararepresentant har igjen tatt sete",
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen"
+        ],
+        "choices": [
+            "statsråd vent høie vil overbringe tre kongelige proposisjoner",
+            "statsråd venn tøye vil overbringe tre kongelige proposisjoner",
+            "statsråd ven tøye vil overbringe tre kongelige proposisjoner",
+            "statsråd vent høie vil overbringe tre kongelige proposisjoner",
+            "statsråd venn tøye vil overbringe tre kongelige proposisjon"
+        ]
+    },
+    {
+        "context": [
+            "Representanten Fredrik Holen, Fredrik Hellein, Bjørn Dal og Trond Giske som har vært permittert har igjen tatt sete, følgende vararepresentant har igjen tatt sete",
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag"
+        ],
+        "choices": [
+            "høie vær så god",
+            "høie vær så god",
+            "høie vær så god",
+            "høie vær så god",
+            "høie vær så god"
+        ]
+    },
+    {
+        "context": [
+            "For Akershus fylke, Kjartan Bærland og Are Helset",
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            ""
+        ],
+        "choices": [
+            "president på denne regjeringen er det næroverbringet tre kommelige proposisjoner",
+            "president på denne regjeringen er det næroverbringet tre kongelige proposisjoner",
+            "president på en av regjeringen er det næroverbringet tre kommelige proposisjoner",
+            "president på en av regjeringen er det nærover bringet tre kongelige proposisjoner",
+            "president på en av regjeringene er det nærover bringet tre kongelige proposisjoner"
+        ]
+    },
+    {
+        "context": [
+            "for buskerud fylke laverand kjære ulv",
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            "",
+            ""
+        ],
+        "choices": [
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven",
+            "oppheving av lov om ferie for fisker og endringer i ferieloven",
+            "oppheving av lov om ferie for fiskere og endringer i ferieloven",
+            "oppheving av loven ferie for fiskere og endringer i ferieloven"
+        ]
+    },
+    {
+        "context": [
+            "for oslo an katrine sjøhammer",
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            "",
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven"
+        ],
+        "choices": [
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarebetal på prisopplysninger",
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarebetalingsprisopplysninger",
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarepartannens prisopplysninger",
+            "endring i markedsføringsloven unntak for rett i tilsyn i dagligvarepartannens prisopplysninger",
+            "endring i markedsføringsloven unntar jeg for rett i tilsyn i dagligvarebetalingsprisopplysningene"
+        ]
+    },
+    {
+        "context": [
+            "for rogaland fylke syssel knutsen hegdal",
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            "",
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven"
+        ],
+        "choices": [
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talernes dag av tredje september 2016",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016"
+        ]
+    },
+    {
+        "context": [
+            "For Akershus fylke, Kjartan Bærland og Are Helset, for Buskerud fylke Laverand kjære Ulv, for Oslo An Katrine Sjøhammer, for Rogaland fylke Syssel Knutsen Hegdal",
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            "",
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016"
+        ],
+        "choices": [
+            "proposisjonene vil bli mannet på reglementsmessig måte",
+            "proposisjonene vil bli mandet på reglementsmessig måte",
+            "proposisjonene vil bli mandet på reglementsmessig måte",
+            "proposisjonene vil bli mandet på reglementsmessig måte",
+            "proposisjonene vil bli mandet på reglementsmessig måte"
+        ]
+    },
+    {
+        "context": [
+            "for troms fylke sigbun steinnes",
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            "",
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            ""
+        ],
+        "choices": [
+            "representanten ketil kjenseth vil framsette et representantforslag",
+            "representanten ketil kjenseth vil framsette et representantforslag",
+            "representanten ketil kjenseth vil framsette et representantforslag",
+            "representanten ketil kjenseth vil framsette et representantforslag",
+            "representanten ketil kjenseth vil framsette et representantforslag"
+        ]
+    },
+    {
+        "context": [
+            "for sør-trøndelag fylke ferhat guven",
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            "",
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "",
+            ""
+        ],
+        "choices": [
+            "ketil kjenseth vær så god",
+            "ketil tjenseth vær så god",
+            "ketil tjenseth vær så god",
+            "ketil tjenseth vær så god",
+            "ketil tjenseth vær så god"
+        ]
+    },
+    {
+        "context": [
+            "og for østfold fylke håvard jensen",
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            "",
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "",
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016"
+        ],
+        "choices": [
+            "Takk president",
+            "ja takk president",
+            "ja takk president",
+            "Ja takk president",
+            "ja takk president"
+        ]
+    },
+    {
+        "context": [
+            "statsråd Vena Tøye vil overbringe tre kongelige forslag",
+            "",
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "",
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president"
+        ],
+        "choices": [
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har jeg gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har jeg gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "",
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere"
+        ],
+        "choices": [
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "og forslaget vil bli behandlet på reglementsmessig måte"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "",
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte"
+        ],
+        "choices": [
+            "foreligger de saker som er oppført på dagsorden nummer 47",
+            "foreligger de saker som er oppført på dagsorden nummer 47",
+            "foreligger de saker som er oppført på dagsorden nummer 47",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "vil behandling foreligge de saker som er oppført på dagsorden nummer 47"
+        ]
+    },
+    {
+        "context": [
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "",
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47"
+        ],
+        "choices": [
+            "sak én er interpellasjon fra representanten freddy de roiter til heise- og omsorgsministeren",
+            "sak én er interpellasjon fra representanten freddy de råiter til heise- og omsorgsministeren",
+            "sak én er interpellasjon fra representanten freddy de roiter til helse- og omsorgsministeren",
+            "sak én er interpellasjon fra representanten freddy de roiter til helse- og omsorgsministeren",
+            "sak én er interpellasjon fra representanten freddy de roiter til heise- og omsorgsministeren"
+        ]
+    },
+    {
+        "context": [
+            "oppheving av loven ferie for fisker og endringer i ferieloven",
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "",
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren"
+        ],
+        "choices": [
+            "autisme asd er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "autisme asd er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "autisme ast er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "autisme asd er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "autisme aste er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging"
+        ]
+    },
+    {
+        "context": [
+            "vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "",
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging"
+        ],
+        "choices": [
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "det opereres med ulike tall på forekomst av autisme men ca 1% av befolkningen har autisme"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme"
+        ],
+        "choices": [
+            "dessverre er oppfølgingen av barn ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører",
+            "dessverre er oppfølgingen av barn ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører",
+            "dessverre er oppfølgingen av barn ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører",
+            "dessverre er oppfølgingen av barn ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører",
+            "dessverre er oppfølgingen av barn ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører."
+        ],
+        "choices": [
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbasert",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbasert",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbasert",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbasert",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte"
+        ]
+    },
+    {
+        "context": [
+            "Vena Tøye vil overbringe tre kongelige forslag, oppheving av loven ferie for fisker og endringer i ferieloven, vår samtykke til inngår altså av avtale mellom norge og finland om fiske i talerstag tredje september 2016",
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte"
+        ],
+        "choices": [
+            "kommunenes oppfølging mot barnehage skole bolig arbeid avlastning bpa og fritid er ofte fraværende eller mangelfull",
+            "kommunenes oppfølging mot barnehage skole bolig arbeid avlastning bpa og fritid er ofte fraværende eller mangelfull",
+            "kommunenes oppfølging mot barnehage skole bolig arbeid avlastning bpa og fritid er ofte fraværende eller mangelfull",
+            "kommunenes oppfølging mot barnehage skole bolig arbeid avlastning bpa og fritid er ofte fraværende eller mangelfull",
+            "kommunenes oppfølging mot barnehage skole bolig arbeid avlastning bpa og fritid er ofte fraværende eller mangelfull"
+        ]
+    },
+    {
+        "context": [
+            "Ja takk president",
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull"
+        ],
+        "choices": [
+            "ikke minst har kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder"
+        ]
+    },
+    {
+        "context": [
+            "på beina representanten iselin nybø abid raja andré skjelsten og meg sjøl har gleden av å fremsette et representantforslag om ny organisering av norske blodbanker en norges blodbank og mulighet for å bruke bankidé for i blodbank for blodgivere",
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder"
+        ],
+        "choices": [
+            "vil statsråden ta initiativ til at behandling og oppfølging av barn ungdom og voksne med autistene blir helhetlig systematisk og kunnskapsbasert",
+            "vil statsråden ta initiativ til at behandling og oppfølging av barn ungdom og voksne med autistene bli helhetlig systematisk og kunnskapsbasert",
+            "vil statsråden ta initiativ til at behandling og oppfølging av barn ungdom og voksne med autistene bli helhetlig systematisk og kunnskapsbasert",
+            "vil statsråden ta initiativ til at behandling og oppfølging av barn ungdom og voksne med autistene bli helhetlig systematisk og kunnskapsbasert",
+            "vil statsråden ta initiativ til at behandling og oppfølging av barn ungdom og voksne med autistene bli helhetlig systematisk og kunnskapsbasert"
+        ]
+    },
+    {
+        "context": [
+            "og forslaget vil bli behandlet på reglementsmessig måte",
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            ""
+        ],
+        "choices": [
+            "og første taler er interpellanten representanten freddy de ruiter deretter statsråd bent høie",
+            "og første taler er interpellanten representanten freddy de ruiter deretter statsråd bent høie",
+            "og første taler er interpellanten representanten freddy de ruiter deretter statsråd bent høie",
+            "og første taler er interpellanten representanten freddy de ruiter deretter statsråd bent høie",
+            "og første taler er interpellanten representanten freddy de ruiter deretter statsråd bent høie"
+        ]
+    },
+    {
+        "context": [
+            "vil behandling foreligger de saker som er oppført på dagsorden nummer 47",
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder"
+        ],
+        "choices": [
+            "du røyter vær så god",
+            "roiter vær så god",
+            "for rektor vær så god",
+            "du røyter vær så god",
+            "du røyter vær så god"
+        ]
+    },
+    {
+        "context": [
+            "sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren",
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            ""
+        ],
+        "choices": [
+            "president autisme ast er en gjennomgripende utviklingsforstyrrelse",
+            "president autisme aste er en gjennomgripende utviklingsforstyrrelse",
+            "president autisme ast er en gjennomgripende utviklingsforstyrrelse",
+            "president autisme ast er en gjennomgripende utviklingsforstyrrelse",
+            "president autisme ast er en gjennomgripende utviklingsforstyrrelse"
+        ]
+    },
+    {
+        "context": [
+            "autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging"
+        ],
+        "choices": [
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn"
+        ]
+    },
+    {
+        "context": [
+            "det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn"
+        ],
+        "choices": [
+            "dessverre ikkje",
+            "dessverre ikkje",
+            "dessverre ikkje",
+            "dessverre ikkje",
+            "dessverre ikkje"
+        ]
+    },
+    {
+        "context": [
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører."
+        ],
+        "choices": [
+            "virkeligheten på barn ungdom og voksen med autisme preges altfor ofte av fraværende dårlig og fragmentert oppfølging",
+            "virkeligheten på barn ungdom og voksne med autisme preges altfor ofte av fraværende dårlig og fragmentert oppfølging",
+            "virkeligheten på barn ungdom og voksne med autisme preges altfor ofte av fraværende dårlig og fragmentert oppfølging",
+            "virkeligheten på barn ungdom og voksne med autisme preges altfor ofte av fraværende dårlig og fragmentert oppfølging",
+            "virkeligheten på barn ungdom og voksne med autisme preges altfor ofte av fraværende dårlig og fragmentert oppfølgning"
+        ]
+    },
+    {
+        "context": [
+            "mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            ""
+        ],
+        "choices": [
+            "kampen for et verdig liv for barn ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "kampen for et verdig liv for barn ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "kampen for et verdig liv for barn ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "kampen for et verdig liv for barn ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "kampen for et verdig liv for barn ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn"
+        ]
+    },
+    {
+        "context": [
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull",
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn"
+        ],
+        "choices": [
+            "det ligger jo i vårt system og vår politiske ryggmarg å ta ekstra godt vare på de mest sårbare",
+            "det ligger jo i vårt system og vår politiske ryggmarg å ta ekstra godt vare på de mest sårbare",
+            "det ligger jo i vårt system og vår politiske ryggmarg å ta ekstra godt vare på de mest sårbare",
+            "det ligger jo i vårt system og vår politiske ryggmarg å ta ekstra godt vare på de mest sårbare",
+            "det ligger jo i vårt system og vår politiske ryggmarg å ta ekstra godt vare på de mest sårbare"
+        ]
+    },
+    {
+        "context": [
+            "ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder"
+        ],
+        "choices": [
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn"
+        ],
+        "choices": [
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "jeg håper at vi i med denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted"
+        ]
+    },
+    {
+        "context": [
+            "og forslaget vil bli behandlet på reglementsmessig måte, vil behandling foreligger de saker som er oppført på dagsorden nummer 47, sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging, det opereres med ulike tall på forekomst av autisme mens ca 1% av befolkningen har autisme, Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører., mangel på nasjonale faglige retningslinjer fører til at spesialisthelsetjenesten ofte gir behandling som ikke er kunnskapsbaserte, Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted"
+        ],
+        "choices": [
+            "slik er dessverre ikke da",
+            "slik er dessverre ikke da",
+            "slik er dessverre ikke da",
+            "slik er dessverre ikke da",
+            "slik er dessverre ikke da"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            ""
+        ],
+        "choices": [
+            "hvilken kommune eller bydel en bor i og eller hvilket sykehus en tilhører for stor betydning for om de som har utisme får et verdig liv",
+            "hvilken kommune eller bydel en bor i og eller hvilket sykehus en tilhører for stor betydning for om de som har utisme får et verdig liv",
+            "hvilken kommune eller bydel en bor i og eller hvilket sykehus en tilhører for stor betydning for om de som har utisme får et verdig liv",
+            "hvilken kommune eller bydel en bor i og eller hvilket sykehus en tilhører for stor betydning for om de som har utisme får et verdig liv",
+            "hvilken kommune eller bydel en bor i og eller hvilket sykehus en tilhører for stor betydning for om de som har utsme får et verdig liv"
+        ]
+    },
+    {
+        "context": [
+            "Sak én er interpellasjon fra representanten Freddy de Roiter til Helse- og omsorgsministeren, autisme er en gjennomgripende utviklingsforstyrrelse som krever en helhetlig og livslang oppfølging",
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører."
+        ],
+        "choices": [
+            "dette handler om manglende prioritering manglende kompetanse manglende samhandling og noen steder også dårlige holdninger",
+            "dette handler om manglende prioritering manglende kompetanse manglende samhandling og noen steder også dårlige holdninger",
+            "dette handler om manglende prioritering manglende kompetanse manglende samhandling og noen steder også dårlige holdninger",
+            "dette handler om manglende prioritering manglende kompetanse manglende samhandling og noen steder også dårlige holdinger",
+            "dette handler om manglende prioritering manglende kompetanse manglende samhandling og noen steder også dårlige holdninger"
+        ]
+    },
+    {
+        "context": [
+            "det skulle tilsi en heilhetlig og livslang oppfølging men er det sånn",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            ""
+        ],
+        "choices": [
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette"
+        ]
+    },
+    {
+        "context": [
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette"
+        ],
+        "choices": [
+            "er pappa til en gutt på seks år med autisme",
+            "er pappa til en gutt på seks år med autisme",
+            "er pappa til en gutt på seks år med autisme",
+            "er pappa til en gutt på seks år med autisme",
+            "er pappa til en gutt på seks år med autisme"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører."
+        ],
+        "choices": [
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen"
+        ]
+    },
+    {
+        "context": [
+            "kampen for et verdig liv for barn, ungdom og voksne med autisme burde være en selvfølge i vårt velferdssamfunn",
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen"
+        ],
+        "choices": [
+            "det er ingen selvfølge",
+            "det er ingen selvfølge",
+            "det er ingen selvfølge",
+            "det er ingen selvfølge",
+            "det er ingen selvfølge"
+        ]
+    },
+    {
+        "context": [
+            "Kommunenes oppfølging av barn med autisme er ofte fraværende eller mangelfull, ikke minst tar kommunene og pårørende behov for kompetanse og veiledning fra spesialisthelsetjenesten noe som også er fraværende mange steder",
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge"
+        ],
+        "choices": [
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "hadde vi bodd et annet sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "hadde vi bodd et annet sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "hadde vi bodd et annet sted kunne situasjonen vært en heilt anna for vår sønn og vår familie"
+        ]
+    },
+    {
+        "context": [
+            "min påstand er at på dette feltet er vi ikke i nærheten av å kunne kalle oss et velferdssamfunn",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie"
+        ],
+        "choices": [
+            "vi har dessverre altfor mange konkrete eksempler på",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "det har jeg dessverre altfor mange konkrete eksempler på"
+        ]
+    },
+    {
+        "context": [
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn ungdom og voksne med autisme et verdig liv heile livsløpet uavhengig av boksted",
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på"
+        ],
+        "choices": [
+            "så mange triste historier er det blitt at det som beslutningsdager ikke kan sitte stille og se på at enkeltpersoner og heile familier nærmest går til grunne fordi kampen for et heilt nødvenn for en heilt nødvendig oppfølging tar alle krefter i et hei at hold er et allerede tøft liv",
+            "så mange triste historier er det blitt at det som beslutningsdager ikke kan sitte stille og se på at enkeltpersoner og heile familier nærmest går til grunne fordi kampen for et heilt nødvenn for en heilt nødvendig oppfølging tar alle krefter i et hei at hold i et allerede tøft liv",
+            "så mange triste historier er det blitt at det som beslutningsdager ikke kan sitte stille og se på at enkeltpersoner og heile familier nærmest går til grunne fordi kampen for et heilt nødvenn for en heilt nødvendig oppfølging tar alle krefter i et hei at hold er et allerede tøft liv",
+            "så mange triste historier er det blitt at det som beslutningsdager ikke kan sitte stille og se på at enkeltpersoner og heile familier nærmest går til grunne fordi kampen for et heilt nødvenn for en heilt nødvendig oppfølging tar alle krefter i et hei at hold er et allerede tøft liv",
+            "så mange triste historier er det blitt at det som beslutningsdager ikke kan sitte stille og se på at enkeltpersoner og heile familier nærmest går til grunne fordi kampen for et heilt nødvenn for en heilt nødvendig oppfølging tar alle krefter i et hei at hold er et allerede tøft liv"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører"
+        ],
+        "choices": [
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag"
+        ]
+    },
+    {
+        "context": [
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag"
+        ],
+        "choices": [
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste"
+        ],
+        "choices": [
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning"
+        ]
+    },
+    {
+        "context": [
+            "jeg legger i president jeg legger ikke skjul på at jeg sjøl har erfaring med dette",
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning"
+        ],
+        "choices": [
+            "og jeg kunne fortsatt i det uendelige og eksemplifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "og jeg kunne fortsatt i det uendelige og eksempelifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "og jeg kunne fortsatt i det uendelige og eksempelifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regel",
+            "og jeg kunne fortsatt i det uendelige og eksempelifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "og jeg kunne fortsatt i det uendelige og eksempelifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaget men regelen"
+        ]
+    },
+    {
+        "context": [
+            "Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helseregion eller hvilket helseforetak man tilhører.",
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "og jeg kunne fortsatt i det uendelige og eksemplifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen"
+        ],
+        "choices": [
+            "unntaket er hver heldigvis og fordi fungerer systemet stort sett på",
+            "unntaget er hver heldigvis og fordi fungerer systemet stort sett på",
+            "unntaket er hver heldigvis og fordi fungerer systemet stort sett på",
+            "unntaket er vær heldigvis og fordi fungerer systemet stort sett på",
+            "unntaket er vær heldigvis og fordi fungerer systemet stort sett på"
+        ]
+    },
+    {
+        "context": [
+            "heldigvis har vi stort sett vært heldige med oppfølginga både fra spesialisthelsetjenesten og kommunen",
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "og jeg kunne fortsatt i det uendelige og eksemplifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "unntaket er der heldigvis og fordi fungerer systemet stort sett på"
+        ],
+        "choices": [
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet",
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet",
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet",
+            "forskning slår entydig fast at for mange fo foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet",
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet"
+        ]
+    },
+    {
+        "context": [
+            "det er ingen selvfølge",
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "og jeg kunne fortsatt i det uendelige og eksemplifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "unntaket er der heldigvis og fordi fungerer systemet stort sett på",
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet"
+        ],
+        "choices": [
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse",
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse",
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse",
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse",
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse"
+        ]
+    },
+    {
+        "context": [
+            "hadde vi bodd et anna sted kunne situasjonen vært en heilt anna for vår sønn og vår familie",
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "og jeg kunne fortsatt i det uendelige og eksemplifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "unntaket er der heldigvis og fordi fungerer systemet stort sett på",
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet",
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse"
+        ],
+        "choices": [
+            "dette gir seg utslag i årevis med dårlig tilbud som gir den det gjelder ofte langt større vansker og funksjonsfall",
+            "dette gir seg utslag i årevis med dårlige tilbud som gir den det gjelder ofte langt større vansker og funksjonsfall",
+            "dette gir seg utslag i årevis med dårlig tilbud som gir den det gjelder ofte langt større vansker og funksjonsfall",
+            "dette gir seg utslag i årevis med dårlige tilbud som gir den det gjelder ofte langt større vansker og funksjonsfall",
+            "dette gir seg utslag i årevis med dårlige tilbud som gir den det gjelder ofte langt større vansker og funksjonsfall"
+        ]
+    },
+    {
+        "context": [
+            "det har jeg dessverre altfor mange konkrete eksempler på",
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "og jeg kunne fortsatt i det uendelige og eksemplifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "unntaket er der heldigvis og fordi fungerer systemet stort sett på",
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet",
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse",
+            "dette gir seg utslag i årevis med dårlig tilbud som gir den det gjelder ofte langt større vansker og funksjonsfall"
+        ],
+        "choices": [
+            "dette bekymrer selvsagt familien som ofte blir møtt av et hjelpeapparat som preges av dårlig ledelse liten kompetanse og dårlige holdninger",
+            "dette bekymrer selvsagt familien som ofte blir møtt av et hjelpeapparat som preges av dårlig ledelse liten kompetanse og dårlige holdninger",
+            "dette bekymrer selvsagt familien som ofte blir møtt av et hjelpeapparat som preges av dårlig ledelse liten kompetanse og dårlige holdninger",
+            "dette bekymrer selvsagt familien som ofte blir møtt av et hjelpeapparat som preges av dårlig ledelse liten kompetanse og dårlige holdninger",
+            "dette bekymrer selvsagt familien som ofte blir møtt av et hjelpeapparat som preges av dårlig ledelse liten kompetanse og dårlige holdninger"
+        ]
+    },
+    {
+        "context": [
+            "jeg håper at vi i mer denne interpellasjonsdebatten kan starte et arbeid som sikrer barn, ungdom og voksne med autisme et verdig liv hele livsløpet uavhengig av bo- og kommunestred. Dessverre er oppfølgingen av barn, ungdom og voksne med autisme svært varierende både med hensyn til hvilken kommune man bor i og hvilken helsetjeneste eller hvilket helseforetak man tilhører",
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "og jeg kunne fortsatt i det uendelige og eksemplifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "unntaket er der heldigvis og fordi fungerer systemet stort sett på",
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet",
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse",
+            "dette gir seg utslag i årevis med dårlig tilbud som gir den det gjelder ofte langt større vansker og funksjonsfall",
+            "dette bekymrer selvsagt familien som ofte blir møtt av et hjelpeapparat som preges av dårlig ledelse liten kompetanse og dårlige holdninger"
+        ],
+        "choices": [
+            "mange savner å ha blitt tatt på alvor og ikke minst at bruker og pårørendekompetansen blei brukt i oppfølginga",
+            "mange savner å ha blitt tatt på alvor og ikke minst at bruker og pårørendekompetansen blei brukt i oppfølginga",
+            "mange savner å ha blitt tatt på alvor og ikke minst at bruker og pårørendekompetansen blei brukt i oppfølginga",
+            "mange savner å ha blitt tatt på alvor og ikke minst at bruker og pårørendekompetansen blei brukt i oppfølginga",
+            "mange savner å ha blitt tatt på alvor og ikke minst at bruker og pårørendekompetansen blei brukt i oppfølginger"
+        ]
+    },
+    {
+        "context": [
+            "jeg er derfor svært takknemlig for at en del av de pårørende er blir kjent med de siste par åra følger denne debatten fra galleriet i dag",
+            "dere er virkelig helter som kjemper en knallhard kamp mot systemet det være seg spesialisthelsetjenesten og eller kommunen bydelen som svikter deres nærmeste",
+            "det handler bl a om manglende helsehjelp en underbemanna og nedprioritert habiliteringstjeneste manglende tidlig innsats manglende språkstimulering opplæring uholdbar boligsituasjon uholdbar avlastning manglende tilrettelegging i barnehage skole eller jobb manglende kompetanse unødvendig tvangsbruk ingen eller liten bruker eller pårørende medvirkning",
+            "og jeg kunne fortsatt i det uendelige og eksemplifisert med historier fra virkeligheten som snart ikke ser ut til å være unntaket men regelen",
+            "unntaket er der heldigvis og fordi fungerer systemet stort sett på",
+            "forskning slår entydig fast at for mange foreldre og andre pårørende til barn med autisme er den aller største belastninga kampen mot systemet",
+            "altfor ofte møtes familiene med arroganse dårlige holdninger og liten kompetanse",
+            "dette gir seg utslag i årevis med dårlig tilbud som gir den det gjelder ofte langt større vansker og funksjonsfall",
+            "dette bekymrer selvsagt familien som ofte blir møtt av et hjelpeapparat som preges av dårlig ledelse liten kompetanse og dårlige holdninger",
+            "mange savner å ha blitt tatt på alvor og ikke minst at bruker og pårørendekompetansen blei brukt i oppfølginga"
+        ],
+        "choices": [
+            "ser også et bilde av en del politikere som lener seg tung til egenadministrasjonen og system uten evne eller vilje til å reflektere kritisk over hva som skjer",
+            "ser også et bilde av en del politikere som lener seg tung til egenadministrasjonen og system uten evne eller vilje til å reflektere kritisk over hva som skjer",
+            "ser også et bilde av en del politikere som lener seg tungt til egenadministrasjonen og system uten evne eller vilje til å reflektere kritisk over hva som skjer",
+            "ser også et bilde av en del politikere som lener seg tungt til egenadministrasjonen og system uten evne eller vilje til å reflektere kritisk over hva som skjer",
+            "ser også et bilde av en del politikere som lener seg tung til egenadministrasjonen og system uten evne eller vilje til å reflektere kritisk over hva som skjer"
+        ]
+    }
+]
