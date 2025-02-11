@@ -5,7 +5,7 @@ import traceback
 from codecarbon import EmissionsTracker
 
 tracker = EmissionsTracker(project_name="experiment_9")
-
+count = 0
 try:
         from asr.asr_model_initialization import initialize_Whisper_model
         from experiments.experiment_9.proposed_system_experiment import run_experiment
@@ -15,7 +15,7 @@ try:
         
         # Run experiment
         whisper_model = initialize_Whisper_model()   
-        run_experiment('../result/npsc_samtale_experiment_9_llm.json', '../result/beam_npsc_experiment_9_llm.json',"../result/wer_npsc_experiment_9_llm.json", whisper_model, 10, tracker)
+        run_experiment('../result/npsc_samtale_experiment_9_llm.json', '../result/beam_npsc_experiment_9_llm.json',"../result/wer_npsc_experiment_9_llm.json", whisper_model, 10, tracker, count)
         # If no exception occurs, break the loop and finish
         print("Script completed successfully.")
 
