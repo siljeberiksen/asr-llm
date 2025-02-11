@@ -134,7 +134,7 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
                 json.dump(wer_data, file, indent=4)
             while(len(context) >= context_len):
                 context.pop(0)
-            context.append(result["text"])
+            context.append("")
             save_count(0)
         emissions: float = tracker.stop_task()
 
