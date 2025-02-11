@@ -15,7 +15,7 @@ try:
         
         # Run experiment
         whisper_model = initialize_Whisper_model()   
-        run_experiment('../result/npsc_samtale_experiment_10_llm.json', '../result/beam_npsc_experiment_10_llm.json',"../result/wer_npsc_experiment_10_llm.json", whisper_model, 100, tracker)
+        run_experiment('../result/npsc_samtale_experiment_10_llm.json', '../result/beam_npsc_experiment_10_llm.json',"../result/wer_npsc_experiment_10_llm.json", whisper_model, 10, tracker)
         # If no exception occurs, break the loop and finish
         print("Script completed successfully.")
 
@@ -30,7 +30,7 @@ except Exception as e:
         
         # Restart the script
     print("Restarting the script...")
-    os.execv(sys.executable, [sys.executable, "-m", "experiments.experiment_10.run_experiment"])
+    os.execv(sys.executable, [sys.executable, "-m", "experiments.experiment_10.run_experiment_10"])
 except BaseException as e:
     print("Caught a BaseException!")
     print(e)

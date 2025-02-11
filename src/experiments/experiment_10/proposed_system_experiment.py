@@ -2,6 +2,12 @@ import json
 from jiwer import wer, cer
 import os
 
+COUNT_FILE = "experiments.experiment_9.count.txt"
+
+def save_count(count):
+    with open(COUNT_FILE, "w") as f:
+        f.write(str(count))
+
 
 def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len, tracker):
     true_transcriptions_data = []
@@ -34,67 +40,105 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
         filename=true_transcription_data['audio']
         tracker.start()
         tracker.start_task(filename)
-        if (os.path.isfile(os.path.join("../NPSC/NPSC_1", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=10)
-        elif (os.path.isfile(os.path.join("../NPSC/NPSC_2", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=10)
-        elif (os.path.isfile(os.path.join("../NPSC/NPSC_3", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=10)
-        elif  (os.path.isfile(os.path.join("../NPSC/NPSC_4", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=10)
-        else:
-            result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True,port=8082, experiment_number=10)
+        if count < 50:
+            if (os.path.isfile(os.path.join("../NPSC/NPSC_1", true_transcription_data['audio']))):
+                result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=10)
+            elif (os.path.isfile(os.path.join("../NPSC/NPSC_2", true_transcription_data['audio']))):
+                result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=10)
+            elif (os.path.isfile(os.path.join("../NPSC/NPSC_3", true_transcription_data['audio']))):
+                result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=10)
+            elif  (os.path.isfile(os.path.join("../NPSC/NPSC_4", true_transcription_data['audio']))):
+                result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=10)
+            else:
+                result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True,port=8082, experiment_number=10)
+                
+            beams_wer=[]
+            beams_cer=[]
+            beams = []
+            with open(result_file, 'r') as file:
+                beam_options = json.load(file)[-1]["choices"]
+                for beam_option in beam_options:
+                    if true_transcription_data["nonverbatim_text"].lower() == "":
+                        beams_wer.append(0)
+                        beams_cer.append(0)
+                    else:
+                        beams_wer.append(wer(true_transcription_data["nonverbatim_text"].lower(), beam_option.lower()))
+                        beams_cer.append(cer(true_transcription_data["nonverbatim_text"].lower(), beam_option.lower()))
+                        beams.append(beam_option.lower())
+            if true_transcription_data["nonverbatim_text"] == "":
+                wer_result = 0
+                cer_result = 0
+            else:
+                wer_result =  wer(true_transcription_data["nonverbatim_text"].lower(), result["text"].lower())
+                cer_result = cer(true_transcription_data["nonverbatim_text"].lower(), result["text"].lower())
             
-        beams_wer=[]
-        beams_cer=[]
-        beams = []
-        with open(result_file, 'r') as file:
-            beam_options = json.load(file)[-1]["choices"]
-            for beam_option in beam_options:
-                if true_transcription_data["nonverbatim_text"].lower() == "":
-                    beams_wer.append(0)
-                    beams_cer.append(0)
-                else:
-                    beams_wer.append(wer(true_transcription_data["nonverbatim_text"].lower(), beam_option.lower()))
-                    beams_cer.append(cer(true_transcription_data["nonverbatim_text"].lower(), beam_option.lower()))
-                    beams.append(beam_option.lower())
-        if true_transcription_data["nonverbatim_text"] == "":
-            wer_result = 0
-            cer_result = 0
+            new_instance = {
+                    "sentence_order": true_transcription_data["sentence_order"],
+                    "audio_file": true_transcription_data['audio'],
+                    "wer": beams_wer,
+                    "cer": beams_cer,
+                    "wer_result": wer_result,
+                    "cer_result": cer_result
+                }
+            with open(wer_file, 'r') as file:
+                wer_data = json.load(file)
+            wer_data.append(new_instance)
+            with open(wer_file, 'w') as file:
+                json.dump(wer_data, file, indent=4)
+
+            new_instance_beams = {
+                "sentence_order": true_transcription_data["sentence_order"],
+                "audio_file": true_transcription_data["audio"],
+                "beams": beams,
+                "true_transcription": true_transcription_data['nonverbatim_text'],
+                "transcribed": result["text"],
+                "context": context
+            }
+            with open(beam_file, 'r') as file:
+                wer_data = json.load(file)
+            wer_data.append(new_instance_beams)
+            with open(beam_file, 'w') as file:
+                json.dump(wer_data, file, indent=4)
+            while(len(context) >= context_len):
+                context.pop(0)
+            context.append(result["text"])
+            count = 0
+            save_count(0)
         else:
-            wer_result =  wer(true_transcription_data["nonverbatim_text"].lower(), result["text"].lower())
-            cer_result = cer(true_transcription_data["nonverbatim_text"].lower(), result["text"].lower())
-        
-        new_instance = {
+            new_instance = {
                 "sentence_order": true_transcription_data["sentence_order"],
                 "audio_file": true_transcription_data['audio'],
-                "wer": beams_wer,
-                "cer": beams_cer,
-                "wer_result": wer_result,
-                "cer_result": cer_result
-            }
-        with open(wer_file, 'r') as file:
-            wer_data = json.load(file)
-        wer_data.append(new_instance)
-        with open(wer_file, 'w') as file:
-            json.dump(wer_data, file, indent=4)
+                "wer": [0,0,0,0,0],
+                "cer": [0,0,0,0,0],
+                "wer_result": 0,
+                "cer_result": 0,
+                 "no_result_returned": True
+                }
+            with open(wer_file, 'r') as file:
+                wer_data = json.load(file)
+                wer_data.append(new_instance)
+            with open(wer_file, 'w') as file:
+                json.dump(wer_data, file, indent=4)
 
-        new_instance_beams = {
-            "sentence_order": true_transcription_data["sentence_order"],
-            "audio_file": true_transcription_data["audio"],
-            "beams": beams,
-            "true_transcription": true_transcription_data['nonverbatim_text'],
-            "transcribed": result["text"],
-            "context": context
-        }
-        with open(beam_file, 'r') as file:
-            wer_data = json.load(file)
-        wer_data.append(new_instance_beams)
-        with open(beam_file, 'w') as file:
-            json.dump(wer_data, file, indent=4)
-        while(len(context) >= context_len):
-            context.pop(0)
-        context.append(result["text"])
+            new_instance_beams = {
+                "sentence_order": true_transcription_data["sentence_order"],
+                "audio_file": true_transcription_data["audio"],
+                "beams": ["","","","",""],
+                "true_transcription": true_transcription_data['nonverbatim_text'],
+                "transcribed": "",
+                "context": context,
+                "no_result_returned": True
+            }
+            with open(beam_file, 'r') as file:
+                wer_data = json.load(file)
+            wer_data.append(new_instance_beams)
+            with open(beam_file, 'w') as file:
+                json.dump(wer_data, file, indent=4)
+            while(len(context) >= context_len):
+                context.pop(0)
+            context.append("")
+            count = 0
+            save_count(0)
         
         emissions: float = tracker.stop_task()
 
