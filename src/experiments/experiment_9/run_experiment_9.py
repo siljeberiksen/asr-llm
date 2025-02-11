@@ -30,7 +30,7 @@ except Exception as e:
         
         # Restart the script
     print("Restarting the script...")
-    os.execv(sys.executable, [sys.executable, "-m", "experiments.experiment_9.run_experiment"])
+    os.execv(sys.executable, [sys.executable, "-m", "experiments.experiment_9.run_experiment_9"])
 except BaseException as e:
     print("Caught a BaseException!")
     print(e)
