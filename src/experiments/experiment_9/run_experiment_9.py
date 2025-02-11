@@ -22,8 +22,9 @@ try:
 except Exception as e:
     print("Caught an exception!")
     print(e)
+    print(count)
     print(traceback.format_exc())
-        
+    count += 1
         # Optional: Add a delay before restarting
     tracker.stop()
     time.sleep(2)
