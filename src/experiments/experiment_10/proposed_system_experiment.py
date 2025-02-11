@@ -2,7 +2,7 @@ import json
 from jiwer import wer, cer
 import os
 
-COUNT_FILE = "experiments.experiment_9.count.txt"
+COUNT_FILE = "experiments.experiment_10.count.txt"
 
 def save_count(count):
     with open(COUNT_FILE, "w") as f:
