@@ -32,6 +32,16 @@ only_number_schema = {
     "enum": [1, 2, 3, 4, 5]
 }
 
+response_format={
+        "type": "object",
+        "propoerties": {
+            "beam_selection": {"type": "string"}
+        },
+        "required":["beams_selection"]
+    }
+
+
+
 both_schema = {
     "type": "object",
     "properties": {
@@ -84,6 +94,18 @@ def pred(
     }
     if use_schema:
         data["json_schema"] = schemas[use_schema]
+
+#TODO use the schema
+    # data["json_schema"]= {
+    #     "type": "object",
+    #     "properties": {
+    #         "beam_selection": {
+    #             "type": "string",
+    #             "enum": choices
+    #         }
+    #     },
+    #     "required": ["beam_selection"]
+    # }   
     print("poooooort", port)
     url = f"http://{HOSTNAME}:{port}/completion"  # llama.cpp server
     response = requests.post(url, headers=headers, data=json.dumps(data)).json()
