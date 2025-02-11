@@ -9,7 +9,7 @@ def save_count(count):
         f.write(str(count))
 
 
-def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len, tracker):
+def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len, tracker,count=0):
     true_transcriptions_data = []
     with open('../NPSC/NPSC_1/NPSC_2_0_test.jsonl', 'r', encoding='utf-8') as file:
         for line in file:
