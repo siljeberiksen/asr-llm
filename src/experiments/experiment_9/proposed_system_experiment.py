@@ -2,6 +2,13 @@ import json
 from jiwer import wer, cer
 import os
 
+COUNT_FILE = "experiments.experiment_9.count.txt"
+
+def save_count(count):
+    with open(COUNT_FILE, "w") as f:
+        f.write(str(count))
+
+
 def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len, tracker, count = 0):
     true_transcriptions_data = []
     with open('../NPSC/NPSC_1/NPSC_2_0_test.jsonl', 'r', encoding='utf-8') as file:
@@ -128,6 +135,7 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
             while(len(context) >= context_len):
                 context.pop(0)
             context.append(result["text"])
+            save_count(0)
         emissions: float = tracker.stop_task()
 
         tracker.stop()
