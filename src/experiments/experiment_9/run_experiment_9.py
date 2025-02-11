@@ -5,7 +5,25 @@ import traceback
 from codecarbon import EmissionsTracker
 
 tracker = EmissionsTracker(project_name="experiment_9")
-count = 0
+
+COUNT_FILE = "experiments.experiment_9.count.txt"
+
+# Function to load count from file
+def load_count():
+    if os.path.exists(COUNT_FILE):
+        try:
+            with open(COUNT_FILE, "r") as f:
+                return int(f.read().strip())
+        except ValueError:
+            return 0  # Default to 0 if file contents are invalid
+    return 0
+# Function to save count to file
+def save_count(count):
+    with open(COUNT_FILE, "w") as f:
+        f.write(str(count))
+
+count = load_count()
+
 try:
         from asr.asr_model_initialization import initialize_Whisper_model
         from experiments.experiment_9.proposed_system_experiment import run_experiment
@@ -22,9 +40,10 @@ try:
 except Exception as e:
     print("Caught an exception!")
     print(e)
-    print(count)
-    print(traceback.format_exc())
     count += 1
+    save_count(count)
+    print("Count", count)
+    print(traceback.format_exc())
         # Optional: Add a delay before restarting
     tracker.stop()
     time.sleep(2)
