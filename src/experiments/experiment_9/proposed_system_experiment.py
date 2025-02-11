@@ -102,6 +102,7 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
             while(len(context) >= context_len):
                 context.pop(0)
             context.append(result["text"])
+            save_count(0)
         else:
             new_instance = {
                 "sentence_order": true_transcription_data["sentence_order"],
