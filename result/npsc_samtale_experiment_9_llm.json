@@ -6788,5 +6788,404 @@
             "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
             "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre"
         ]
+    },
+    {
+        "context": [
+            "mange voksne med utviklingshemming har ikke anledning til å flytte ut av foreldreheimen",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform og om dei vil eige eller leie",
+            "utviklingshemma bur ofte samla i seg regerte boformer",
+            "organisering og gjennomføring av tjenestene til personer med utviklingshemming undergraver mulighetene for privatliv og personvern",
+            "Omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til å dra omsorg for eigne barn",
+            "elevar med utdanningshemming får ikkje opplæring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre"
+        ],
+        "choices": [
+            "mange utviklingshemmer får ikke sjølfattig beslutning om egen helsebehandling",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "mange utviklingshemmer får ikke sjølfattig beslutning om egen helsebehandling",
+            "mange utviklingshemmer får ikke sjølfattig beslutning om egen helsebehandling",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling"
+        ]
+    },
+    {
+        "context": [
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform og om dei vil eige eller leie",
+            "utviklingshemma bur ofte samla i seg regerte boformer",
+            "organisering og gjennomføring av tjenestene til personer med utviklingshemming undergraver mulighetene for privatliv og personvern",
+            "Omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til å dra omsorg for eigne barn",
+            "elevar med utdanningshemming får ikkje opplæring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling"
+        ],
+        "choices": [
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma på en måte som hindrer kjølbestemmelse inkludering og deltagelse i lokalsamfunnet",
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma på en måte som hindrer kjølbestemmelse inkludering og deltakelse i lokalsamfunnet",
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma på en måte som hindrer kjølbestemmelse inkludering og deltagelse i lokalsamfunnet",
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma på en måte som hindrer kjølbestemmelse inkludering og deltagelse i lokalsamfunnet",
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma på en måte som hindrer kjølbestemmelse inkludering og deltagelse i lokalsamfunnet"
+        ]
+    },
+    {
+        "context": [
+            "utviklingshemma bur ofte samla i seg regerte boformer",
+            "organisering og gjennomføring av tjenestene til personer med utviklingshemming undergraver mulighetene for privatliv og personvern",
+            "Omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til å dra omsorg for eigne barn",
+            "elevar med utdanningshemming får ikkje opplæring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg"
+        ],
+        "choices": [
+            "berre 25% av utbrukshemma yrkesaktig alder er i jobb",
+            "berre 25% av utbrukshemma i yrkesaktig alder er i jobb",
+            "berre 25% av utbrukshemma yrkesaktig alder er i jobb",
+            "berre 25% av utbrukshemma i yrkesaktig alder er i jobb",
+            "berre 25% av utbrukshemma i yrkesaktig alder er i jobb"
+        ]
+    },
+    {
+        "context": [
+            "organisering og gjennomføring av tjenestene til personer med utviklingshemming undergraver mulighetene for privatliv og personvern",
+            "Omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til å dra omsorg for eigne barn",
+            "elevar med utdanningshemming får ikkje opplæring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb"
+        ],
+        "choices": [
+            "utviklingshemma i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+            "utviksthemma i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+            "utviksthemma i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+            "utviksthemma i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+            "utviksthemma i liten grad har i liten grad tilgang til tilrettelagt arbeid"
+        ]
+    },
+    {
+        "context": [
+            "Omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til å dra omsorg for eigne barn",
+            "elevar med utdanningshemming får ikkje opplæring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid"
+        ],
+        "choices": [
+            "utvalget foreslår åtte løft som er nødvendig for at utvikstemmer skal få opp for sine menneskerettigheter på lik linje med andre",
+            "utvalget foreslår åtte løft som er nødvendig for at utvikstemmer skal få opp fylle sine menneskerettigheter på lik linje med andre",
+            "utvalget foreslår åtte løft som er nødvendig for at utvikstemmer skal få opp fylt sine menneskerettigheter på lik linje med andre",
+            "utvalget foreslår åtte løft som er nødvendig for at utvikstemmer skal få opp fylt sine menneskerettigheter på lik linje med andre",
+            "utvalget foreslår åtte løft som er nødvendig for at utvikstemmer skal få opp fylle sine menneskerettigheter på lik linje med andre"
+        ]
+    },
+    {
+        "context": [
+            "uttrykkstemma for ikkje eigna hjelp til å dra omsorg for eigne barn",
+            "elevar med utdanningshemming får ikkje opplæring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            ""
+        ],
+        "choices": [
+            "og hvert av de åtte løfta inneholder flere anbefalte tiltak som sammen skal bidra til bedring",
+            "og hvert av de åtte løfta inneholder flere anbefalte tiltak som sammen skal bidra til bedring",
+            "og hvert av de åtte løfta inneholder flere anbefalte tiltak som sammen skal bidra til bedring",
+            "og hvert av de åtte løfta inneholder flere anbefalte tiltak som sammen skal bidra til bedring",
+            "og hvert av de åtte løfta inneholder flere anbefalte tiltak som sammen skal bidra til bedring"
+        ]
+    },
+    {
+        "context": [
+            "elevar med utdanningshemming får ikkje opplæring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            ""
+        ],
+        "choices": [
+            "det åtte løfta er",
+            "det åtte løftene er",
+            "dei åtte løfta er",
+            "dei åtte løftene er",
+            "det åtte løfta er"
+        ]
+    },
+    {
+        "context": [
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det åtte løfte er"
+        ],
+        "choices": [
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølbestemmelse",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvbestemmelse",
+            "løft éin sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølbestemmelse",
+            "løft éin sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft éin sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvikstemmer rett til frihet og sjølvestemmelse"
+        ]
+    },
+    {
+        "context": [
+            "utviklingshemma har ikke tilgang til livslang læring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse"
+        ],
+        "choices": [
+            "løfto inkluderande og likeverdig opplæring",
+            "løftho inkluderande og likeverdig opplæring",
+            "løft to inkluderande og likeverdig opplæring",
+            "løft to inkluderande og likeverdig opplæring",
+            "løft to inkluderande og likeverdig opplæring"
+        ]
+    },
+    {
+        "context": [
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse"
+        ],
+        "choices": [
+            "løft tre arbeid for alle",
+            "løft tre arbeid for alle",
+            "løft tre arbeid for alle",
+            "løft tre arbeid for alle",
+            "løft tre arbeid for alle"
+        ]
+    },
+    {
+        "context": [
+            "mange utviklingshemmer får ikke sjøl fattig beslutning om egen helsebehandling",
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet"
+        ],
+        "choices": [
+            "løft fire god helse og omsorg",
+            "løft fire god helse og omsorg",
+            "løft fire god helse og omsorg",
+            "løft fire god helse og omsorg",
+            "løft fire god helse og omsorg"
+        ]
+    },
+    {
+        "context": [
+            "utviklingshemma har få reelle moglegheiter til å velje bustad og boform, omsorgstjenesten gjennomføres på en måte som vanskeligere private relasjoner og egen familie for å utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet"
+        ],
+        "choices": [
+            "løft fem eige hjem",
+            "løft fem eig eit hjem",
+            "løft fem eige hjem",
+            "løft fem eige til hjem",
+            "løft fem eige til hjem"
+        ]
+    },
+    {
+        "context": [
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft fem eig eit hjem"
+        ],
+        "choices": [
+            "løft seks kompetanse og kunnskap",
+            "løft seks kompetanse og kunnskap",
+            "løft seks kompetanse og kunnskap",
+            "løft seks kompetanse og kunnskap",
+            "løft seks kompetanse og kunnskap"
+        ]
+    },
+    {
+        "context": [
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft fem eig eit hjem",
+            "løft fem eig eit hjem"
+        ],
+        "choices": [
+            "løft sju koordinerte tjenester",
+            "på løft sju koordinerte tjenester",
+            "på løft sju koordinerte tjeneste",
+            "på løft sju koordinerte tjenester",
+            "på løft sju koordinerte tjenester"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "",
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft fem eig eit hjem",
+            "løft fem eig eit hjem",
+            "på løft sju koordinerte tjenester"
+        ],
+        "choices": [
+            "på løft åtte målretta store styring",
+            "og løft åtte målretta store styring",
+            "på løft åtte målretta store styring",
+            "og løft åtte målretta store styring",
+            "på løft åtte målretta storå styring"
+        ]
+    },
+    {
+        "context": [
+            "",
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft fem eig eit hjem",
+            "løft fem eig eit hjem",
+            "på løft sju koordinerte tjenester",
+            "pågløft åtte målretta store styring"
+        ],
+        "choices": [
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomføres på alle relevante samfunnsområder",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomføres på alle relevante samfunnsområder",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomføres på alle relevante samfunnsområder",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomføres på alle relevante samfunnsområder",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomføres på alle relevante samfunnsområder"
+        ]
+    },
+    {
+        "context": [
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft fem eig eit hjem",
+            "løft fem eig eit hjem",
+            "på løft sju koordinerte tjenester",
+            "pågløft åtte målretta store styring",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomføres på alle relevante samfunnsområder"
+        ],
+        "choices": [
+            "nå har regjeringen fått overlevert denne utdanningen og det er regjeringen som da kan fremme ei stortingsmelding til til oss der en på alle samfunnsområder ikke bare på helseområdet kan si hvordan en vil styrke styrka dette området og hvordan sikra koordinerte tjenester for tjenester",
+            "nå har regjeringen fått overlevert denne utdanningen og det er regjeringen som da kan fremme ei stortingsmelding til til oss der en på alle samfunnsområder ikke bare på helseområdet kan si hvordan en vil styrke styrka dette området og hvordan sikra koordinerte tjenester for tjenester",
+            "nå har regjeringen fått overlevert denne utdanningen og det er regjeringen som da kan fremme ei stortingsmelding til til oss der en på alle samfunnsområder ikke bare på helseområdet kan si hvordan en vil styrke styrka dette området og hvordan sikra koordinerte tjenester for tjenester for",
+            "nå har regjeringen fått overlevert denne utdanningen og det er regjeringen som da kan fremme ei stortingsmelding til til oss der en på alle samfunnsområder ikke bare på helseområdet kan si hvordan en vil styrke styrka dette området og hvordan sikra koordinerte tjenester for tjenester",
+            "nå har regjeringen fått overlevert denne utdanningen og det er regjeringen som da kan fremme ei stortingsmelding til til oss der en på alle samfunnsområder ikke bare på helseområdet kan si hvordan en vil styrke styrka dette området og hvordan sikra koordinerte tjenester for tjenester"
+        ]
+    },
+    {
+        "context": [
+            "det åtte løfte er",
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft fem eig eit hjem",
+            "løft fem eig eit hjem",
+            "på løft sju koordinerte tjenester",
+            "pågløft åtte målretta store styring",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomføres på alle relevante samfunnsområder"
+        ],
+        "choices": [
+            "de med autisme og få andre som har en sykdom som trenger vår s for å trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+            "de med autisme og få andre som har en sykdom som trenger vår s for å trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+            "de med autisme og få andre som har en sykdom som trenger vår s for å trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+            "de me autisme og få andre som har en sykdom som trenger vår s for å trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+            "de me autisme og få andre som har en sykdom som trenger vår s for å trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige"
+        ]
+    },
+    {
+        "context": [
+            "løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "det åtte løfte er, løft ein sjølvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalstemma rett til frihet og sjølvestemmelse",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft åtte er, løfte om selvbestemmelse og rettssikkerhet norsk lovverk må respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "løft fem eig eit hjem",
+            "løft fem eig eit hjem",
+            "på løft sju koordinerte tjenester",
+            "pågløft åtte målretta store styring",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomføres på alle relevante samfunnsområder",
+            "de med autisme og få andre som har en sykdom som trenger vår s for å trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige"
+        ],
+        "choices": [
+            "neste taler er representanten ruth grå og deretter ketil kjenseth",
+            "neste taler er representanten ruth grå og deretter ketil kjenseth",
+            "neste taler er representanten ruth grå og deretter ketil kjenseth",
+            "neste taler er representanten ruth grå og deretter ketil kjenseth",
+            "neste taler er representanten ruth grå og deretter ketil kjenseth"
+        ]
     }
 ]

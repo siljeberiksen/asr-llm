@@ -8042,5 +8042,455 @@
             "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
             "utviklingshemma har ikke tilgang til livslang l\u00e6ring"
         ]
+    },
+    {
+        "sentence_order": 324,
+        "audio_file": "20170207/audio/20170207-095506_2855255_2860375.wav",
+        "beams": [
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8lfattig beslutning om egen helsebehandling",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8lfattig beslutning om egen helsebehandling",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8lfattig beslutning om egen helsebehandling",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling"
+        ],
+        "true_transcription": "mange utviklingshemma f\u00e5r ikkje sj\u00f8l fatte avgjerd om eiga helsebehandling",
+        "transcribed": "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+        "context": [
+            "mange voksne med utviklingshemming har ikke anledning til \u00e5 flytte ut av foreldreheimen",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform og om dei vil eige eller leie",
+            "utviklingshemma bur ofte samla i seg regerte boformer",
+            "organisering og gjennomf\u00f8ring av tjenestene til personer med utviklingshemming undergraver mulighetene for privatliv og personvern",
+            "Omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til \u00e5 dra omsorg for eigne barn",
+            "elevar med utdanningshemming f\u00e5r ikkje oppl\u00e6ring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre"
+        ]
+    },
+    {
+        "sentence_order": 325,
+        "audio_file": "20170207/audio/20170207-095506_2860375_2868970.wav",
+        "beams": [
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma p\u00e5 en m\u00e5te som hindrer kj\u00f8lbestemmelse inkludering og deltagelse i lokalsamfunnet",
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma p\u00e5 en m\u00e5te som hindrer kj\u00f8lbestemmelse inkludering og deltakelse i lokalsamfunnet",
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma p\u00e5 en m\u00e5te som hindrer kj\u00f8lbestemmelse inkludering og deltagelse i lokalsamfunnet",
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma p\u00e5 en m\u00e5te som hindrer kj\u00f8lbestemmelse inkludering og deltagelse i lokalsamfunnet",
+            "helse- og omsorgstjenesten til utvilshemma er utsolforma p\u00e5 en m\u00e5te som hindrer kj\u00f8lbestemmelse inkludering og deltagelse i lokalsamfunnet"
+        ],
+        "true_transcription": "helse- og omsorgstenesta til utviklingshemma er utforma p\u00e5 ei m\u00e5te som hindrar sj\u00f8lvbestemming inkludering og deltaking i lokalsamfunnet",
+        "transcribed": "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+        "context": [
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform og om dei vil eige eller leie",
+            "utviklingshemma bur ofte samla i seg regerte boformer",
+            "organisering og gjennomf\u00f8ring av tjenestene til personer med utviklingshemming undergraver mulighetene for privatliv og personvern",
+            "Omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til \u00e5 dra omsorg for eigne barn",
+            "elevar med utdanningshemming f\u00e5r ikkje oppl\u00e6ring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling"
+        ]
+    },
+    {
+        "sentence_order": 326,
+        "audio_file": "20170207/audio/20170207-095506_2868970_2874140.wav",
+        "beams": [
+            "berre 25% av utbrukshemma yrkesaktig alder er i jobb",
+            "berre 25% av utbrukshemma i yrkesaktig alder er i jobb",
+            "berre 25% av utbrukshemma yrkesaktig alder er i jobb",
+            "berre 25% av utbrukshemma i yrkesaktig alder er i jobb",
+            "berre 25% av utbrukshemma i yrkesaktig alder er i jobb"
+        ],
+        "true_transcription": "berre 25% av utviklingshemma i yrkesaktiv alder er i jobb",
+        "transcribed": "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+        "context": [
+            "utviklingshemma bur ofte samla i seg regerte boformer",
+            "organisering og gjennomf\u00f8ring av tjenestene til personer med utviklingshemming undergraver mulighetene for privatliv og personvern",
+            "Omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til \u00e5 dra omsorg for eigne barn",
+            "elevar med utdanningshemming f\u00e5r ikkje oppl\u00e6ring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg"
+        ]
+    },
+    {
+        "sentence_order": 327,
+        "audio_file": "20170207/audio/20170207-095506_2874140_2880765.wav",
+        "beams": [
+            "utviklingshemma i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+            "utviksthemma i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+            "utviksthemma i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+            "utviksthemma i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+            "utviksthemma i liten grad har i liten grad tilgang til tilrettelagt arbeid"
+        ],
+        "true_transcription": "utviklingshemma er i liten grad har i liten grad tilgang til tilrettelagt arbeid",
+        "transcribed": "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+        "context": [
+            "organisering og gjennomf\u00f8ring av tjenestene til personer med utviklingshemming undergraver mulighetene for privatliv og personvern",
+            "Omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til \u00e5 dra omsorg for eigne barn",
+            "elevar med utdanningshemming f\u00e5r ikkje oppl\u00e6ring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb"
+        ]
+    },
+    {
+        "sentence_order": 328,
+        "audio_file": "20170207/audio/20170207-095506_2880765_2890055.wav",
+        "beams": [
+            "utvalget foresl\u00e5r \u00e5tte l\u00f8ft som er n\u00f8dvendig for at utvikstemmer skal f\u00e5 opp for sine menneskerettigheter p\u00e5 lik linje med andre",
+            "utvalget foresl\u00e5r \u00e5tte l\u00f8ft som er n\u00f8dvendig for at utvikstemmer skal f\u00e5 opp fylle sine menneskerettigheter p\u00e5 lik linje med andre",
+            "utvalget foresl\u00e5r \u00e5tte l\u00f8ft som er n\u00f8dvendig for at utvikstemmer skal f\u00e5 opp fylt sine menneskerettigheter p\u00e5 lik linje med andre",
+            "utvalget foresl\u00e5r \u00e5tte l\u00f8ft som er n\u00f8dvendig for at utvikstemmer skal f\u00e5 opp fylt sine menneskerettigheter p\u00e5 lik linje med andre",
+            "utvalget foresl\u00e5r \u00e5tte l\u00f8ft som er n\u00f8dvendig for at utvikstemmer skal f\u00e5 opp fylle sine menneskerettigheter p\u00e5 lik linje med andre"
+        ],
+        "true_transcription": "utvalet foresl\u00e5r \u00e5tte l\u00f8ft som er n\u00f8dvendige for at utviklingshemma skal f\u00e5 oppfylt sine menneskerettar p\u00e5 lik linje med andre",
+        "transcribed": "",
+        "context": [
+            "Omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "uttrykkstemma for ikkje eigna hjelp til \u00e5 dra omsorg for eigne barn",
+            "elevar med utdanningshemming f\u00e5r ikkje oppl\u00e6ring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid"
+        ]
+    },
+    {
+        "sentence_order": 329,
+        "audio_file": "20170207/audio/20170207-095506_2890055_2896020.wav",
+        "beams": [
+            "og hvert av de \u00e5tte l\u00f8fta inneholder flere anbefalte tiltak som sammen skal bidra til bedring",
+            "og hvert av de \u00e5tte l\u00f8fta inneholder flere anbefalte tiltak som sammen skal bidra til bedring",
+            "og hvert av de \u00e5tte l\u00f8fta inneholder flere anbefalte tiltak som sammen skal bidra til bedring",
+            "og hvert av de \u00e5tte l\u00f8fta inneholder flere anbefalte tiltak som sammen skal bidra til bedring",
+            "og hvert av de \u00e5tte l\u00f8fta inneholder flere anbefalte tiltak som sammen skal bidra til bedring"
+        ],
+        "true_transcription": "og kvart av dei \u00e5tte l\u00f8fta inneheld fleire anbefalte tiltak som saman skal bidra til betring",
+        "transcribed": "",
+        "context": [
+            "uttrykkstemma for ikkje eigna hjelp til \u00e5 dra omsorg for eigne barn",
+            "elevar med utdanningshemming f\u00e5r ikkje oppl\u00e6ring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            ""
+        ]
+    },
+    {
+        "sentence_order": 330,
+        "audio_file": "20170207/audio/20170207-095506_2896020_2898335.wav",
+        "beams": [
+            "det \u00e5tte l\u00f8fta er",
+            "det \u00e5tte l\u00f8ftene er",
+            "dei \u00e5tte l\u00f8fta er",
+            "dei \u00e5tte l\u00f8ftene er",
+            "det \u00e5tte l\u00f8fta er"
+        ],
+        "true_transcription": "dei \u00e5tte l\u00f8fta er",
+        "transcribed": "det \u00e5tte l\u00f8fte er",
+        "context": [
+            "elevar med utdanningshemming f\u00e5r ikkje oppl\u00e6ring av same kvalitet som andre elevar",
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            ""
+        ]
+    },
+    {
+        "sentence_order": 331,
+        "audio_file": "20170207/audio/20170207-095506_2898335_2907995.wav",
+        "beams": [
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lbestemmelse",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvbestemmelse",
+            "l\u00f8ft \u00e9in sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lbestemmelse",
+            "l\u00f8ft \u00e9in sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e9in sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvikstemmer rett til frihet og sj\u00f8lvestemmelse"
+        ],
+        "true_transcription": "l\u00f8ft \u00e9in sj\u00f8lvbestemming og rettstryggleik norsk lovverk m\u00e5 respektere og sikra utviklingshemma rett til fridom og sj\u00f8lvbestemming",
+        "transcribed": "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+        "context": [
+            "elevar med utviklingshemming har ikkje ein er ikkje inkludert i normalskulen",
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det \u00e5tte l\u00f8fte er"
+        ]
+    },
+    {
+        "sentence_order": 332,
+        "audio_file": "20170207/audio/20170207-095506_2907995_2912225.wav",
+        "beams": [
+            "l\u00f8fto inkluderande og likeverdig oppl\u00e6ring",
+            "l\u00f8ftho inkluderande og likeverdig oppl\u00e6ring",
+            "l\u00f8ft to inkluderande og likeverdig oppl\u00e6ring",
+            "l\u00f8ft to inkluderande og likeverdig oppl\u00e6ring",
+            "l\u00f8ft to inkluderande og likeverdig oppl\u00e6ring"
+        ],
+        "true_transcription": "l\u00f8ft to inkluderande og likeverdig oppl\u00e6ring",
+        "transcribed": "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+        "context": [
+            "utviklingshemma har ikke tilgang til livslang l\u00e6ring",
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse"
+        ]
+    },
+    {
+        "sentence_order": 333,
+        "audio_file": "20170207/audio/20170207-095506_2912225_2914470.wav",
+        "beams": [
+            "l\u00f8ft tre arbeid for alle",
+            "l\u00f8ft tre arbeid for alle",
+            "l\u00f8ft tre arbeid for alle",
+            "l\u00f8ft tre arbeid for alle",
+            "l\u00f8ft tre arbeid for alle"
+        ],
+        "true_transcription": "l\u00f8ft tre arbeid for alle",
+        "transcribed": "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+        "context": [
+            "utviklingshemma har ikke samme tilgang til forsvarlige helsetjenester som andre",
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse"
+        ]
+    },
+    {
+        "sentence_order": 334,
+        "audio_file": "20170207/audio/20170207-095506_2914470_2917510.wav",
+        "beams": [
+            "l\u00f8ft fire god helse og omsorg",
+            "l\u00f8ft fire god helse og omsorg",
+            "l\u00f8ft fire god helse og omsorg",
+            "l\u00f8ft fire god helse og omsorg",
+            "l\u00f8ft fire god helse og omsorg"
+        ],
+        "true_transcription": "l\u00f8ft fire god helse og omsorg",
+        "transcribed": "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+        "context": [
+            "mange utviklingshemmer f\u00e5r ikke sj\u00f8l fattig beslutning om egen helsebehandling",
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet"
+        ]
+    },
+    {
+        "sentence_order": 335,
+        "audio_file": "20170207/audio/20170207-095506_2917510_2919895.wav",
+        "beams": [
+            "l\u00f8ft fem eige hjem",
+            "l\u00f8ft fem eig eit hjem",
+            "l\u00f8ft fem eige hjem",
+            "l\u00f8ft fem eige til hjem",
+            "l\u00f8ft fem eige til hjem"
+        ],
+        "true_transcription": "l\u00f8ft fem eige heim",
+        "transcribed": "l\u00f8ft fem eig eit hjem",
+        "context": [
+            "utviklingshemma har f\u00e5 reelle moglegheiter til \u00e5 velje bustad og boform, omsorgstjenesten gjennomf\u00f8res p\u00e5 en m\u00e5te som vanskeligere private relasjoner og egen familie for \u00e5 utvikle seg",
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet"
+        ]
+    },
+    {
+        "sentence_order": 336,
+        "audio_file": "20170207/audio/20170207-095506_2919895_2921990.wav",
+        "beams": [
+            "l\u00f8ft seks kompetanse og kunnskap",
+            "l\u00f8ft seks kompetanse og kunnskap",
+            "l\u00f8ft seks kompetanse og kunnskap",
+            "l\u00f8ft seks kompetanse og kunnskap",
+            "l\u00f8ft seks kompetanse og kunnskap"
+        ],
+        "true_transcription": "l\u00f8ft seks kompetanse og kunnskap",
+        "transcribed": "l\u00f8ft fem eig eit hjem",
+        "context": [
+            "Bare 25% av utviklingshemma i yrkesaktig alder er i jobb",
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft fem eig eit hjem"
+        ]
+    },
+    {
+        "sentence_order": 337,
+        "audio_file": "20170207/audio/20170207-095506_2921990_2924780.wav",
+        "beams": [
+            "l\u00f8ft sju koordinerte tjenester",
+            "p\u00e5 l\u00f8ft sju koordinerte tjenester",
+            "p\u00e5 l\u00f8ft sju koordinerte tjeneste",
+            "p\u00e5 l\u00f8ft sju koordinerte tjenester",
+            "p\u00e5 l\u00f8ft sju koordinerte tjenester"
+        ],
+        "true_transcription": "l\u00f8ft sju koordinerte tenester",
+        "transcribed": "p\u00e5 l\u00f8ft sju koordinerte tjenester",
+        "context": [
+            "utviklingshemma i liten grad har tilgang til tilrettelagt arbeid",
+            "",
+            "",
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft fem eig eit hjem",
+            "l\u00f8ft fem eig eit hjem"
+        ]
+    },
+    {
+        "sentence_order": 338,
+        "audio_file": "20170207/audio/20170207-095506_2924780_2928330.wav",
+        "beams": [
+            "p\u00e5 l\u00f8ft \u00e5tte m\u00e5lretta store styring",
+            "og l\u00f8ft \u00e5tte m\u00e5lretta store styring",
+            "p\u00e5 l\u00f8ft \u00e5tte m\u00e5lretta store styring",
+            "og l\u00f8ft \u00e5tte m\u00e5lretta store styring",
+            "p\u00e5 l\u00f8ft \u00e5tte m\u00e5lretta stor\u00e5 styring"
+        ],
+        "true_transcription": "og l\u00f8ft \u00e5tte m\u00e5lretta stor styring",
+        "transcribed": "p\u00e5gl\u00f8ft \u00e5tte m\u00e5lretta store styring",
+        "context": [
+            "",
+            "",
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft fem eig eit hjem",
+            "l\u00f8ft fem eig eit hjem",
+            "p\u00e5 l\u00f8ft sju koordinerte tjenester"
+        ]
+    },
+    {
+        "sentence_order": 339,
+        "audio_file": "20170207/audio/20170207-095506_2928330_2937175.wav",
+        "beams": [
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomf\u00f8res p\u00e5 alle relevante samfunnsomr\u00e5der",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomf\u00f8res p\u00e5 alle relevante samfunnsomr\u00e5der",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomf\u00f8res p\u00e5 alle relevante samfunnsomr\u00e5der",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomf\u00f8res p\u00e5 alle relevante samfunnsomr\u00e5der",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomf\u00f8res p\u00e5 alle relevante samfunnsomr\u00e5der"
+        ],
+        "true_transcription": "korleis skal FN-konvensjonen om rettar til menneske med nedsett funksjonsevne gjennomf\u00f8rast p\u00e5 alle relevante samfunnsomr\u00e5de",
+        "transcribed": "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomf\u00f8res p\u00e5 alle relevante samfunnsomr\u00e5der",
+        "context": [
+            "",
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft fem eig eit hjem",
+            "l\u00f8ft fem eig eit hjem",
+            "p\u00e5 l\u00f8ft sju koordinerte tjenester",
+            "p\u00e5gl\u00f8ft \u00e5tte m\u00e5lretta store styring"
+        ]
+    },
+    {
+        "sentence_order": 340,
+        "audio_file": "20170207/audio/20170207-095506_2937175_2983155.wav",
+        "beams": [
+            "de med autisme og f\u00e5 andre som har en sykdom som trenger v\u00e5r s for \u00e5 trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+            "de med autisme og f\u00e5 andre som har en sykdom som trenger v\u00e5r s for \u00e5 trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+            "de med autisme og f\u00e5 andre som har en sykdom som trenger v\u00e5r s for \u00e5 trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+            "de me autisme og f\u00e5 andre som har en sykdom som trenger v\u00e5r s for \u00e5 trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+            "de me autisme og f\u00e5 andre som har en sykdom som trenger v\u00e5r s for \u00e5 trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige"
+        ],
+        "true_transcription": "no har regjeringa f\u00e5tt overlevert denne utdanninga og det er regjeringa som d\u00e5 kan fremma ei stortingsmelding til til oss der ein p\u00e5 alle samfunnsomr\u00e5de ikkje berre p\u00e5 helseomr\u00e5det kan seie korleis ein vil styrka styrka dette omr\u00e5det og korleis sikra koordinerte tenester for dei med autisme og for andre som har ein sjukdom som treng v\u00e5r som treng betre merksemd og betre betre tilbod i fr\u00e5 det offentlege",
+        "transcribed": "de med autisme og f\u00e5 andre som har en sykdom som trenger v\u00e5r s for \u00e5 trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige",
+        "context": [
+            "det \u00e5tte l\u00f8fte er",
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft fem eig eit hjem",
+            "l\u00f8ft fem eig eit hjem",
+            "p\u00e5 l\u00f8ft sju koordinerte tjenester",
+            "p\u00e5gl\u00f8ft \u00e5tte m\u00e5lretta store styring",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomf\u00f8res p\u00e5 alle relevante samfunnsomr\u00e5der"
+        ]
+    },
+    {
+        "sentence_order": 341,
+        "audio_file": "20170207/audio/20170207-095506_2983155_2988380.wav",
+        "beams": [
+            "neste taler er representanten ruth gr\u00e5 og deretter ketil kjenseth",
+            "neste taler er representanten ruth gr\u00e5 og deretter ketil kjenseth",
+            "neste taler er representanten ruth gr\u00e5 og deretter ketil kjenseth",
+            "neste taler er representanten ruth gr\u00e5 og deretter ketil kjenseth",
+            "neste taler er representanten ruth gr\u00e5 og deretter ketil kjenseth"
+        ],
+        "true_transcription": "neste taler er representanten Ruth Grung og deretter Ketil Kjenseth",
+        "transcribed": "",
+        "context": [
+            "l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "det \u00e5tte l\u00f8fte er, l\u00f8ft ein sj\u00f8lvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalstemma rett til frihet og sj\u00f8lvestemmelse",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft \u00e5tte er, l\u00f8fte om selvbestemmelse og rettssikkerhet norsk lovverk m\u00e5 respektere og sikre utvalgt menneske rett til frihet og selvstendighet",
+            "l\u00f8ft fem eig eit hjem",
+            "l\u00f8ft fem eig eit hjem",
+            "p\u00e5 l\u00f8ft sju koordinerte tjenester",
+            "p\u00e5gl\u00f8ft \u00e5tte m\u00e5lretta store styring",
+            "hvordan skal fn-kommisjonen om rettigheter til mennesker med nedsatt funksjonsevne gjennomf\u00f8res p\u00e5 alle relevante samfunnsomr\u00e5der",
+            "de med autisme og f\u00e5 andre som har en sykdom som trenger v\u00e5r s for \u00e5 trenge bedre oppmerksomhet og bedre bedre tilbud ifra det offentlige"
+        ]
     }
 ]
