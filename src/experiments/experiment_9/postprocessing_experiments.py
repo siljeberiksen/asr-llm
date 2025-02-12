@@ -3,7 +3,7 @@ import json
 import matplotlib.pyplot as plt
 import statistics
 
-from src.visualization.postprocessing_emissions import runEmissionPostProcessing
+from visualization.postprocessing_emissions import runEmissionPostProcessing
 
 #with open("result/wer_nb_samtale_5_tiny_2.json", 'r') as file:
 #"result/wer_nb_samtale_llm_5_tiny_10_prompt_3.json

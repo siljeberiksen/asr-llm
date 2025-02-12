@@ -11,7 +11,7 @@ Utilzing NPSC 3
 ## Hyperparameters
 
 - beam size = 5
-- context size = 50
+- context size = 100
 
 ## Prompt
 
