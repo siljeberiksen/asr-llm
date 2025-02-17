@@ -173,7 +173,7 @@ def pred(
         format=HypothesisSelector.model_json_schema(),
     )
     print(response)
-    response = response.message.content
+    response = response.message.content["selected"]
     if evaluate:
         return parse_llm_output(response)
     return response
@@ -203,34 +203,33 @@ def parse_llm_output(response: str):
     #response = response.lower()
 
     # Regular expression to capture text between <optionnumber> tags
-    match = re.search(r'<option\d+>(.*?)</option\d+>',response)
+    # match = re.search(r'<option\d+>(.*?)</option\d+>',response)
 
 
     # Remove any HTML code still left
-    CLEANR = re.compile('<.*?>')
-    if match:
-        extracted_text = match.group(1)
-        print("extracted", extracted_text)
-        cleantext = re.sub(CLEANR, '', extracted_text)
-        print("cleannn", cleantext.strip())
-        cleantext = re.sub(r'^.*?:', '', cleantext)
-        if('<option1>' in cleantext):
-            raise Exception("Parsing error")
-        if ('<option2>' in cleantext):
-            raise Exception("Parsing error")
-        if('<option3>' in cleantext):
-            raise Exception("Parsing error")
-        if('<option4>' in cleantext):
-            raise Exception("Parsing error")
-        if('<option5>' in cleantext):
-            raise Exception("Parsing error")
-        if('print(' in cleantext):
-            raise Exception("Parsing error")
-        if(not cleantext):
-             raise Exception("Empty string")
-        return cleantext.strip()
-    else:
-        raise Exception("No option returned")
+    # CLEANR = re.compile('<.*?>')
+    # if match:
+        # extracted_text = match.group(1)
+        # print("extracted", extracted_text)
+        # cleantext = re.sub(CLEANR, '', extracted_text)
+        # print("cleannn", cleantext.strip())
+        # cleantext = re.sub(r'^.*?:', '', cleantext)
+        # if('<option1>' in cleantext):
+        #     raise Exception("Parsing error")
+        # if ('<option2>' in cleantext):
+        #     raise Exception("Parsing error")
+        # if('<option3>' in cleantext):
+        #     raise Exception("Parsing error")
+        # if('<option4>' in cleantext):
+        #     raise Exception("Parsing error")
+        # if('<option5>' in cleantext):
+        #     raise Exception("Parsing error")
+        # if('print(' in cleantext):
+        #     raise Exception("Parsing error")
+        # if(not cleantext):
+        #      raise Exception("Empty string")
+        # return cleantext.strip()
+    return response.strip()
 
 
 def read_file(file_path):
@@ -313,7 +312,7 @@ def choose_best_sentence(context, choices, port=8081):
     prompt += "The ASR hypotheses are as follows:\n"
 
     for i, choice in enumerate(choices, 1):
-        prompt += f"i. {choice} \n"
+        prompt += f"{choice} \n"
 
     prompt += (
         "Return only the selected option in JSON format, strictly following this schema:\n\n"
