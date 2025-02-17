@@ -91,7 +91,7 @@ def generate(
         model=model,
         messages=[
             # {"role": "system", "content": system_prompt},
-            {"role": "user", "content": prompt},
+            prompt,
         ],
         options={
             "num_ctx": num_ctx,
@@ -158,7 +158,7 @@ def pred(
         model=model,
         messages=[
             # {"role": "system", "content": system_prompt},
-           prompt
+           {"role":"user","content":prompt}
         ],
         options={
             "num_predict": max_tokens,
