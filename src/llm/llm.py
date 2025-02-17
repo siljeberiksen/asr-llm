@@ -174,8 +174,10 @@ def pred(
     )
     print(response)
     response = response.message.content
+
+    parsed_response = json.loads(response)  
     # Convert to JSON format
-    json_output = json.dumps(response, indent=4)
+    json_output = json.dumps(parsed_response, indent=4)
     print(json_output)
 
     print(choices)
