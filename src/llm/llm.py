@@ -314,7 +314,7 @@ def choose_best_sentence(context, choices, port=8081):
     prompt += "The ASR hypotheses are as follows:\n"
 
     for i, choice in enumerate(choices, 1):
-        prompt += f"<option{i}> {choice} </option{i}>\n"
+        prompt += f"1. {choice} \n"
 
     prompt += (
         "Do NOT include your reasoning.\n"
