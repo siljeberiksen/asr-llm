@@ -26,7 +26,7 @@ count = load_count()
 
 try:
         from asr.asr_model_initialization import initialize_Whisper_model
-        from experiments.experiment_11.proposed_system_experiment import run_experiment
+        from experiments.experiment_12.proposed_system_experiment import run_experiment
 
         # Your main script logic here
         print("Running the script...")
