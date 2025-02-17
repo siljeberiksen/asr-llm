@@ -68,9 +68,9 @@ history = [
     "Yeah, but honestly, they should have played better in the first half.",
 ]
 hypotheses = [
+    "They had so many missed chances early on. ",
     "They had so many mixed chances early on. ",
     "They had so many missed chants early on. ",
-    "They had so many missed chances early on. ",
     "They had some money missed chances early on. ",
     "They had so many missed chance early on. ",
 ]
