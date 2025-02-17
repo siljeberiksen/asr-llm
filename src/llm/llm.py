@@ -180,10 +180,18 @@ def pred(
     json_output = json.dumps(parsed_response, indent=4)
     print(json_output)
 
-    print(parsed_response.get("selected"))
+    selected_index = parsed_response.get("selected") 
+    print(selected_index)
+
+    if selected_index is not None and 0 <= selected_index < len(choices):
+        selected_hypothesis = choices[selected_index]
+    else:
+        raise Exception("Could not parse output")
+
+    print(selected_hypothesis)
     # if evaluate:
     #     return parse_llm_output(response)
-    return choices[parsed_response.get("selected")]
+    return selected_hypothesis
 
 def parse_llm_output(response: str):
     if not response:

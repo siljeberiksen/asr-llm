@@ -7,7 +7,7 @@ from codecarbon import EmissionsTracker
 tracker = EmissionsTracker(project_name="experiment_12")
 
 
-COUNT_FILE = "experiments.experiment_11.count.txt"
+COUNT_FILE = "experiments.experiment_12.count.txt"
 
 def load_count():
     if os.path.exists(COUNT_FILE):
@@ -48,7 +48,7 @@ except Exception as e:
         
         # Restart the script
     print("Restarting the script...")
-    os.execv(sys.executable, [sys.executable, "-m", "experiments.experiment_11.run_experiment_11"])
+    os.execv(sys.executable, [sys.executable, "-m", "experiments.experiment_12.run_experiment_12"])
 except BaseException as e:
     print("Caught a BaseException!")
     print(e)
