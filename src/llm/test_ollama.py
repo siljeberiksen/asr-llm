@@ -4,8 +4,8 @@ from ollama import ChatResponse, chat
 from pydantic import BaseModel
 from pydantic.types import JsonSchemaValue, Literal
 
-# model = "hf.co/unsloth/Llama-3.1-8B-Instruct-GGUF:Q6_K"
-model = "hf.co/unsloth/Llama-3.2-3B-Instruct-GGUF:Q6_K"
+model = "hf.co/unsloth/Llama-3.1-8B-Instruct-GGUF:Q6_K"
+#model = "hf.co/unsloth/Llama-3.2-3B-Instruct-GGUF:Q6_K"
 
 
 def generate(
