@@ -183,7 +183,7 @@ def pred(
     print(choices)
     # if evaluate:
     #     return parse_llm_output(response)
-    return response
+    return choices[parsed_response.get("selected")]
 
 def parse_llm_output(response: str):
     if not response:
