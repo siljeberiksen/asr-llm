@@ -180,7 +180,7 @@ def pred(
     json_output = json.dumps(parsed_response, indent=4)
     print(json_output)
 
-    print(choices)
+    print(parsed_response.get("selected"))
     # if evaluate:
     #     return parse_llm_output(response)
     return choices[parsed_response.get("selected")]
