@@ -173,7 +173,8 @@ def pred(
         format=HypothesisSelector.model_json_schema(),
     )
     print(response)
-    response = response.message.content["selected"]
+    response = response.message.content
+    print(response)
     if evaluate:
         return parse_llm_output(response)
     return response
