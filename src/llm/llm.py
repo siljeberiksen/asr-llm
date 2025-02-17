@@ -176,8 +176,8 @@ def pred(
     response = response.message.content
     response = eval(response)
     print(response)
-    if evaluate:
-        return parse_llm_output(response)
+    # if evaluate:
+    #     return parse_llm_output(response)
     return response
 
 def parse_llm_output(response: str):
