@@ -171,7 +171,7 @@ def pred(
         stream=False,
     )
     print(response)
-    response = response["content"]
+    response = response.message.content
     if evaluate:
         return parse_llm_output(response)
     return response
