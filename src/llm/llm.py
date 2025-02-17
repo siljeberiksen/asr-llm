@@ -174,8 +174,9 @@ def pred(
     )
     print(response)
     response = response.message.content
-    response = eval(response)
-    print(response)
+    # Convert to JSON format
+    json_output = json.dumps(response, indent=4)
+    print(json_output)
 
     print(choices)
     # if evaluate:
