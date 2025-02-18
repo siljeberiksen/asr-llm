@@ -154,6 +154,7 @@ def pred(
     #     },
     #     "required": ["beam_selection"]
     # }   
+    print("instruction", instruction)
 
     response: ChatResponse = chat(
         model=model,
@@ -172,7 +173,6 @@ def pred(
         stream=False,
         format=HypothesisSelector.model_json_schema(),
     )
-    print(response)
     response = response.message.content
 
     parsed_response = json.loads(response)  
@@ -196,7 +196,6 @@ def pred(
 def parse_llm_output(response: str):
     if not response:
         return response
-    print("response", response)
     # spacing!
     response = response.replace("\n", " ")
     response = response.replace("\t", " ")
@@ -372,14 +371,12 @@ def choose_best_sentence(context, choices, port=8081):
     history_str = "\n\n".join(context)
     hypo = [f"<option{i+1}> {h.strip()} </option{i+1}>" for i, h in enumerate(choices)]
     hypo_str = "\n".join(hypo)
-    print(history_str)
-    print(hypo_str)
+
 
     prompt = prompt_asr.format(
-        history=context,
+        history=history_str,
         hypotheses=hypo_str,
     )
-    print(prompt)
 
 
     # class HypothesisSelector(BaseModel):
