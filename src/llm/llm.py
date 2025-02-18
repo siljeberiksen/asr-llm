@@ -372,11 +372,12 @@ def choose_best_sentence(context, choices, port=8081):
     hypo = [f"<option{i+1}> {h.strip()} </option{i+1}>" for i, h in enumerate(choices)]
     hypo_str = "\n".join(hypo)
 
-
+##TODO test with history_str instead
     prompt = prompt_asr.format(
-        history=history_str,
+        history=context,
         hypotheses=hypo_str,
     )
+    print(prompt)
 
 
     # class HypothesisSelector(BaseModel):
