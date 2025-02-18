@@ -190,11 +190,12 @@ def pred(
             raise Exception("Could not parse output")
     else:
         selected_hypothesis=choices[0]
+        selected_index = 0
 
     print(selected_hypothesis)
     # if evaluate:
     #     return parse_llm_output(response)
-    return selected_hypothesis
+    return selected_index, selected_hypothesis
 
 def parse_llm_output(response: str):
     if not response:

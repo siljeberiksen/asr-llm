@@ -772,7 +772,8 @@ class DecodingTask:
         selected = self.sequence_ranker.rank(tokens, sum_logprobs)
 
         if(integrate_llm):
-            texts= [choose_best_sentence(context, beam_options[0],port)]
+            index_llm, text_llm = choose_best_sentence(context, beam_options[0],port)
+            texts= [text_llm]
         
             if(len(beam_options[0])!=1):
                 with open(f'../result/npsc_samtale_experiment_{experiment_number}_llm.json', 'r', encoding='utf-8') as file:
@@ -781,7 +782,8 @@ class DecodingTask:
                 # Create a new entry with context and choices
                 new_entry = {
                     "context": context,
-                    "choices": beam_options[0]
+                    "choices": beam_options[0],
+                    "index":index_llm
                 }
         
                 # Append the new entry to the existing data
