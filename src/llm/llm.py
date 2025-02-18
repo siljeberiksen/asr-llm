@@ -183,8 +183,8 @@ def pred(
     selected_index = parsed_response.get("selected") 
     print(selected_index)
 
-    if selected_index is not None and 0 <= selected_index < len(choices):
-        selected_hypothesis = choices[selected_index]
+    if selected_index is not None and 0 < selected_index <= len(choices):
+        selected_hypothesis = choices[selected_index - 0]
     else:
         raise Exception("Could not parse output")
 
