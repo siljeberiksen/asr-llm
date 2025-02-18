@@ -155,38 +155,41 @@ def pred(
     #     "required": ["beam_selection"]
     # }   
     print("instruction", instruction)
+    if(len(choices)>1):
 
-    response: ChatResponse = chat(
-        model=model,
-        messages=[
-            # {"role": "system", "content": system_prompt},
-           {"role":"user","content":instruction}
-        ],
-        options={
-            "num_predict": max_tokens,
-            "top_k": 100,
-            "top_p": 0.8,
-            "temperature": temp,
-            "seed": 0,  # this is not needed when temp is 0
-            "repeat_penalty": 1.2,  # remain default for json outputs, from experience.
-        },
-        stream=False,
-        format=HypothesisSelector.model_json_schema(),
-    )
-    response = response.message.content
+        response: ChatResponse = chat(
+            model=model,
+            messages=[
+                # {"role": "system", "content": system_prompt},
+            {"role":"user","content":instruction}
+            ],
+            options={
+                "num_predict": max_tokens,
+                "top_k": 100,
+                "top_p": 0.8,
+                "temperature": temp,
+                "seed": 0,  # this is not needed when temp is 0
+                "repeat_penalty": 1.2,  # remain default for json outputs, from experience.
+            },
+            stream=False,
+            format=HypothesisSelector.model_json_schema(),
+        )
+        response = response.message.content
 
-    parsed_response = json.loads(response)  
-    # Convert to JSON format
-    json_output = json.dumps(parsed_response, indent=4)
-    print(json_output)
+        parsed_response = json.loads(response)  
+        # Convert to JSON format
+        json_output = json.dumps(parsed_response, indent=4)
+        print(json_output)
 
-    selected_index = parsed_response.get("selected") 
-    print(selected_index)
+        selected_index = parsed_response.get("selected") 
+        print(selected_index)
 
-    if selected_index is not None and 0 < selected_index <= len(choices) + 1:
-        selected_hypothesis = choices[selected_index - 1]
+        if selected_index is not None and 0 < selected_index <= len(choices):
+            selected_hypothesis = choices[selected_index - 1]
+        else:
+            raise Exception("Could not parse output")
     else:
-        raise Exception("Could not parse output")
+        selected_hypothesis=choices[0]
 
     print(selected_hypothesis)
     # if evaluate:
