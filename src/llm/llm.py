@@ -378,7 +378,7 @@ def choose_best_sentence(context, choices, port=8081):
 
 ##TODO test with history_str instead
     prompt = prompt_asr.format(
-        history=context,
+        history=history_str,
         hypotheses=hypo_str,
     )
     print(prompt)
