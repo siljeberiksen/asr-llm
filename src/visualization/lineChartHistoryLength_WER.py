@@ -22,18 +22,20 @@ CER_MEDIAN = [2.6,3.96,3.3,3.75]
 # CER_MEDIAN = [2.6,2.5,2.5,2.6]
 
 ##Filtering out where beams are equyal
-WER = [14.8, 17.2 , 17.3 , 17.2]
-CER = [6.7, 7.8 , 7.8, 7.8]
-WER_MEDIAN = [8.1,10.3,10.5,10.3]
-CER_MEDIAN = [2.6,3.4,3.4,3.4]
+# WER = [17.4, 17.2 , 17.3 , 17.2]
+# CER = [7.6, 7.8 , 7.8, 7.8]
+# WER_MEDIAN = [10.5,10.3,10.5,10.3]
+# CER_MEDIAN = [3.4,3.4,3.4,3.4]
+
+####Experiment 9-11
 
 # Create positions for equal spacing
 positions = range(len(x_labels))
 
 # Create the plot
 plt.figure(figsize=(8, 6))
-plt.plot(positions, WER, label="WER", marker='o')  # WER line
-plt.plot(positions, CER, label="CER", marker='s')  # CER line
+plt.plot(positions, WER_MEDIAN, label="WER", marker='o')  # WER line
+plt.plot(positions, CER_MEDIAN, label="CER", marker='s')  # CER line
 
 # Set x-axis ticks with categorical labels
 plt.xticks(ticks=positions, labels=x_labels)
