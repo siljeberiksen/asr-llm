@@ -184,7 +184,7 @@ def pred(
     print(selected_index)
 
     if selected_index is not None and 0 < selected_index <= len(choices):
-        selected_hypothesis = choices[selected_index - 0]
+        selected_hypothesis = choices[selected_index - 1]
     else:
         raise Exception("Could not parse output")
 
