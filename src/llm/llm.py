@@ -363,11 +363,6 @@ def choose_best_sentence(context, choices, port=8081):
     #         schema=HypothesisSelector.model_json_schema(),
     #     )
     # )
-
-
-
-    
-    print("Prompt:", prompt)
     return pred(prompt, context=context, choices=choices, evaluate=True, port=port)
 
 
