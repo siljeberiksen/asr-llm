@@ -13,16 +13,10 @@ def post_process(file_name, empty_instances = []):
     cer_sum = 0
     wer_acutal =[]
     cer_actual = []
-    first_started = False
     length = 1
     difference_beams = []
     differnece_beams_cer =[]
-    count_files = 0
     for data in wer_data:
-        if count_files > 7:
-            break
-        if(data["sentence_order"]==0):
-            count_files +=1
         if(data["audio_file"] in empty_instances):
             continue
         cer_best_beam.append(min(data["cer"]))
@@ -67,8 +61,6 @@ def understanding_experiment(number):
         if(max_wer >= wer_data["wer_result"] and max_wer-min(beam_wer)!=0):
             files.append(wer_data["audio_file"])
         else:
-            print(max_wer)
-            print(wer_data["wer_result"])
             files_not_okey.append(wer_data["audio_file"])
     print("Results better", len(files_not_okey))
     print("Results total", len(wer_data_points))
@@ -93,4 +85,4 @@ def understanding_experiment(number):
     post_process(f'../result/wer_npsc_experiment_3.json', files_not_okey)
 
 
-understanding_experiment(8)
+understanding_experiment(10)

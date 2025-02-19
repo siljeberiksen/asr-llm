@@ -25,9 +25,7 @@ Select the most accurate ASR transcription.
 
 ---
 
-History:
-history 1
-history 2
+[Conversational history]
 
 ---
 
@@ -38,7 +36,7 @@ The ASR hypotheses are as follows:
 <option4> [hypothesis 4] </option4>
 <option5> [hypothesis 5] </option5>
 
-Output the integer index N of the most suitable ASR transcription from the <option N> hypothesis.
+Reason concisely about the correct ASR transcription using past conversational history, and output the integer index N of the most suitable ASR transcription from the <option N> hypothesis.
 Lets think step by step.
 
 ## Resulting files

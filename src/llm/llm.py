@@ -26,57 +26,6 @@ HOSTNAME = os.environ["HOSTNAME"]
 PORT = os.environ["PORT"]
 headers = {"Content-Type": "application/json"}
  
-only_string_schema = {
-    "type": "string"
-}
-
-only_string_schema_object = {
-    "type": "object",
-    "properties": {
-        "result":{
-            "type": "text"
-        }
-    }
-}
-
-#TODO Add object
-
-#TODO Test schema that have to use one of the
-only_number_schema = {
-    "type": "number",
-    "enum": [1, 2, 3, 4, 5]
-}
-
-response_format={
-        "type": "object",
-        "propoerties": {
-            "beam_selection": {"type": "string"}
-        },
-        "required":["beams_selection"]
-    }
-
-
-
-both_schema = {
-    "type": "object",
-    "properties": {
-        "selected_option": {
-            "type": "number",
-            "enum": [1, 2, 3, 4, 5]
-        },
-        "transcription": {
-            "type": "string"
-        }
-    },
-    "required": ["selected_option", "transcription"]
-}
-
-schemas = {
-    "default": only_string_schema,
-    "number_only": only_number_schema,
-    "both": both_schema
-}
-
 def returnLogits():
     model = Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
     out = model.create_completion("The capital of France is", max_tokens=1, logprobs=20)
@@ -124,6 +73,7 @@ def pred(
     max_tokens=1000,
     use_schema: str = "default",
     temp=0.1,  # temperature. 0: deterministic, 1+: random
+    num_ctx: int = 48000,
     # min_p=0.1,  # minimum probability
     # max_p=0.9,  # maximum probability
     # top_p=0.9,  # nucleus sampling
@@ -136,31 +86,9 @@ def pred(
 ):
     if len(instruction) == 0:
         raise ValueError("Instruction cannot be empty")
-
-    data = {
-        "prompt": instruction,
-        "n_predict": max_tokens,
-        "temperature": temp,
-        "repeat_penalty": 1.2,  # 1.1 default,
-        "logits_all": True
-    }
-    if use_schema:
-        data["json_schema"] = schemas[use_schema]
-
-#TODO use the schema
-    # data["json_schema"]= {
-    #     "type": "object",
-    #     "properties": {
-    #         "beam_selection": {
-    #             "type": "string",
-    #             "enum": choices
-    #         }
-    #     },
-    #     "required": ["beam_selection"]
-    # }   
+    
     print("instruction", instruction)
     if(len(choices)>1):
-
         response: ChatResponse = chat(
             model=model,
             messages=[
@@ -168,12 +96,13 @@ def pred(
             {"role":"user","content":instruction}
             ],
             options={
+                "num_ctx": num_ctx,
                 "num_predict": max_tokens,
                 "top_k": 100,
                 "top_p": 0.8,
                 "temperature": temp,
                 "seed": 0,  # this is not needed when temp is 0
-                "repeat_penalty": 1.2,  # remain default for json outputs, from experience.
+                "repeat_penalty": 1.3,  # remain default for json outputs, from experience.
             },
             stream=False,
             format=HypothesisSelectorReasoning.model_json_schema(),

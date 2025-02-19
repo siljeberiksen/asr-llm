@@ -22,7 +22,6 @@ def post_process(file_name, empty_instances = []):
         wer_data = json.load(file)
 
     print("Processing: ", file_name)
-    wer_best_beam = []
     cer_best_beam = []
     wer_worst_beam = []
     cer_worst_beam = []
@@ -30,7 +29,6 @@ def post_process(file_name, empty_instances = []):
     cer_sum = 0
     wer_acutal =[]
     cer_actual = []
-    first_started = False
     length = 1
     difference_beams = []
     differnece_beams_cer =[]
@@ -82,4 +80,4 @@ empty_instances = find_empty_instances("beam_npsc_experiment_12_llm.json")
 post_process("wer_npsc_experiment_12_llm.json", empty_instances)
 
 print("\nEmissions")
-runEmissionPostProcessing("experiment_12")
+runEmissionPostProcessing("experiment_12", "emissions_3-12.csv")

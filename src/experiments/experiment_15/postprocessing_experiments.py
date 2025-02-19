@@ -30,16 +30,10 @@ def post_process(file_name, empty_instances = []):
     cer_sum = 0
     wer_acutal =[]
     cer_actual = []
-    first_started = False
     length = 1
     difference_beams = []
     differnece_beams_cer =[]
-    count_files = 0
     for data in wer_data:
-        if count_files > 7:
-            break
-        if(data["sentence_order"]==0):
-            count_files +=1
         if(data["audio_file"] in empty_instances):
             continue
         cer_best_beam.append(min(data["cer"]))
@@ -74,12 +68,12 @@ def post_process(file_name, empty_instances = []):
     print("average wer", wer_sum/length)
     print("average cer", cer_sum/length)
 
-post_process("wer_npsc_experiment_9_llm.json")
+post_process("wer_npsc_experiment_15_llm.json")
 
 print("\n\n\nWithout empty instances")
-empty_instances = find_empty_instances("beam_npsc_experiment_9_llm.json")
+empty_instances = find_empty_instances("beam_npsc_experiment_15_llm.json")
 #post_process("wer_npsc_experiment_3.json", empty_instances)
-post_process("wer_npsc_experiment_9_llm.json", empty_instances)
+post_process("wer_npsc_experiment_15_llm.json", empty_instances)
 
 print("\nEmissions")
-runEmissionPostProcessing("experiment_9")
+runEmissionPostProcessing("experiment_15")

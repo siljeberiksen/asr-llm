@@ -34,12 +34,7 @@ def post_process(file_name, empty_instances = []):
     length = 1
     difference_beams = []
     differnece_beams_cer =[]
-    count_files = 0
     for data in wer_data:
-        if count_files > 7:
-            break
-        if(data["sentence_order"]==0):
-            count_files +=1
         if(data["audio_file"] in empty_instances):
             continue
         cer_best_beam.append(min(data["cer"]))
@@ -82,4 +77,4 @@ empty_instances = find_empty_instances("beam_npsc_experiment_9_llm.json")
 post_process("wer_npsc_experiment_9_llm.json", empty_instances)
 
 print("\nEmissions")
-runEmissionPostProcessing("experiment_9")
+runEmissionPostProcessing("experiment_9", "emissions_3-12.csv")
