@@ -25,9 +25,7 @@ Select the most accurate ASR transcription.
 
 ---
 
-History:
-history 1
-history 2
+[Conversational history]
 
 ---
 
@@ -38,18 +36,17 @@ The ASR hypotheses are as follows:
 <option4> [hypothesis 4] </option4>
 <option5> [hypothesis 5] </option5>
 
-Output the integer index N of the most suitable ASR transcription from the <option N> hypothesis.
-Lets think step by step.
+Reason shortly about the answer using past conversational history, and output the integer index N of the most suitable ASR transcription from the <option N> hypothesis.
 
 ## Resulting files
 
-beam_nb_samtale_experiment_12_llm.json
+beam_nb_samtale_experiment_14_llm.json
 beam_nb_samtale_experiment_3.json
 
-nb_samtale_experiment_12_llm.json
+nb_samtale_experiment_14_llm.json
 nb_samtale_experiment_3.json
 
-wer_nb_samtale_experiment_12_llm.json
+wer_nb_samtale_experiment_14_llm.json
 wer_nb_samtale_experiment_3.json
 
 (There were some that was said to be experiment_3, but is actually number 5)
