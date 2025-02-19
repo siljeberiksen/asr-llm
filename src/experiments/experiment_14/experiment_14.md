@@ -36,7 +36,7 @@ The ASR hypotheses are as follows:
 <option4> [hypothesis 4] </option4>
 <option5> [hypothesis 5] </option5>
 
-Reason shortly about the answer using past conversational history, and output the integer index N of the most suitable ASR transcription from the <option N> hypothesis.
+Reason concisely about the correct ASR transcription using past conversational history, and output the integer index N of the most suitable ASR transcription from the <option N> hypothesis.
 
 ## Resulting files
 
