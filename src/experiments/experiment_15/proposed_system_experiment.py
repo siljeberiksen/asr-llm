@@ -2,7 +2,7 @@ import json
 from jiwer import wer, cer
 import os
 
-COUNT_FILE = "experiments.experiment_13.count.txt"
+COUNT_FILE = "experiments.experiment_15.count.txt"
 
 def save_count(count):
     with open(COUNT_FILE, "w") as f:
@@ -42,15 +42,15 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, context_len,
         tracker.start_task(filename)
         if count < 50:
             if (os.path.isfile(os.path.join("../NPSC/NPSC_1", true_transcription_data['audio']))):
-                result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=13)
+                result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=15)
             elif (os.path.isfile(os.path.join("../NPSC/NPSC_2", true_transcription_data['audio']))):
-                result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=13)
+                result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=15)
             elif (os.path.isfile(os.path.join("../NPSC/NPSC_3", true_transcription_data['audio']))):
-                result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=13)
+                result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=15)
             elif  (os.path.isfile(os.path.join("../NPSC/NPSC_4", true_transcription_data['audio']))):
-                result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=13)
+                result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True, port=8082, experiment_number=15)
             else:
-                result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True,port=8082, experiment_number=13)
+                result = whisper_model.transcribe(f"../NPSC/NPSC_5/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=True,port=8082, experiment_number=15)
                 
             beams_wer=[]
             beams_cer=[]
