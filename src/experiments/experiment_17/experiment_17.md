@@ -1,4 +1,4 @@
-# Experiment 16
+# Experiment 10
 
 ## Model used
 
@@ -11,7 +11,7 @@ Utilzing NPSC 3
 ## Hyperparameters
 
 - beam size = 5
-- context size = 10
+- context size = 100
 
 ## Prompt
 
