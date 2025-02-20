@@ -105,7 +105,7 @@ def pred(
                 "repeat_penalty": 1.3,  # remain default for json outputs, from experience.
             },
             stream=False,
-            format=HypothesisSelectorReasoning.model_json_schema(),
+            format=HypothesisSelector.model_json_schema(),
         )
         response = response.message.content
 
@@ -121,7 +121,6 @@ def pred(
             selected_hypothesis = choices[selected_index - 1].replace("<|notimestamps|>", "")
         else:
             raise Exception("Could not parse output")
-        reason = parsed_response.get("reason")
     else:
         selected_hypothesis=choices[0]
         selected_index = 0
@@ -130,7 +129,7 @@ def pred(
     print(selected_hypothesis)
     # if evaluate:
     #     return parse_llm_output(response)
-    return selected_index, selected_hypothesis, reason
+    return selected_index, selected_hypothesis
 
 def parse_llm_output(response: str):
     if not response:
