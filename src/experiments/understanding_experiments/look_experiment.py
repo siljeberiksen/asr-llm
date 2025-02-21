@@ -13,7 +13,7 @@ def post_process(file_name, empty_instances = []):
     cer_sum = 0
     wer_acutal =[]
     cer_actual = []
-    length = 1
+    length = 0
     difference_beams = []
     differnece_beams_cer =[]
     for data in wer_data:
@@ -85,4 +85,4 @@ def understanding_experiment(number):
     post_process(f'../result/wer_npsc_experiment_3.json', files_not_okey)
 
 
-understanding_experiment(10)
+understanding_experiment(16)

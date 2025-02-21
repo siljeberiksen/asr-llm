@@ -22,6 +22,13 @@ class HypothesisSelectorReasoning(BaseModel):
     reason: str
     selected:  Literal[1, 2, 3, 4, 5]
 
+class TranscriptionCreater(BaseModel):
+    transcription: str
+
+class TranscriptionCreaterReasoning(BaseModel):
+    reason: str
+    transcription: str
+
 HOSTNAME = os.environ["HOSTNAME"]
 PORT = os.environ["PORT"]
 headers = {"Content-Type": "application/json"}
