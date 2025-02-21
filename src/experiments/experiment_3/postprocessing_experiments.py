@@ -31,15 +31,11 @@ def post_process(file_name, empty_instances = []):
     wer_acutal =[]
     cer_actual = []
     first_started = False
-    length = 1
+    length = 0
     difference_beams = []
     differnece_beams_cer =[]
     count_files = 0
     for data in wer_data:
-        if count_files > 7:
-            break
-        if(data["sentence_order"]==0):
-            count_files +=1
         if(data["audio_file"] in empty_instances):
             continue
         cer_best_beam.append(min(data["cer"]))
@@ -82,17 +78,17 @@ empty_instances = find_empty_instances("beam_npsc_experiment_3_llm.json")
 post_process("wer_npsc_experiment_3_llm.json", empty_instances)
 
 print("\nEmissions")
-runEmissionPostProcessing("experiment_3")
+#runEmissionPostProcessing("experiment_3")
 
 print("\n\n\nBASELINE")
 
 post_process("wer_npsc_experiment_3.json")
 
-print("\nnWithout empty instances")
-empty_instances = find_empty_instances("beam_npsc_experiment_3_llm.json")
-post_process("wer_npsc_experiment_3.json", empty_instances)
+# print("\nnWithout empty instances")
+# empty_instances = find_empty_instances("beam_npsc_experiment_3_llm.json")
+# post_process("wer_npsc_experiment_3.json", empty_instances)
 
 print("\nEmissions")
-runEmissionPostProcessing("experiment_3_baseline")
+#runEmissionPostProcessing("experiment_3_baseline")
 
 
