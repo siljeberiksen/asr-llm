@@ -122,6 +122,7 @@ def pred(
         print(json_output)
 
         selected_index = parsed_response.get("selected") 
+        reason = parsed_response.get("reason") 
         print(selected_index)
 
         if selected_index is not None and 0 < selected_index <= len(choices):
@@ -136,7 +137,7 @@ def pred(
     print(selected_hypothesis)
     # if evaluate:
     #     return parse_llm_output(response)
-    return selected_index, selected_hypothesis
+    return selected_index, selected_hypothesis,reason 
 
 def parse_llm_output(response: str):
     if not response:
