@@ -135,11 +135,11 @@ def pred(
         selected_index = 0
         reason = ""
         transcription = ""
-
-    print(transcription)
+    parsed_transcription = parse_llm_output(transcription)
+    print(parsed_transcription)
     # if evaluate:
     #     return parse_llm_output(response)
-    return transcription 
+    return parsed_transcription
 
 def parse_llm_output(response: str):
     if not response:
@@ -169,28 +169,6 @@ def parse_llm_output(response: str):
 
 
     # Remove any HTML code still left
-    CLEANR = re.compile('<.*?>')
-    if match:
-        extracted_text = match.group(1)
-        print("extracted", extracted_text)
-        cleantext = re.sub(CLEANR, '', extracted_text)
-        print("cleannn", cleantext.strip())
-        cleantext = re.sub(r'^.*?:', '', cleantext)
-        if('<option1>' in cleantext):
-            raise Exception("Parsing error")
-        if ('<option2>' in cleantext):
-            raise Exception("Parsing error")
-        if('<option3>' in cleantext):
-            raise Exception("Parsing error")
-        if('<option4>' in cleantext):
-            raise Exception("Parsing error")
-        if('<option5>' in cleantext):
-            raise Exception("Parsing error")
-        if('print(' in cleantext):
-            raise Exception("Parsing error")
-        if(not cleantext):
-             raise Exception("Empty string")
-        return cleantext.strip()
     return response.strip()
 
 
