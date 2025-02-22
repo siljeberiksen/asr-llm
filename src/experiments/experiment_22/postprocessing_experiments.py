@@ -67,12 +67,12 @@ def post_process(file_name, empty_instances = []):
     print("average wer", wer_sum/length)
     print("average cer", cer_sum/length)
 
-post_process("wer_npsc_experiment_18_llm.json")
+post_process("wer_npsc_experiment_22_llm.json")
 
 print("\n\n\nWithout empty instances")
-empty_instances = find_empty_instances("beam_npsc_experiment_18_llm.json")
+empty_instances = find_empty_instances("beam_npsc_experiment_22_llm.json")
 #post_process("wer_npsc_experiment_3.json", empty_instances)
-post_process("wer_npsc_experiment_18_llm.json", empty_instances)
+post_process("wer_npsc_experiment_22_llm.json", empty_instances)
 
 print("\nEmissions")
-runEmissionPostProcessing("experiment_18", "emissions_18_20.csv")
+runEmissionPostProcessing("experiment_22", "emissions_22.csv")
