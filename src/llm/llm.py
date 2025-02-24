@@ -287,12 +287,13 @@ def choose_best_sentence(context, choices, port=8081):
 
     The ASR hypotheses are as follows:
     {hypotheses}
+    ___
 
     Output the best transcription as a plain string, making minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
     """
 
     history_str = "\n\n".join(context)
-    hypo = [f"<option{i+1}> {h.strip()} </option{i+1}>" for i, h in enumerate(choices)]
+    hypo = [f"Option {i+1} {h.strip()}" for i, h in enumerate(choices)]
     hypo_str = "\n".join(hypo)
 
 ##TODO test with history_str instead
