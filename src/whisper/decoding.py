@@ -773,6 +773,7 @@ class DecodingTask:
 
         if(integrate_llm):
             text_llm = choose_best_sentence(context, beam_options[0],port)
+            print("text_llm", text_llm)
             texts= [text_llm]
         
             if(len(beam_options[0])!=1):
