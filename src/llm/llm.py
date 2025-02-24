@@ -193,6 +193,7 @@ def parse_llm_output(response: str):
              raise Exception("Empty string")
         return cleantext.strip()
     else:
+        print("response", response)
         cleantext = re.sub(CLEANR, '', response)
         CLEANR_2 = re.compile(r'<[^>]+>')  
         cleantext = re.sub(CLEANR_2, "", cleantext)
