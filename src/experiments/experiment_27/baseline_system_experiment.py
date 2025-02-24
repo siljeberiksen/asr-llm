@@ -37,8 +37,8 @@ def run_experiment(result_file, beam_file, wer_file, whisper_model, tracker):
             result = whisper_model.transcribe(f"../NPSC/NPSC_1/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False, experiment_number=27)
         elif (os.path.isfile(os.path.join("../NPSC/NPSC_2", true_transcription_data['audio']))):
             result = whisper_model.transcribe(f"../NPSC/NPSC_2/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False, experiment_number=27)
-        elif (os.path.isfile(os.path.join("../NPSC/NPSC_27", true_transcription_data['audio']))):
-            result = whisper_model.transcribe(f"../NPSC/NPSC_27/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False, experiment_number=27)
+        elif (os.path.isfile(os.path.join("../NPSC/NPSC_3", true_transcription_data['audio']))):
+            result = whisper_model.transcribe(f"../NPSC/NPSC_3/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False, experiment_number=27)
         elif  (os.path.isfile(os.path.join("../NPSC/NPSC_4", true_transcription_data['audio']))):
             result = whisper_model.transcribe(f"../NPSC/NPSC_4/{true_transcription_data['audio']}", beam_size=5, without_timestamps=True, context=context, integrate_llm=False, experiment_number=27)
         else:
