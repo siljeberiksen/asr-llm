@@ -203,7 +203,7 @@ def parse_llm_output(response: str):
         cleantext = re.sub(r'^.*?:', '', cleantext)
         print(cleantext)
         
-    return cleantext.strip
+    return cleantext.strip()
 
 
 def read_file(file_path):
