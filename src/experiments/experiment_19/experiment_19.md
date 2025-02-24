@@ -24,13 +24,14 @@ Select the most accurate ASR transcription and provide the best possible correct
 ## History: [conversational history]
 
 The ASR hypotheses are as follows:
-<option1> [hypothesis 1] </option1>
-<option2> [hypothesis 2] </option2>
-<option3> [hypothesis 3] </option3>
-<option4> [hypothesis 4] </option4>
-<option5> [hypothesis 5] </option5>
+Option 1 [hypothesis 1]
+Option 2 [hypothesis 2]
+Option 3 [hypothesis 3]
+Option 4 [hypothesis 4]
+Option 5 [hypothesis 5]
 
-Output the best transcription as a string, making minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
+Output the best transcription as a plain string, making minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
+Always answer in Norwegian.
 
 ## Resulting files
 

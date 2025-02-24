@@ -290,7 +290,7 @@ def choose_best_sentence(context, choices, port=8081):
     ___
 
     Output the best transcription as a plain string, making minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
-    Alwayas answer in Norwegian.
+    Always answer in Norwegian.
     """
 
     history_str = "\n\n".join(context)
