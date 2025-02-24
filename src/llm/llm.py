@@ -174,7 +174,8 @@ def parse_llm_output(response: str):
         extracted_text = match.group(1)
         print("extracted", extracted_text)
         cleantext = re.sub(CLEANR, '', extracted_text)
-        print("cleannn", cleantext.strip())
+        CLEANR_2 = re.compile(r'<[^>]+>')  
+        cleantext = re.sub(CLEANR_2, "", cleantext)
         cleantext = re.sub(r'^.*?:', '', cleantext)
         if('<option1>' in cleantext):
             raise Exception("Parsing error")
@@ -193,7 +194,10 @@ def parse_llm_output(response: str):
         return cleantext.strip()
     else:
         cleantext = re.sub(CLEANR, '', response)
+        CLEANR_2 = re.compile(r'<[^>]+>')  
+        cleantext = re.sub(CLEANR_2, "", cleantext)
         cleantext = re.sub(r'^.*?:', '', cleantext)
+        print(cleantext)
         
     return cleantext.strip
 
