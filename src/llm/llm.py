@@ -197,7 +197,7 @@ def parse_llm_output(response: str):
     else:
         print("response", response)
         cleantext = re.sub(r'<s>[^<]*</s>', '', response)
-        cleantext = re.sub(CLEANR, '', response)
+        cleantext = re.sub(CLEANR, '', cleantext)
         # CLEANR_2 = re.compile(r'<[^>]+>')  
         # cleantext = re.sub(CLEANR_2, "", cleantext)
         cleantext = re.sub(r'^.*?:', '', cleantext)
