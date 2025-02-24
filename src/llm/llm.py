@@ -121,6 +121,7 @@ def pred(
         json_output = json.dumps(parsed_response, indent=4)
         print(json_output)
         transcription = parsed_response.get("transcription")
+        parse_llm_output(transcription)
 
         # selected_index = parsed_response.get("selected") 
         # reason = parsed_response.get("reason") 
@@ -174,8 +175,8 @@ def parse_llm_output(response: str):
         extracted_text = match.group(1)
         print("extracted", extracted_text)
         cleantext = re.sub(CLEANR, '', extracted_text)
-        CLEANR_2 = re.compile(r'<[^>]+>')  
-        cleantext = re.sub(CLEANR_2, "", cleantext)
+        # CLEANR_2 = re.compile(r'<[^>]+>')  
+        # cleantext = re.sub(CLEANR_2, "", cleantext)
         cleantext = re.sub(r'^.*?:', '', cleantext)
         if('<option1>' in cleantext):
             raise Exception("Parsing error")
@@ -195,8 +196,8 @@ def parse_llm_output(response: str):
     else:
         print("response", response)
         cleantext = re.sub(CLEANR, '', response)
-        CLEANR_2 = re.compile(r'<[^>]+>')  
-        cleantext = re.sub(CLEANR_2, "", cleantext)
+        # CLEANR_2 = re.compile(r'<[^>]+>')  
+        # cleantext = re.sub(CLEANR_2, "", cleantext)
         cleantext = re.sub(r'^.*?:', '', cleantext)
         print(cleantext)
         
