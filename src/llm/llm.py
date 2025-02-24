@@ -287,7 +287,7 @@ def choose_best_sentence(context, choices, port=8081):
     The ASR hypotheses are as follows:
     {hypotheses}
 
-    Output the best transcription as a string, making minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
+    Output the best transcription as a plain string, making minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
     """
 
     history_str = "\n\n".join(context)
