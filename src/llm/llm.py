@@ -121,7 +121,7 @@ def pred(
         json_output = json.dumps(parsed_response, indent=4)
         print(json_output)
         transcription = parsed_response.get("transcription")
-        parse_llm_output(transcription)
+        transcription = parse_llm_output(transcription)
 
         # selected_index = parsed_response.get("selected") 
         # reason = parsed_response.get("reason") 
@@ -145,6 +145,7 @@ def pred(
 def parse_llm_output(response: str):
     if not response:
         return response
+    print("\n\n -------------- PARSING -----------------")
     # spacing!
     response = response.replace("\n", " ")
     response = response.replace("\t", " ")
