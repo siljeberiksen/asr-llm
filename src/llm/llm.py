@@ -115,6 +115,7 @@ def pred(
             format=TranscriptionCreater.model_json_schema(),
         )
         response = response.message.content
+        print("response", response)
 
         parsed_response = json.loads(response)  
         # Convert to JSON format
