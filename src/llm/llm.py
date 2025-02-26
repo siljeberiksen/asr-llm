@@ -80,7 +80,7 @@ def pred(
     max_tokens=1000,
     use_schema: str = "default",
     temp=0.1,  # temperature. 0: deterministic, 1+: random
-    num_ctx: int = 48000,
+    num_ctx: int = 60000,
     # min_p=0.1,  # minimum probability
     # max_p=0.9,  # maximum probability
     # top_p=0.9,  # nucleus sampling
