@@ -41,9 +41,10 @@ except Exception as e:
     print("Caught an exception!")
     print(e)
     print(traceback.format_exc())
-        
-        # Optional: Add a delay before restarting
+    count += 1
+    save_count(count)        
     tracker.stop()
+    print("count", count)
     time.sleep(2)
         
         # Restart the script
