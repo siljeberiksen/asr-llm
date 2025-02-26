@@ -114,6 +114,8 @@ def pred(
             stream=False,
             format=TranscriptionCreater.model_json_schema(),
         )
+        print("response 1", response)
+
         response = response.message.content
         print("response", response)
 
