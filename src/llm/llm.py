@@ -77,7 +77,7 @@ def generate(
 
 def pred(
     instruction,
-    max_tokens=1000,
+    max_tokens=2000,
     use_schema: str = "default",
     temp=0.1,  # temperature. 0: deterministic, 1+: random
     num_ctx: int = 60000,
