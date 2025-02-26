@@ -77,10 +77,10 @@ def generate(
 
 def pred(
     instruction,
-    max_tokens=2000,
+    max_tokens=1000,
     use_schema: str = "default",
     temp=0.1,  # temperature. 0: deterministic, 1+: random
-    num_ctx: int = 60000,
+    num_ctx: int =48000,
     # min_p=0.1,  # minimum probability
     # max_p=0.9,  # maximum probability
     # top_p=0.9,  # nucleus sampling
@@ -118,13 +118,18 @@ def pred(
 
         response = response.message.content
         print("response", response)
-
-        parsed_response = json.loads(response)  
-        # Convert to JSON format
-        json_output = json.dumps(parsed_response, indent=4)
-        print(json_output)
-        transcription = parsed_response.get("transcription")
-        transcription = parse_llm_output(transcription)
+        try:
+            parsed_response = json.loads(response)  
+            json_output = json.dumps(parsed_response, indent=4)
+            print(json_output)
+            transcription = parsed_response.get("transcription")
+            transcription = parse_llm_output(transcription)
+            # Convert to JSON format
+        except:
+            if(len(set(choices))) == 1:
+                transcription = choices[0].replace("<|notimestamps|>", "")
+            else:
+                raise("Could not parse json output")
 
         # selected_index = parsed_response.get("selected") 
         # reason = parsed_response.get("reason") 
