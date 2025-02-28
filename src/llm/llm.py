@@ -172,6 +172,9 @@ def parse_llm_output(response: str):
     response = response.replace("Selected Transcription:", "")
     response = response.replace("Selected Transcription", "")
 
+    # Removing all invisible code
+    response = re.sub(r"[\u200B-\u200D]", "", response)
+
     response = response.lower()
 
     # Regular expression to capture text between <optionnumber> tags
