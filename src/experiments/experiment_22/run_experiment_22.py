@@ -47,6 +47,10 @@ except Exception as e:
         # Optional: Add a delay before restarting
     tracker.stop()
     time.sleep(2)
+    count += 1
+    save_count(count)  
+    print("count", count)      
+    tracker.stop()
         
         # Restart the script
     print("Restarting the script...")
