@@ -112,7 +112,7 @@ def pred(
                 "repeat_penalty": 1.3,  # remain default for json outputs, from experience.
             },
             stream=False,
-            format=TranscriptionCreater.model_json_schema(),
+            format=TranscriptionCreaterReasoning.model_json_schema(),
         )
         print("response 1", response)
 
@@ -122,6 +122,7 @@ def pred(
             parsed_response = json.loads(response)  
             json_output = json.dumps(parsed_response, indent=4)
             print(json_output)
+            reason = parsed_response.get("reason")
             transcription = parsed_response.get("transcription")
             transcription = parse_llm_output(transcription)
             # Convert to JSON format
@@ -148,7 +149,7 @@ def pred(
     print(transcription)
     # if evaluate:
     #     return parse_llm_output(response)
-    return transcription 
+    return transcription, reason
 
 def parse_llm_output(response: str):
     if not response:
@@ -300,7 +301,7 @@ def choose_best_sentence(context, choices, port=8081):
     {hypotheses}
     ___
 
-    Output the best transcription as a plain string, making minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
+    Reason concisely about the correct ASR transcription using past conversational history, and output the best transcription as a plain string. Make minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
     Always answer in Norwegian.
     """
 
