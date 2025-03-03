@@ -41,6 +41,11 @@ except Exception as e:
     print("Caught an exception!")
     print(e)
     print(traceback.format_exc())
+    
+    count += 1
+    save_count(count)        
+    tracker.stop()
+    print("count", count)
         
         # Optional: Add a delay before restarting
     tracker.stop()
