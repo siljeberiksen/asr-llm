@@ -58,7 +58,7 @@ def understanding_experiment(number):
     for wer_data in wer_data_points:
         beam_wer = wer_data["wer"]
         max_wer = max(beam_wer)
-        if(max_wer >= wer_data["wer_result"]):
+        if(max_wer >= wer_data["wer_result"] and max_wer-min(beam_wer)!=0):
             files.append(wer_data["audio_file"])
         else:
             files_not_okey.append(wer_data["audio_file"])
@@ -82,7 +82,7 @@ def understanding_experiment(number):
         file.write(json.dumps(data_points_to_add, indent=4))
     post_process(f'../result/wer_npsc_experiment_{number}_llm.json', files_not_okey)
     print("Basline")
-    post_process(f'../result/wer_npsc_experiment_3.json', files_not_okey)
+    post_process(f'../result/wer_npsc_experiment_27.json', files_not_okey)
 
 
-understanding_experiment(5)
+understanding_experiment(24)
