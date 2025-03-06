@@ -301,7 +301,14 @@ def choose_best_sentence(context, choices, port=8081):
     {hypotheses}
     ___
 
-    Reason concisely about the correct ASR transcription using past conversational history, and output the best transcription as a plain string. Make minimal corrections if necessary for accuracy and fluency, ensuring it follows the larger conversational history.
+    Follow these steps to determine the correct transcription:
+    - Analyze the hypotheses and conversational history to determine the most contextually and grammatically accurate transcription.  
+    - Make only minimal corrections when necessary to ensure accuracy and fluency.  
+    - Avoid repetition of previous statements or getting stuck on the same sentence structure.
+    - Do not use emojis in your response.
+
+    Output a concise reasoning for the best ASR transcription following the steps outlined above, and the final transcription as plaintext. 
+
     Always answer in Norwegian.
     """
 
