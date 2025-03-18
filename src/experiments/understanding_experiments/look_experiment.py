@@ -1,5 +1,7 @@
 import json
 import statistics
+
+from visualization.creating_distribution_of_wer import creating_distribution
 def post_process(file_name, empty_instances = []):
     with open(f'../result/{file_name}', 'r') as file:
         wer_data = json.load(file)
@@ -55,16 +57,20 @@ def understanding_experiment(number):
         wer_data_points = json.load(file)
     files = []
     files_not_okey = []
+    wer_list = []
     for wer_data in wer_data_points:
         beam_wer = wer_data["wer"]
         max_wer = max(beam_wer)
         if(max_wer >= wer_data["wer_result"] and max_wer-min(beam_wer)!=0):
             files.append(wer_data["audio_file"])
+            wer_list.append(wer_data["wer_result"]*100)
         else:
             files_not_okey.append(wer_data["audio_file"])
     print("Results better", len(files_not_okey))
     print("Results total", len(wer_data_points))
     data_points_to_add =[]
+
+    creating_distribution(wer_list)
 
     with open(f'../result/beam_npsc_experiment_{number}_llm.json', 'r') as file:
         beam_data_points = json.load(file)
