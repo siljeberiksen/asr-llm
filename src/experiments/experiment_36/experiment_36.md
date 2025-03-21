@@ -15,8 +15,6 @@ Utilzing NPSC 3
 
 ## Prompt
 
-## Prompt
-
 ### Summary
 
 You are an summary creator.

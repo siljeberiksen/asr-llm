@@ -1,4 +1,4 @@
-# Experiment 35
+# Experiment 38
 
 ## Model used
 
@@ -55,13 +55,13 @@ Always answer in Norwegian.
 
 ## Resulting files
 
-beam_nb_samtale_experiment_35_llm.json
+beam_nb_samtale_experiment_38_llm.json
 beam_nb_samtale_experiment_3.json
 
-nb_samtale_experiment_35_llm.json
+nb_samtale_experiment_38_llm.json
 nb_samtale_experiment_3.json
 
-wer_nb_samtale_experiment_35_llm.json
+wer_nb_samtale_experiment_38_llm.json
 wer_nb_samtale_experiment_3.json
 
 (There were some that was said to be experiment_3, but is actually number 5)
