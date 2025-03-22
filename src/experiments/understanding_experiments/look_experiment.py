@@ -61,7 +61,7 @@ def understanding_experiment(number):
     for wer_data in wer_data_points:
         beam_wer = wer_data["wer"]
         max_wer = max(beam_wer)
-        if(max_wer >= wer_data["wer_result"] and max_wer-min(beam_wer)!=0):
+        if(max_wer >= wer_data["wer_result"]):
             files.append(wer_data["audio_file"])
             wer_list.append(wer_data["wer_result"]*100)
         else:
@@ -70,7 +70,7 @@ def understanding_experiment(number):
     print("Results total", len(wer_data_points))
     data_points_to_add =[]
 
-    creating_distribution(wer_list)
+    #creating_distribution(wer_list)
 
     with open(f'../result/beam_npsc_experiment_{number}_llm.json', 'r') as file:
         beam_data_points = json.load(file)
@@ -91,4 +91,4 @@ def understanding_experiment(number):
     post_process(f'../result/wer_npsc_experiment_34.json', files_not_okey)
 
 
-understanding_experiment(33)
+understanding_experiment(24)

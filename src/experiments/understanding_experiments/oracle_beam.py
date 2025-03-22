@@ -21,8 +21,8 @@ with open(f'../result/beam_npsc_experiment_18_llm.json', 'r') as file:
 
 for i, wer_point in enumerate(wer_data_points):
     best_option = min(wer_point["wer"])
-    #if(best_option == max(wer_point["wer"])):
-    #    continue
+    if(best_option == max(wer_point["wer"])):
+       continue
     best_wer.append(best_option)
     actual_chosen = wer_point["wer_result"]
     actual_wer.append(actual_chosen)
@@ -47,7 +47,7 @@ number_chosen_perfect = np.count_nonzero(difference_numpy == 0)
 print("number chosen", number_chosen_perfect)
 print(number_chosen_perfect/len(difference))
 
-print(mean(actual_wer)-mean(best_wer))
+print((mean(actual_wer)-mean(best_wer))/mean(actual_wer))
 print(max(sentence_lengths))
 
 
