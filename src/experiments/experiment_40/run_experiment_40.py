@@ -41,7 +41,7 @@ except Exception as e:
     print("Caught an exception!")
     print(e)
     print(traceback.format_exc())
-
+    count = load_count()
     count += 1
     save_count(count)        
     tracker.stop()
