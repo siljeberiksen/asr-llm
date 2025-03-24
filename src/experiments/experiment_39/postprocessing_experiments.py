@@ -75,4 +75,4 @@ empty_instances = find_empty_instances("beam_npsc_experiment_39_llm.json")
 post_process("wer_npsc_experiment_39_llm.json", empty_instances)
 
 print("\nEmissions")
-runEmissionPostProcessing("experiment_39", "emissions_39_31.csv")
+runEmissionPostProcessing("experiment_39", "emissions_39.csv")

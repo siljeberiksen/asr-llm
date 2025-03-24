@@ -88,7 +88,7 @@ def understanding_experiment(number):
         file.write(json.dumps(data_points_to_add, indent=4))
     post_process(f'../result/wer_npsc_experiment_{number}_llm.json', files_not_okey)
     print("Basline")
-    post_process(f'../result/wer_npsc_experiment_34.json', files_not_okey)
+    post_process(f'../result/wer_npsc_experiment_27.json', files_not_okey)
 
 
-understanding_experiment(24)
+understanding_experiment(39)
