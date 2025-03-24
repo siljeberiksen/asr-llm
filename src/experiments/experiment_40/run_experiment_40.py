@@ -23,7 +23,7 @@ def save_count(count):
         f.write(str(count))
 
 count = load_count()
-
+print("count outside", count)
 try:
         from asr.asr_model_initialization import initialize_Whisper_model
         from experiments.experiment_40.proposed_system_experiment import run_experiment
