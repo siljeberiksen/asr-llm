@@ -222,7 +222,8 @@ def parse_llm_output(response: str):
     response = response.replace("Selected Transcription", "")
 
     # Removing all invisible code
-    response = re.sub(r"[\u200B-\u200D]", "", response)
+    response = re.sub(r"[\u200B-\udfff]", "", response)
+    response =  response.encode('utf-16', 'surrogatepass').decode('utf-16', 'ignore')
     
 
     response = response.lower()
