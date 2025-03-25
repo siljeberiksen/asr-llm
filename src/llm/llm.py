@@ -223,6 +223,7 @@ def parse_llm_output(response: str):
 
     # Removing all invisible code
     response = re.sub(r"[\u200B-\u200D]", "", response)
+    
 
     response = response.lower()
 
@@ -255,7 +256,6 @@ def parse_llm_output(response: str):
              raise Exception("Empty string")
         return cleantext.strip()
     else:
-        print("response", response)
         cleantext = re.sub(r'<s>[^<]*</s>', '', response)
         cleantext = re.sub(CLEANR, '', cleantext)
         # CLEANR_2 = re.compile(r'<[^>]+>')  
