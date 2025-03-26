@@ -177,6 +177,7 @@ def pred(
         except:
             if(len(set(choices))) == 1:
                 transcription = choices[0].replace("<|notimestamps|>", "")
+                reason=""
             else:
                 raise("Could not parse json output")
 
