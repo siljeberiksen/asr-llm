@@ -113,7 +113,7 @@ def predSummary(
                 "repeat_penalty": 1.3,  # remain default for json outputs, from experience.
             },
             stream=False,
-            format=SummaryCreator.model_json_schema(),
+            format=SummaryReasonCreator.model_json_schema(),
         )
 
     response = response.message.content
@@ -123,6 +123,8 @@ def predSummary(
         json_output = json.dumps(parsed_response, indent=4)
         print(json_output)
         summary = parsed_response.get("summary")
+        reason = parsed_response.get("reason")
+        print("\nReason:", reason)
             # Convert to JSON format
     except:
         raise("Could not parse json output")
