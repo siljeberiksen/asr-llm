@@ -32,6 +32,10 @@ class TranscriptionCreaterReasoning(BaseModel):
 class SummaryCreator(BaseModel):
     summary: str
 
+class SummaryReasonCreator(BaseModel):
+    reason: str
+    summary: str
+
 HOSTNAME = os.environ["HOSTNAME"]
 PORT = os.environ["PORT"]
 headers = {"Content-Type": "application/json"}
@@ -319,7 +323,7 @@ def creatingSummary(context,port=8081):
     {history}
     ___
 
-    Output the summary as plain text.
+    Reason concisely about the best summary of the past conversational history, and output the summary as a plain string.
     
     Always answer in Norwegian
     """
