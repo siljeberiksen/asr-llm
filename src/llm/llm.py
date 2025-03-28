@@ -123,6 +123,7 @@ def predSummary(
         json_output = json.dumps(parsed_response, indent=4)
         print(json_output)
         summary = parsed_response.get("summary")
+        summary = parse_llm_output(summary)
         reason = parsed_response.get("reason")
         print("\nReason:", reason)
             # Convert to JSON format
