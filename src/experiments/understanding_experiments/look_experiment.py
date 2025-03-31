@@ -91,4 +91,4 @@ def understanding_experiment(number):
     post_process(f'../result/wer_npsc_experiment_27.json', files_not_okey)
 
 
-understanding_experiment(35)
+understanding_experiment(42)
