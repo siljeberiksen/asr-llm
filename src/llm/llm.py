@@ -360,7 +360,7 @@ def choose_best_sentence(context, choices, port=8081):
 
     
 
-    Reason concisely about the correct ASR transcription using past conversational history, and output the integer index N (between 1 and 3) of the most suitable ASR transcription from the <option N> hypothesis.
+    Reason concisely about the correct ASR transcription using past conversational history, and output the integer index N of the most suitable ASR transcription from the <option N> hypothesis.
     """
 
     history_str = "\n\n".join(context)
