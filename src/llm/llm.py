@@ -180,6 +180,7 @@ def pred(
             reason = parsed_response.get("reason")
             #transcription = parsed_response.get("transcription")
             #transcription = parse_llm_output(transcription)
+            print("index", index_chosen)
             index_chosen = parsed_response.get("selected")
             transcription = choices[index_chosen-1]
             # Convert to JSON format
