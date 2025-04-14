@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "sentence_order": 0,
+        "audio_file": "20170207/audio/20170207-095506_302650_306000.wav",
+        "beams": [
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt",
+            "stortingets m\u00f8te er lovlig satt"
+        ],
+        "true_transcription": "Stortingets m\u00f8te er lovlig satt",
+        "transcribed": "stortingets m\u00f8te er lovlig satt",
+        "context": []
+    }
+]
