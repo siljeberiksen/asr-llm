@@ -4,10 +4,10 @@ import sys
 import traceback
 from codecarbon import EmissionsTracker
 
-tracker = EmissionsTracker(project_name="experiment_52")
+tracker = EmissionsTracker(project_name="experiment_53")
 
 
-COUNT_FILE = "experiments.experiment_52.count.txt"
+COUNT_FILE = "experiments.experiment_53.count.txt"
 
 def load_count():
     if os.path.exists(COUNT_FILE):
@@ -26,14 +26,14 @@ count = load_count()
 
 try:
         from asr.asr_model_initialization import initialize_Whisper_model
-        from experiments.experiment_52.proposed_system_experiment import run_experiment
+        from experiments.experiment_53.proposed_system_experiment import run_experiment
 
         # Your main script logic here
         print("Running the script...")
         
         # Run experiment
         whisper_model = initialize_Whisper_model()   
-        run_experiment('../result/npsc_samtale_experiment_52_llm.json', '../result/beam_npsc_experiment_52_llm.json',"../result/wer_npsc_experiment_52_llm.json", whisper_model, 10, tracker, count)
+        run_experiment('../result/npsc_samtale_experiment_53_llm.json', '../result/beam_npsc_experiment_53_llm.json',"../result/wer_npsc_experiment_53_llm.json", whisper_model, 50, tracker, count)
         # If no exception occurs, break the loop and finish
         print("Script completed successfully.")
 
@@ -53,7 +53,7 @@ except Exception as e:
         
         # Restart the script
     print("Restarting the script...")
-    os.execv(sys.executable, [sys.executable, "-m", "experiments.experiment_52.run_experiment_52"])
+    os.execv(sys.executable, [sys.executable, "-m", "experiments.experiment_53.run_experiment_53"])
 except BaseException as e:
     print("Caught a BaseException!")
     print(e)
