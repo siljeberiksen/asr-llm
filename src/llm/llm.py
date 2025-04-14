@@ -364,7 +364,7 @@ def choose_best_sentence(context, choices, port=8081):
     """
 
     history_str = "\n\n".join(context)
-    hypo = [f"<option {i+1}> {h.strip()}" for i, h in enumerate(choices)]
+    hypo = [f"<option {i+1}> {h.strip()} </option {i+1}" for i, h in enumerate(choices)]
     hypo_str = "\n".join(hypo)
 
 ##TODO test with history_str instead
