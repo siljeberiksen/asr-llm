@@ -20,7 +20,7 @@ class HypothesisSelector(BaseModel):
 
 class HypothesisSelectorReasoning(BaseModel):
     reason: str
-    selected:  Literal[1, 2, 3, 4, 5]
+    selected:  Literal[1, 2, 3]
 
 class TranscriptionCreater(BaseModel):
     transcription: str
