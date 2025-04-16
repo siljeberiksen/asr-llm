@@ -49,7 +49,9 @@ def post_process(file_name, empty_instances = []):
     print("median_cer", median_value)
 
     print("average wer", wer_sum/length)
+    print("Standard deviation wer", statistics.stdev(wer_acutal))
     print("average cer", cer_sum/length)
+    print("Standard devision cer", statistics.stdev(cer_actual))
 
 
 def understanding_experiment(number):
@@ -91,4 +93,4 @@ def understanding_experiment(number):
     post_process(f'../result/wer_npsc_experiment_27.json', files_not_okey)
 
 
-understanding_experiment(42)
+understanding_experiment(5)

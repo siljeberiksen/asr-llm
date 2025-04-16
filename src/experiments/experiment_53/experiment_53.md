@@ -53,4 +53,4 @@ wer_nb_samtale_experiment_3.json
 
 class HypothesisSelectorReasoning(BaseModel):
 reason: str
-selected: Literal[1, 2, 3, 4, 5]
+selected: Literal[1, 2, 3]
