@@ -29,7 +29,7 @@ for i, wer_point in enumerate(wer_data_points):
     difference.append(actual_chosen-best_option)
 
     if(beam_data_points[i]["audio_file"] == wer_point["audio_file"]):
-        sentence_lengths.append(len(beam_data_points[i]["true_transcription"]))
+        sentence_lengths.append(len((beam_data_points[i]["true_transcription"]).split()))
 
     else:
         sentence_lengths.append(None)
@@ -61,7 +61,7 @@ plt.show()
 
 
 
-bins = list(range(0, 550, 50)) 
+bins = list(range(0,100, 10)) 
 bin_labels = [f"{bins[i]}-{bins[i+1]-1}" for i in range(len(bins)-1)]
 
 # Assign each sentence to a bin

@@ -29,12 +29,35 @@ def get_wer_lists(file_name, dialect_dict):
         audio_file = data.get("audio_file")
         wer = data.get("wer_result")
         wer_baseline = wer_data_baseline[idx].get("wer_result")
+        wer_beams = data.get("wer")
         for dialect, audio_list in dialect_dict.items():
             if audio_file in audio_list:
-                if(wer_baseline != 0):
+                if(wer_baseline != 0 and wer <= max(wer_beams) and max(wer_beams) != min(wer_beams)):
                     werr_by_dialect[dialect].append(((wer_baseline-wer)/wer_baseline)*100)
                 wer_by_dialect[dialect].append(wer)
     return wer_by_dialect, werr_by_dialect
+
+def handle_processing_baseline(experiment, dict_use, filtering_element_str):
+    wer_by_element_baseline, werr_by_element_baseline = get_wer_lists(experiment, dict_use)
+    
+    combined_data_wer = []
+    for element_value, werr in wer_by_element_baseline.items():
+        combined_data_wer.append({
+            filtering_element_str: element_value,
+            "wer": werr
+        })
+
+    df_wer = pd.DataFrame(combined_data_wer)
+    print(df_wer)
+    # Plot
+    plt.figure(figsize=(10, 6))
+    ax = sns.barplot(
+        data=df_wer,
+        x=filtering_element_str,
+        y='wer',
+        estimator='mean',
+        ci='sd'  # Standard deviation as error bars
+    )
 
 def handle_processing(experiment_1, experiment_2, expeirment_3, dict_use, filtering_element_str, x_label):
 
@@ -54,18 +77,18 @@ def handle_processing(experiment_1, experiment_2, expeirment_3, dict_use, filter
                 combined_data_werr.append({
                     filtering_element_str: filtering_element,
                     "werr": werr,
-                    "history": history
+                    "History length": history
                 })
     
     # Create DataFrame
     df_werr = pd.DataFrame(combined_data_werr)
     plt.figure(figsize=(10, 6))
-    df_werr["history"] = df_werr["history"].astype(str)
+    df_werr["History length"] = df_werr["History length"].astype(str)
     ax = sns.barplot(
         data=df_werr,
         x=filtering_element_str,
         y='werr',
-        hue='history',
+        hue='History length',
         estimator='mean',
         ci='sd'  # Standard deviation as error bars
     )
@@ -78,7 +101,25 @@ def handle_processing(experiment_1, experiment_2, expeirment_3, dict_use, filter
     plt.tight_layout()
     plt.show()
 
-handle_processing("wer_npsc_experiment_12_llm.json","wer_npsc_experiment_13_llm.json","wer_npsc_experiment_14_llm.json", dialect_files, "dialect", "Speaker Dialect")
+# handle_processing("wer_npsc_experiment_12_llm.json","wer_npsc_experiment_18_llm.json","wer_npsc_experiment_17_llm.json", dialect_files, "dialect", "Speaker Dialect")
+
+# handle_processing("wer_npsc_experiment_12_llm.json","wer_npsc_experiment_18_llm.json","wer_npsc_experiment_17_llm.json", norwegian_written_language_files, "language", "Transcription language")
+
+# handle_processing("wer_npsc_experiment_12_llm.json","wer_npsc_experiment_18_llm.json","wer_npsc_experiment_17_llm.json", gender_filer, "gender", "Speaker gender")
+
+
+# handle_processing("wer_npsc_experiment_14_llm.json","wer_npsc_experiment_20_llm.json","wer_npsc_experiment_21_llm.json", dialect_files, "dialect", "Speaker Dialect")
+
+# handle_processing("wer_npsc_experiment_14_llm.json","wer_npsc_experiment_20_llm.json","wer_npsc_experiment_21_llm.json", norwegian_written_language_files, "language", "Transcription language")
+
+# handle_processing("wer_npsc_experiment_14_llm.json","wer_npsc_experiment_20_llm.json","wer_npsc_experiment_21_llm.json", gender_filer, "gender", "Speaker gender")
+handle_processing_baseline("wer_npsc_experiment_27.json", dialect_files, "dialect", )
+# handle_processing("wer_npsc_experiment_24_llm.json","wer_npsc_experiment_25_llm.json","wer_npsc_experiment_36_llm.json", dialect_files, "dialect", "Speaker Dialect")
+
+# handle_processing("wer_npsc_experiment_24_llm.json","wer_npsc_experiment_25_llm.json","wer_npsc_experiment_26_llm.json", norwegian_written_language_files, "language", "Transcription language")
+
+# handle_processing("wer_npsc_experiment_24_llm.json","wer_npsc_experiment_25_llm.json","wer_npsc_experiment_36_llm.json", gender_filer, "gender", "Speaker gender")
+
 # wer_by_dialect_history_10, werr_by_dialect_history_10 = get_wer_lists("wer_npsc_experiment_12_llm.json", dialect_files)
 # wer_by_dialect_history_50, werr_by_dialect_history_50 = get_wer_lists("wer_npsc_experiment_13_llm.json", dialect_files)
 # wer_by_dialect_history_100, werr_by_dialect_history_100 = get_wer_lists("wer_npsc_experiment_14_llm.json", dialect_files)
@@ -120,7 +161,3 @@ handle_processing("wer_npsc_experiment_12_llm.json","wer_npsc_experiment_13_llm.
 # plt.grid(True, axis='y')
 # plt.tight_layout()
 # plt.show()
-
-handle_processing("wer_npsc_experiment_12_llm.json","wer_npsc_experiment_13_llm.json","wer_npsc_experiment_14_llm.json", norwegian_written_language_files, "language", "Transcription language")
-
-handle_processing("wer_npsc_experiment_12_llm.json","wer_npsc_experiment_13_llm.json","wer_npsc_experiment_14_llm.json", gender_filer, "gender", "Speaker gender")

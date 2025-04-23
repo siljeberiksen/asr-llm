@@ -20,6 +20,7 @@ def creating_distribution(wer_values):
     # Create histogram
     plt.figure(figsize=(8, 5))
     plt.hist(wer_values, bins=bins, edgecolor='black', alpha=0.75)
+    plt.yscale("log")
 
     # Labels and title
     plt.xlabel("WER (%)")
