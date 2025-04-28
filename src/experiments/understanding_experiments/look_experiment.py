@@ -2,6 +2,7 @@ import json
 import statistics
 
 from visualization.creating_distribution_of_wer import creating_distribution
+
 def post_process(file_name, empty_instances = []):
     with open(f'../result/{file_name}', 'r') as file:
         wer_data = json.load(file)
@@ -54,6 +55,7 @@ def post_process(file_name, empty_instances = []):
     print("Standard devision cer", statistics.stdev(cer_actual))
 
 
+
 def understanding_experiment(number):
     with open(f'../result/wer_npsc_experiment_{number}_llm.json', 'r') as file:
         wer_data_points = json.load(file)
@@ -93,4 +95,4 @@ def understanding_experiment(number):
     post_process(f'../result/wer_npsc_experiment_27.json', files_not_okey)
 
 
-understanding_experiment(5)
+understanding_experiment(37)
