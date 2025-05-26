@@ -9,11 +9,15 @@ load_dotenv()
 
 from typing import Optional
 
+# TODO Using ollama, change if something else should be used
 from ollama import ChatResponse, chat
 from pydantic import BaseModel
 from pydantic.types import JsonSchemaValue, Literal
 
 model = "hf.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:Q6_K"
+
+
+# Classes used for Controlled decoding
 
 class HypothesisSelector(BaseModel):
     selected:  Literal[1, 2, 3, 4, 5]
@@ -39,48 +43,9 @@ class SummaryReasonCreator(BaseModel):
 HOSTNAME = os.environ["HOSTNAME"]
 PORT = os.environ["PORT"]
 headers = {"Content-Type": "application/json"}
- 
-def returnLogits():
-    model = Llama(model_path="../../llama.cpp/models/gemma-2-9b-it-Q6_K_L.gguf?download=true", logits_all=True)
-    out = model.create_completion("The capital of France is", max_tokens=1, logprobs=20)
-    print(out)
 
 
-def generate(
-    # system_prompt: str,  # prøv uten først.
-    prompt: str,
-    schema: Optional[JsonSchemaValue] = None,
-    parse: bool = True,
-    num_ctx: int = 48000,
-    num_predict: int = 4000,
-    temperature: float = 0.0,
-) -> str:
-    response: ChatResponse = chat(
-        model=model,
-        messages=[
-            # {"role": "system", "content": system_prompt},
-            prompt,
-        ],
-        options={
-            "num_ctx": num_ctx,
-            "num_predict": num_predict,
-            "top_k": 100,
-            "top_p": 0.8,
-            "temperature": temperature,
-            "seed": 0,  # this is not needed when temp is 0
-            "repeat_penalty": 1.3,  # remain default for json outputs, from experience.
-        },
-        format=schema,
-        stream=False,
-    )
-    res = response.message.content
-    if parse and schema:
-        try:
-            res = eval(res)
-        except Exception:
-            res = None
-    return res
-def predSummary(
+def pred_summary(
     instruction,
     max_tokens=1000,
     use_schema: str = "default",
@@ -95,8 +60,7 @@ def predSummary(
 ):
     if len(instruction) == 0:
         raise ValueError("Instruction cannot be empty")
-    
-    print("instruction", instruction)
+
     response: ChatResponse = chat(
             model=model,
             messages=[
@@ -117,7 +81,6 @@ def predSummary(
         )
 
     response = response.message.content
-    print("response", response)
     try:
         parsed_response = json.loads(response)  
         json_output = json.dumps(parsed_response, indent=4)
@@ -130,6 +93,7 @@ def predSummary(
     except:
         raise("Could not parse json output")
     return summary
+
 def pred(
     instruction,
     max_tokens=1000,
@@ -145,11 +109,11 @@ def pred(
     evaluate: bool = False,  # apply eval
     iteration: int= 0,
     port=8081
+
 ):
     if len(instruction) == 0:
         raise ValueError("Instruction cannot be empty")
     
-    print("instruction", instruction)
     if(len(choices)>1):
         response: ChatResponse = chat(
             model=model,
@@ -169,7 +133,6 @@ def pred(
             stream=False,
             format=HypothesisSelectorReasoning.model_json_schema(),
         )
-        print("response 1", response)
 
         response = response.message.content
         print("response", response)
@@ -177,9 +140,14 @@ def pred(
             parsed_response = json.loads(response)  
             json_output = json.dumps(parsed_response, indent=4)
             print(json_output)
+            #TODO: if reasoning
+
             reason = parsed_response.get("reason")
-            #transcription = parsed_response.get("transcription")
-            #transcription = parse_llm_output(transcription)
+            
+            # TODO: change when used as error correcto
+            # transcription = parsed_response.get("transcription")
+            # transcription = parse_llm_output(transcription)
+
             index_chosen = parsed_response.get("selected")
             print("index", index_chosen)
             transcription = choices[index_chosen-1]
@@ -190,15 +158,6 @@ def pred(
                 reason=""
             else:
                 raise("Could not parse json output")
-
-        # selected_index = parsed_response.get("selected") 
-        # reason = parsed_response.get("reason") 
-        # print(selected_index)
-
-        # if selected_index is not None and 0 < selected_index <= len(choices):
-        #     selected_hypothesis = choices[selected_index - 1].replace("<|notimestamps|>", "")
-        # else:
-        #     raise Exception("Could not parse output")
     else:
         selected_hypothesis=choices[0]
         selected_index = 0
@@ -206,8 +165,7 @@ def pred(
         transcription = ""
 
     print(transcription)
-    # if evaluate:
-    #     return parse_llm_output(response)
+    # TODO remove reason if not included
     return transcription, reason
 
 def parse_llm_output(response: str):
@@ -277,15 +235,6 @@ def parse_llm_output(response: str):
         
     return cleantext.strip()
 
-
-def read_file(file_path):
-    try:
-        with open(file_path, 'r') as file:
-            data = json.load(file)
-    except FileNotFoundError:
-        data = []  # If file doesn't exist, initialize with an empty list
-    return data
-
 def try_streaming_output():
     headers = {"Content-Type": "application/json"}
     url = f"http://{HOSTNAME}:{8082}/completion"
@@ -318,7 +267,7 @@ def model_logits():
     out = model.create_completion("The capital of France is", max_tokens=1, logprobs=20)
     print(out)
 
-def creatingSummary(context,port=8081):
+def creating_summary(context,port=8081):
     prompt_asr = """
     You are a summary creator.
     Create a concise summary of the previous sentences generated by an ASR (Automatic Speech Recognition) system.
@@ -338,12 +287,15 @@ def creatingSummary(context,port=8081):
         history=context,
     )
 
-    return predSummary(prompt, port=port)
+    return pred_summary(prompt, port=port)
 
 
             
 
 def choose_best_sentence(context, choices, port=8081):
+
+    # TODO When summary is created
+    # creating_summary(context)
 
     #___New_prompt 
     prompt_asr = """
@@ -366,82 +318,10 @@ def choose_best_sentence(context, choices, port=8081):
     history_str = "\n\n".join(context)
     hypo = [f"<option {i+1}> {h.strip()} </option {i+1}" for i, h in enumerate(choices)]
     hypo_str = "\n".join(hypo)
-
-##TODO test with history_str instead
     prompt = prompt_asr.format(
         history=context,
         hypotheses=hypo_str,
     )
-    print(prompt)
     return pred(prompt, context=context, choices=choices, evaluate=True, port=port)
 
-
-# context = [
-#             "what causes it that the government party right is not more concerned about these vulnerable children here",
-#             "stensham",
-#             "president jeg vil f\u00f8rst ta avstand fra premisset for de sp\u00f8rsm\u00e5lene",
-#             "vi er sannsynligvis akkurat like opptatt av disse barna og disse m\u00f8drene",
-#             "\"><option1> ```python import re from typing import List, Dict, Tuple def select_best_transcript(hypotheses: List[str], history: str) -> str:  # TODO: Implement your ASR transcript selection logic here  # You can use the provided hypotheses and history to determine the most accurate transcription.  # For example, you could consider factors like:  # - Semantic coherence with the conversation history  # - Pronunciation accuracy  # - Confidence scores from the ASR system (if available)  raise NotImplementedError(\"\n",
-#             "det er ikke s\u00e5nn at alle fagfolk har v\u00e6rt enige om hva som var riktig i det sp\u00f8rsm\u00e5let her",
-#             "\"><option1> ```python import re from typing import List, Dict, Tuple def select_best_transcript(hypotheses: List[str], history: str) -> str:  # TODO: Implement your ASR transcript selection logic here  # You can use the provided hypotheses and history to determine the most accurate transcription.  # For example, you could consider factors like:  # - Semantic coherence with the conversation history  # - Pronunciation accuracy  # - Confidence scores from the ASR system (if available)  raise NotImplementedError(\"\n",
-#             "\"><option1> ```python import re from typing import List, Dict, Tuple def select_best_transcript(hypotheses: List[str], history: str) -> str:  # TODO: Implement your ASR transcript selection logic here  # You can use the provided hypotheses and history to determine the most accurate transcription.  # For example, you could consider factors like:  # - Semantic coherence with the conversation history  # - Pronunciation accuracy  # - Confidence scores from the ASR system (if available)  raise NotImplementedError(\"\n",
-#             "\"><option1> ```python import re from typing import List, Dict, Tuple def select_best_transcript(hypotheses: List[str], history: str) -> str:  # TODO: Implement your ASR transcript selection logic here  # You can use the provided hypotheses and history to determine the most accurate transcription.  # For example, you could consider factors like:  # - Semantic coherence with the conversation history  # - Pronunciation accuracy  # - Confidence scores from the ASR system (if available)  raise NotImplementedError(\"\n"
-#         ]
-
-# choices = [ "neste replikant er nicholas wilkinson deretter ketil kjenseth",
-#             "neste replikant er nicholas wilkinson deretter ketil kjenseth",
-#             "neste replikant er nicholas wilkinson deretter ketil kjenseth",
-#             "neste replikant er nicholas wilkinson deretter ketil kjenseth",
-#             "neste replikant er nicholas wilkinson deretter ketil kjenseth"]
-
-# predicted = choose_best_sentence(context, choices)
-# print("preeeed", predicted)
-
-# parsed = parse_llm_output("<option1><option1> ```python import re from typing import List, Dict, Tuple def select_best_transcript(hypotheses: List[str], history: str) -> str:  # TODO: Implement your ASR transcript selection logic here  # You can use the provided hypotheses and history to determine the most accurate transcription.  # For example, you could consider factors like:  # - Semantic coherence with the conversation history  # - Pronunciation accuracy  # - Confidence scores from the ASR system (if available)  raise NotImplementedError(\"\n</option1>")
-# print("parsed", parsed)
-
-from typing import Optional
-
-from ollama import ChatResponse, chat
-from pydantic import BaseModel
-from pydantic.types import JsonSchemaValue, Literal
-
-model = "hf.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:Q6_K"
-#model = "hf.co/unsloth/Llama-3.2-3B-Instruct-GGUF:Q6_K"
-
-
-def generate(
-    # system_prompt: str,  # prøv uten først.
-    prompt: str,
-    schema: Optional[JsonSchemaValue] = None,
-    parse: bool = True,
-    num_ctx: int = 48000,
-    num_predict: int = 4000,
-    temperature: float = 0.0,
-) -> str:
-    response: ChatResponse = chat(
-        model=model,
-        messages=[
-            # {"role": "system", "content": system_prompt},
-            {"role": "user", "content": prompt},
-        ],
-        options={
-            "num_ctx": num_ctx,
-            "num_predict": num_predict,
-            "top_k": 100,
-            "top_p": 0.8,
-            "temperature": temperature,
-            "seed": 0,  # this is not needed when temp is 0
-            "repeat_penalty": 1.3,  # remain default for json outputs, from experience.
-        },
-        format=schema,
-        stream=False,
-    )
-    res = response.message.content
-    if parse and schema:
-        try:
-            res = eval(res)
-        except Exception:
-            res = None
-    return res
 

@@ -773,8 +773,11 @@ class DecodingTask:
 
         if(integrate_llm):
             text_llm, reason = choose_best_sentence(context, beam_options[0],port)
-            print("text_llm", text_llm)
             texts= [text_llm]
+
+
+            # TODO - Add when use Whisper-GEC-H for entire files 
+            # context.append(text_llm)
         
             if(len(beam_options[0])!=1):
                 with open(f'../result/npsc_samtale_experiment_{experiment_number}_llm.json', 'r', encoding='utf-8') as file:
