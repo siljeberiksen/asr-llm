@@ -150,5 +150,5 @@ def create_line_chart():
 
 #find_std("wer_npsc_experiment_46_llm.json", "wer_npsc_experiment_44.json")
 
-understanding_experiment(37,27)
+understanding_experiment(43,27)
 # create_line_chart()
