@@ -772,7 +772,7 @@ class DecodingTask:
         selected = self.sequence_ranker.rank(tokens, sum_logprobs)
 
         if(integrate_llm):
-            text_llm, reason = choose_best_sentence(context, beam_options[0],port)
+            text_llm = choose_best_sentence(context, beam_options[0],port)
             texts= [text_llm]
 
 
@@ -787,7 +787,6 @@ class DecodingTask:
                 new_entry = {
                     "context": context,
                     "choices": beam_options[0],
-                    "reason": reason
                 }
         
                 # Append the new entry to the existing data
