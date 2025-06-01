@@ -131,7 +131,7 @@ def pred(
                 "repeat_penalty": 1.3,  # remain default for json outputs, from experience.
             },
             stream=False,
-            format=HypothesisSelector.model_json_schema(),
+            format=TranscriptionCreater.model_json_schema(),
         )
 
         response = response.message.content
