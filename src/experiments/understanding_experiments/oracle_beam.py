@@ -5,28 +5,33 @@ from statistics import mean
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+def calculate_wer(baseline, proposed):
+    if(baseline ==0):
+        return 0
+    else:
+        return (baseline-proposed)/baseline 
 
 #true_transcription
 
-with open(f'../result/wer_npsc_experiment_18_llm.json', 'r') as file:
+with open(f'../result/wer_npsc_experiment_27.json', 'r') as file:
     wer_data_points = json.load(file)
 
 best_wer = []
 actual_wer = []
 difference = []
 sentence_lengths = []
+werr = []
 
-with open(f'../result/beam_npsc_experiment_18_llm.json', 'r') as file:
+with open(f'../result/beam_npsc_experiment_27.json', 'r') as file:
     beam_data_points = json.load(file)
 
 for i, wer_point in enumerate(wer_data_points):
     best_option = min(wer_point["wer"])
-    if(best_option == max(wer_point["wer"])):
-       continue
     best_wer.append(best_option)
     actual_chosen = wer_point["wer_result"]
     actual_wer.append(actual_chosen)
     difference.append(actual_chosen-best_option)
+    werr.append(calculate_wer(actual_chosen,best_option))
 
     if(beam_data_points[i]["audio_file"] == wer_point["audio_file"]):
         sentence_lengths.append(len((beam_data_points[i]["true_transcription"]).split()))
@@ -49,6 +54,7 @@ print(number_chosen_perfect/len(difference))
 
 print((mean(actual_wer)-mean(best_wer))/mean(actual_wer))
 print(max(sentence_lengths))
+print(mean(werr))
 
 
 plt.figure(figsize=(8, 5))

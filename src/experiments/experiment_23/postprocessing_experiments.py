@@ -75,4 +75,4 @@ post_process("wer_npsc_experiment_23_llm.json")
 # post_process("wer_npsc_experiment_23_llm.json", empty_instances)
 
 print("\nEmissions")
-runEmissionPostProcessing("experiment_23", "emissions.csv")
+runEmissionPostProcessing("experiment_23", "emissions_22-25.csv")

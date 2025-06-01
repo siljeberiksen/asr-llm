@@ -166,7 +166,7 @@ def pred(
 
     print(transcription)
     # TODO remove reason if not included
-    return transcription, reason
+    return transcription
 
 def parse_llm_output(response: str):
     if not response:
