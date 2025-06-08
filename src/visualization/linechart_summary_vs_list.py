@@ -33,14 +33,13 @@ WERR_4_3 = [-6.59,-6.41,-6.02]
 
 # Create positions for equal spacing
 positions = range(len(x_labels))
-
 # Create the plot
 plt.figure(figsize=(8, 6))
 plt.plot(positions, WERR_3_2, label="Prompt 2", marker='o',  color='tab:blue', linestyle='--')  # CER line
 plt.plot(positions, WERR_3_3, label="Prompt 3", marker='o', color='tab:red', linestyle='--')  # WER line
 plt.plot(positions, WERR_4_1, label="Strategy 1", marker='o',  color='tab:blue', linestyle='-')  # CER line
 plt.plot(positions, WERR_4_2, label="Strategy 2", marker='o', color='tab:red', linestyle='-')  # WER line
-plt.plot(positions, WERR_4_3, label="Startegy 3", marker='o',  color='tab:blue', linestyle='-')  # CER line
+plt.plot(positions, WERR_4_3, label="Startegy 3", marker='s',  color='blue', linestyle='-')  # CER line
 #plt.plot(positions, WER, label="WERR median", marker='o', color='tab:orange', linestyle='--')  # WER line
 #plt.plot(positions, CER, label="CERR median", marker='s', color='tab:orange', linestyle='-')  # CER line
 
