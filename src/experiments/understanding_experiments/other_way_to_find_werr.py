@@ -214,7 +214,8 @@ def create_line_chart():
     # Show the plot
     plt.show()
 
-find_std("wer_npsc_experiment_23_llm.json", "wer_npsc_experiment_27.json")
+#find_std("wer_npsc_experiment_23_llm.json", "wer_npsc_experiment_27.json")
 #create_line_chart()
 #create_line_chart()
 # create_line_chart()
+understanding_experiment(23, 27)
