@@ -18,7 +18,7 @@ The project is organised into Python modules for modularity and clarity, includi
 The open-source Whisper Python library was extended in this project to support the **Whisper-GEC-H** framework. This extension introduces four optional arguments to the `transcribe()` method, allowing integration with an external LLM and conversational history tracking:
 
 - context (Optional[str]):
- An optional string containing the conversational history so far. This is prepended to the prompt to help the LLM handle context-dependent utterances. 
+ An optional list of strings containing the conversational history so far. This is added to the prompt to help the LLM handle context-dependent utterances. 
 
 - integrate_llm (Optional[bool]):
 When set to True, it enables LLM integration, allowing the external LLM to select the most likely transcription from beam search candidates (as defined in the GEC-H framework).
@@ -27,7 +27,7 @@ When set to True, it enables LLM integration, allowing the external LLM to selec
 Specifies the port used to communicate with the external LLM server. The default is 8081.
 
 - experiment_number (Optional[int]):
-An optional identifier used to save or log context related to a specific experiment. Used for experimental purposes, to save the output given from the LLM
+An optional identifier used to save or log context related to a specific experiment. Used for experimental purposes, to save the output given by the LLM
 
 The Whisper-GEC-H beam search decoding needs to be used, as this is where the external LLM is used. An example call to the new Whisper module can therefore be.:
 ````python
@@ -35,6 +35,7 @@ Whisper.transcribe(audio_path, beam_size=5, context=[], integrate_llm=True, port
 ````
 
 ## Coding pipeline
+
 
 ## Running the Project
 
