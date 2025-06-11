@@ -1,7 +1,6 @@
 from matplotlib import ticker
 import matplotlib.pyplot as plt
 
-# Data for the line chart
 x_labels = ["10", "50", "100"]  # Categorical x-axis labels
 WER = [-20.10, -12.98 , -7.90]
 CER = [-34.50, -29.54, -15.00]
@@ -51,27 +50,21 @@ def add_labels(values, x_pos, offset=100):
     for x, y in zip(x_pos, values):
         plt.text(x, y - offset, f"{y:.1f}", ha='center', va='top', fontsize=9)
 
-# Add labels
+
 add_labels(WER, positions)
 add_labels(CER, positions)
 add_labels(WER_MEDIAN, positions)
 add_labels(CER_MEDIAN, positions)
-# Set x-axis ticks with categorical labels
-plt.xticks(ticks=positions, labels=x_labels)
 
-# Set y-axis limits from 0 to 100
-#
+plt.xticks(ticks=positions, labels=x_labels)
 plt.ylim(top=0)
 
-# Add titles and labels
 plt.title("")
 plt.xlabel("History Length")
 plt.ylabel("WERR/CERR (%)")
 
-# Format y-axis labels to show percentages
 plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f"{x:.0f}%"))
 
-# Add grid and legend
 plt.grid(True)
 plt.legend()
 

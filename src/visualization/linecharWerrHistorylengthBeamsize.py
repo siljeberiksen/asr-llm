@@ -1,7 +1,6 @@
 from matplotlib import ticker
 import matplotlib.pyplot as plt
 
-# Data for the line chart
 x_labels = ["10", "50", "100"]  # Categorical x-axis labels
 WER = [-20.15, -14.31 , -14.69]
 #CER = [-29.32, -23.15, -20.01]
@@ -27,24 +26,16 @@ plt.plot(positions, WER_10, label="10", marker='o',  color='tab:blue', linestyle
 #plt.plot(positions, WER, label="WERR median", marker='o', color='tab:orange', linestyle='--')  # WER line
 #plt.plot(positions, CER, label="CERR median", marker='s', color='tab:orange', linestyle='-')  # CER line
 
-# Set x-axis ticks with categorical labels
 plt.xticks(ticks=positions, labels=x_labels)
-
-# Set y-axis limits from 0 to 100
-#
 plt.ylim(top=0)
 
-# Add titles and labels
 plt.title("")
 plt.xlabel("History Length")
 plt.ylabel("WERR (%)")
 
-# Format y-axis labels to show percentages
 plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f"{x:.0f}%"))
 
-# Add grid and legend
 plt.grid(True)
 plt.legend(title="Beam size")
 
-# Show the plot
 plt.show()

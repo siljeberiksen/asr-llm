@@ -1,6 +1,4 @@
 import json
-
-
 def checkBestBeamChosen(file_name):
     with open(f'../result/{file_name}', 'r') as file:
         wer_data = json.load(file)

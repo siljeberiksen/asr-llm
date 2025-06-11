@@ -37,7 +37,7 @@ def post_process(file_name, empty_instances = []):
         cer_sum += data["cer_result"]
         length +=1
     print("Average wer beam", sum(difference_beams)/length)
-    #print(difference_beams)
+
 
     print(length)
 
@@ -97,23 +97,17 @@ def understanding_experiment(number):
     mean_filter_basleine, wer_values_filter_baseline = post_process(f'../result/wer_npsc_experiment_27.json', files_not_okey)
     return mean_filter, wer_values, mean_non_filter, wer_values_filter, mean_filter_basleine, wer_values_filter_baseline
 
-# History 10
 mean_filter_10, wer_values_llm_full_10, mean_non_filter_10, wer_values_llm_filtered_10, mean_filter_baseline_10, wer_values_baseline_filtered_10 = understanding_experiment(7)
 
-# History 50
 mean_filter_50, wer_values_llm_full_50, mean_non_filter_50, wer_values_llm_filtered_50, mean_filter_baseline_50, wer_values_baseline_filtered_50 = understanding_experiment(6)
 
-# History 100
 mean_filter_100, wer_values_llm_full_100, mean_non_filter_100, wer_values_llm_filtered_100, mean_filter_baseline_100, wer_values_baseline_filtered_100 = understanding_experiment(5)
 
 
-# History 10
-mean_filter_10_llama, wer_values_llm_full_10_llama, mean_non_filter_10, wer_values_llm_filtered_10, mean_filter_baseline_10_llama, wer_values_baseline_filtered_10 = understanding_experiment(9)
 
-# History 50
+mean_filter_10_llama, wer_values_llm_full_10_llama, mean_non_filter_10, wer_values_llm_filtered_10, mean_filter_baseline_10_llama, wer_values_baseline_filtered_10 = understanding_experiment(9)
 mean_filter_50_llama, wer_values_llm_full_50_llama, mean_non_filter_50, wer_values_llm_filtered_50, mean_filter_baseline_50_llama, wer_values_baseline_filtered_50 = understanding_experiment(10)
 
-# History 100
 mean_filter_100_llama, wer_values_llm_full_100_llama, mean_non_filter_100, wer_values_llm_filtered_100, mean_filter_baseline_100_llama, wer_values_baseline_filtered_100 = understanding_experiment(11)
 
 mean_baseline, wer_values_baseline = post_process(f'../result/wer_npsc_experiment_27.json')
@@ -140,7 +134,6 @@ ax.axhline(
     linewidth=1.2,
     label='Baseline non filtering'
 )
-# Add LLama have baseline as a line
 print(mean_filter_baseline_10)
 print(mean_filter_baseline_50)
 print(mean_filter_baseline_100)
@@ -148,22 +141,17 @@ print(mean_filter_baseline_100)
 for container in ax.containers:
     ax.bar_label(container, fmt='%.4f%%', padding=3)
 
-# Grid settings
 ax.yaxis.grid(True, linestyle='--', linewidth=0.7)
-
-# Grab all handles and labels (from both bars and the line)
 handles, labels = ax.get_legend_handles_labels()
 
-# Remove duplicates, just in case
 unique = dict(zip(labels, handles))
 
-# Set the updated legend
 ax.legend(unique.values(), unique.keys(), title='')
-ax.set_axisbelow(True)  # Ensure grid is behind the bars
+ax.set_axisbelow(True) 
 
 plt.title('')
 plt.ylabel('Mean WER(%)')
 plt.xlabel('History Length')
-plt.ylim(0, max(mean_df['Mean_WER'])+5)  # Optional: adjust Y-axis
+plt.ylim(0, max(mean_df['Mean_WER'])+5) 
 plt.tight_layout()
 plt.show()

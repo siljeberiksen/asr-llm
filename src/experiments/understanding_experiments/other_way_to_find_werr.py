@@ -180,9 +180,6 @@ def create_line_chart():
     print(standard_deviation_prompt_1)
 
     x_labels = ["10", "50", "100"]  # Categorical x-axis labels
-
-
-
     positions = range(len(x_labels))
 
     # Create the plot
@@ -194,20 +191,9 @@ def create_line_chart():
     # plt.plot(positions, CER, label="CERR median", marker='s', color='tab:orange', linestyle='-')  # CER line
     plt.xticks(ticks=positions, labels=x_labels)
 
-    # Set y-axis limits from 0 to 100
-    #
-
-    # plt.errorbar(x_labels,mean_prompt_1, yerr=standard_deviation_prompt_1, fmt="o", color="r")
-    # plt.errorbar(x_labels,mean_prompt_2, yerr=standard_deviation_prompt_2, fmt="o", color="r")
-    # Add titles and labels
     plt.title("")
     plt.xlabel("History Length (l)")
     plt.ylabel("WERR (%)")
-
-    # # Format y-axis labels to show percentages
-    # plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f"{x:.0f}%"))
-
-    # Add grid and legend
     plt.grid(True)
     plt.legend()
 

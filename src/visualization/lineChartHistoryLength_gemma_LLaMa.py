@@ -1,7 +1,6 @@
 from matplotlib import ticker
 import matplotlib.pyplot as plt
 
-# Data for the line chart
 x_labels = ["10", "50", "100"]  # Categorical x-axis labels
 #WERR_gemma = [-0.86, 0.09 , 1.33
 WERR_1 = [-1.62,-1.11,-2.11]
@@ -32,21 +31,15 @@ plt.plot(positions, WERR_2, label="Prompt 2 - With reasoning", marker='o',  colo
 # Set x-axis ticks with categorical labels
 plt.xticks(ticks=positions, labels=x_labels)
 
-# Set y-axis limits from 0 to 100
-#
 plt.ylim(ymax=0)
 
-# Add titles and labels
 plt.title("")
 plt.xlabel("History Length")
 plt.ylabel("WERR (%)")
 
-# Format y-axis labels to show percentages
 plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f"{x:.0f}%"))
 
-# Add grid and legend
 plt.grid(True)
 plt.legend(title="LLM model")
 
-# Show the plot
 plt.show()

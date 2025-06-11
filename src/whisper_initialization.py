@@ -31,15 +31,10 @@ def hf_to_whisper_states(text):
     return text
 
 def initialize_Whisper_model():
-    # Load Hugging Face model
     model_name = "NbAiLabBeta/nb-whisper-tiny-verbatim"
-    #NbAiLabBeta/nb-whisper-small-verbatim
     hf_model = WhisperForConditionalGeneration.from_pretrained(model_name)
-    # Get Hugging Face model's state_dict
     hf_state_dict = hf_model.state_dict()
-    # Convert Hugging Face state dict keys to Whisper's format
     whisper_state_dict = {hf_to_whisper_states(k): v for k, v in hf_state_dict.items()}
     whisper_model = load_model("tiny") 
 
-    # Update Whisper model's state dict with the converted Hugging Face state dict
     whisper_model.load_state_dict(whisper_state_dict)

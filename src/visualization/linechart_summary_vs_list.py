@@ -1,7 +1,6 @@
 from matplotlib import ticker
 import matplotlib.pyplot as plt
 
-# Data for the line chart
 x_labels = ["10", "50", "100"]  # Categorical x-axis labels
 #WERR_gemma = [-0.86, 0.09 , 1.33
 # WERR_3_2 = [-20.10,-12.98,-7.90]
@@ -33,7 +32,7 @@ WERR_4_3 = [-6.59,-6.41,-6.02]
 
 # Create positions for equal spacing
 positions = range(len(x_labels))
-# Create the plot
+
 plt.figure(figsize=(8, 6))
 plt.plot(positions, WERR_3_2, label="Prompt 2", marker='o',  color='tab:blue', linestyle='--')  # CER line
 plt.plot(positions, WERR_3_3, label="Prompt 3", marker='o', color='tab:red', linestyle='--')  # WER line
@@ -43,24 +42,15 @@ plt.plot(positions, WERR_4_3, label="Startegy 3", marker='s',  color='blue', lin
 #plt.plot(positions, WER, label="WERR median", marker='o', color='tab:orange', linestyle='--')  # WER line
 #plt.plot(positions, CER, label="CERR median", marker='s', color='tab:orange', linestyle='-')  # CER line
 
-# Set x-axis ticks with categorical labels
 plt.xticks(ticks=positions, labels=x_labels)
-
-# Set y-axis limits from 0 to 100
-#
 plt.ylim(ymax=0)
 
-# Add titles and labels
 plt.title("")
 plt.xlabel("History Length")
 plt.ylabel("WERR (%)")
-
-# Format y-axis labels to show percentages
 plt.gca().yaxis.set_major_formatter(ticker.FuncFormatter(lambda x, _: f"{x:.0f}%"))
 
-# Add grid and legend
 plt.grid(True)
 plt.legend(title="Prompting strategy")
 
-# Show the plot
 plt.show()

@@ -11,8 +11,6 @@ def calculate_wer(baseline, proposed):
     else:
         return (baseline-proposed)/baseline 
 
-#true_transcription
-
 with open(f'../result/wer_npsc_experiment_27.json', 'r') as file:
     wer_data_points = json.load(file)
 
@@ -70,24 +68,18 @@ plt.show()
 bins = list(range(0,100, 10)) 
 bin_labels = [f"{bins[i]}-{bins[i+1]-1}" for i in range(len(bins)-1)]
 
-# Assign each sentence to a bin
 binned_lengths = pd.cut(sentence_lengths, bins=bins, labels=bin_labels)
-
-# Create a DataFrame
 df = pd.DataFrame({"Sentence Length Bin": binned_lengths, "WER Difference": difference_numpy*100})
 
-# Create the boxplot
 plt.figure(figsize=(8, 5))
 df.boxplot(column="WER Difference", by="Sentence Length Bin", grid=False)
 
 plt.xlabel("Sentence Length")
 plt.ylabel("WER Difference (Model - Oracle)")
-#plt.title("Boxplot of WER Difference Across Sentence Lengths")
 plt.title("")
-plt.suptitle("")  # Remove default Pandas title
+plt.suptitle("")
 plt.grid(True)
 
-# Format y-axis to show percentages
 plt.gca().yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f"{x:.1f}%"))
 
 plt.show()

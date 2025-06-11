@@ -2,9 +2,7 @@ import pandas as pd
 
 
 def runEmissionPostProcessing(experiment_name, emission_file = "emissions.csv"):
-    # Load the CSV file into a DataFrame
     df = pd.read_csv(emission_file)
-    # Display the first few rows
     results = df.project_name.apply(lambda a: experiment_name in a)
     df_filtered = df[results]
     count = 0
@@ -15,12 +13,11 @@ def runEmissionPostProcessing(experiment_name, emission_file = "emissions.csv"):
             count += 1
         except:
             content = 0
-    # Convert relevant columns to numeric, forcing errors to NaN
+  
     numeric_columns = ["duration", "emissions", "cpu_energy", "gpu_energy", "ram_energy"]
     for col in numeric_columns:
         df_filtered[col] = pd.to_numeric(df_filtered[col], errors="coerce")
 
-    # Report invalid values (rows with NaN after conversion)
     invalid_rows = df_filtered[df_filtered[numeric_columns].isna().any(axis=1)]
     if not invalid_rows.empty:
         print("Invalid numeric values found in the following rows:")

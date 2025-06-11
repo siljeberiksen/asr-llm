@@ -2,31 +2,6 @@ import numpy as np
 import json
 import statistics
 
-# def standard_deviation(proposed_wer_list, baseline_wer_list):
-#     proposed_wer = np.asarray(proposed_wer_list)
-
-#     baseline_wer = np.asarray(baseline_wer_list)
-#     ratios_list = []
-#     for  p, b in zip(proposed_wer, baseline_wer):
-#         if (b == 0):
-#             if(p==0):
-#                 ratios_list.append(0)
-#         else:
-#             ratios_list.append(p/b)
-#     ratios = np.asarray(ratios_list)
-
-#     # baseline_wer[baseline_wer == 0] = 0.001
-#     # ratios = proposed_wer / baseline_wer
-#     N = len(ratios)
-#     if (N == 0):
-#         return np.nan  # or raise an error if appropriate
-
-#     first_term = 1/N * np.sum(ratios**2)
-#     second_term = 1/N**2 * (np.sum(ratios))**2
-#     variance = first_term - second_term
-#     std = np.sqrt(variance)/100
-#     return std
-
 def post_process(file_name, empty_instances = []):
     with open(f'../result/{file_name}', 'r') as file:
         wer_data = json.load(file)
@@ -76,12 +51,8 @@ def understanding_experiment(number):
     mean_p_cer = statistics.mean(cer_proposed)
     mean_p_wer = statistics.mean(wer_proposed)
 
-    
-    
-
     print("standard diviation wer", standard_deviation(mean_p_wer,mean_b_wer,std_p_wer,std_b_wer, calculate_werr(mean_p_wer,mean_b_wer)))
     print("standard diviation cer", standard_deviation(mean_p_cer,mean_b_cer,std_p_cer,std_b_cer, calculate_werr(mean_p_cer, mean_b_cer)))
-
 
 
 understanding_experiment(5)
