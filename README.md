@@ -12,6 +12,7 @@ The project is organised into Python modules for modularity and clarity, includi
 - **whisper**: A customised copy of the Whisper library, modified to incorporate conversational history into the beam search selection process.
 
 ## Whisper-GEC-H
+[proposed_GEC_pipeline.drawio (5) (1).pdf](https://github.com/user-attachments/files/20686926/proposed_GEC_pipeline.drawio.5.1.pdf)
 
 ## Development of Whisper-GEC-H
 
