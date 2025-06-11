@@ -12,7 +12,14 @@ The project is organised into Python modules for modularity and clarity, includi
 - **whisper**: A customised copy of the Whisper library, modified to incorporate conversational history into the beam search selection process.
 
 ## Whisper-GEC-H
-[proposed_GEC_pipeline.drawio (5) (1).pdf](https://github.com/user-attachments/files/20686926/proposed_GEC_pipeline.drawio.5.1.pdf)
+The Whisper-GEC-H system is built on the GEC-H framework, which can be applied to any ASR model. It employs beam search decoding, but instead of selecting the most probable hypothesis based on conventional scoring, it sends the beam candidates along with the previous transcriptions, to a large language model (LLM). The LLM selects the most appropriate transcription, which is then used to update the sequence of previous transcriptions. 
+
+The framework can be visualised as:
+![proposed_GEC_pipeline drawio (5) (1)-1](https://github.com/user-attachments/assets/22d9270c-52c2-4498-be88-7730e1ee6942)
+
+Whisper-GEC-H builds on the Whisper model, extending its functionality to operate within the GEC-H framework. The system can be visualized as follows:
+![proposed drawio (6) (1)-1](https://github.com/user-attachments/assets/c3d41387-d11e-4d0c-adb4-12f737421b48)
+
 
 ## Development of Whisper-GEC-H
 
