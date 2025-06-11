@@ -42,9 +42,6 @@ The Whisper-GEC-H beam search decoding needs to be used, as this is where the ex
 Whisper.transcribe(audio_path, beam_size=5, context=[], integrate_llm=True, port=8081, experiment_number=3)
 ````
 
-## Coding pipeline
-
-
 ## Running the Project
 
 1. **Set Up the Server**: Ensure that the LLM server is running in the background.
