@@ -25,7 +25,7 @@ Whisper-GEC-H builds on the Whisper model, extending its functionality to operat
 
 The open-source Whisper Python library was extended in this project to support the **Whisper-GEC-H** framework. This extension introduces four optional arguments to the `transcribe()` method, allowing integration with an external LLM and conversational history tracking:
 
-- context (Optional[str]):
+- context (Optional[str[]):
  An optional list of strings containing the conversational history so far. This is added to the prompt to help the LLM handle context-dependent utterances. 
 
 - integrate_llm (Optional[bool]):
