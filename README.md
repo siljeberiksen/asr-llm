@@ -1,6 +1,6 @@
 # ASR-LLM
 
-This repository introduces a system, Whisper-GEC-H, that performs **contextual Beam Selection in Whisper**, leveraging a **LLM-Based Conversational History Integration** to improve ASR accuracy by considering previous segments' context. Developed as part of the course **TDT4900 - Computer Science, Master's Thesis**.
+This repository introduces Whisper-GEC-H, a system that performs contextual Beam Selection in Whisper, leveraging an LLM-Based Conversational History Integration to improve ASR accuracy by considering previous segments' context. Whisper-GEC-H is developed as part of the course TDT4900 Computer Science, Master's Thesis.
 
 ## Project Structure
 
@@ -12,7 +12,7 @@ The project is organised into Python modules for modularity and clarity, includi
 - **whisper**: A customised copy of the Whisper library, modified to incorporate conversational history into the beam search selection process.
 
 ## Whisper-GEC-H
-The Whisper-GEC-H system is built on the GEC-H framework, which can be applied to any ASR model. It employs beam search decoding, but instead of selecting the most probable hypothesis based on conventional scoring, it sends the beam candidates along with the previous transcriptions, to a large language model (LLM). The LLM selects the most appropriate transcription, which is then used to update the sequence of previous transcriptions. 
+The Whisper-GEC-H system is built on the GEC-H framework, which can be applied to any ASR model. It employs beam search decoding, but instead of selecting the most probable hypothesis based on conventional scoring, it sends the beam candidates along with the previous transcriptions to a large language model (LLM). The LLM selects the most appropriate transcription, which is then used to update the sequence of prior transcriptions. 
 
 The framework can be visualised as:
 ![proposed_GEC_pipeline drawio (5) (1)-1](https://github.com/user-attachments/assets/22d9270c-52c2-4498-be88-7730e1ee6942)
@@ -44,25 +44,56 @@ Whisper.transcribe(audio_path, beam_size=5, context=[], integrate_llm=True, port
 
 ## Running the Project
 
-1. **Set Up the Server**: Ensure that the LLM server is running in the background.
-2. **Download test data**: In experiments outlined NB Samtale is used - https://www.nb.no/sprakbanken/ressurskatalog/oai-nb-no-sbr-85/
+1. **Set Up the Server**: Ensure the LLM server runs in the background. This can, for example, be done using ollama. If this set-up is changed, the module titled llm must be updated accordingly. 
+2. **Download test data**: Download [NPSC 2.0](https://www.nb.no/sprakbanken/en/resource-catalogue/oai-nb-no-sbr-85/) into the ASR-LLM folder, and title the file NPSC
 
-### Running an Experiment
+### Installing and Running Ollama
 
-To run Experiment 1, execute the following command from the `src` folder:
+To install Ollama on a Linux system:
 
 ```bash
-python3 -m experiments.experiment_1.proposed_system_experiment
+# Download and extract Ollama
+curl -L https://ollama.com/download/ollama-linux-amd64.tgz -o ollama-linux-amd64.tgz
+mkdir -p ~/.local
+tar -C ~/.local -xzf ollama-linux-amd64.tgz
+
+# Add Ollama to PATH and library path (temporary for this session)
+export PATH=$HOME/.local/bin:$PATH
+export LD_LIBRARY_PATH=$HOME/.local/lib/ollama:$LD_LIBRARY_PATH
+
+# Persist settings in ~/.bashrc
+grep -qxF 'export PATH=$HOME/.local/bin:$PATH' ~/.bashrc || echo 'export PATH=$HOME/.local/bin:$PATH' >> ~/.bashrc
+grep -qxF 'export LD_LIBRARY_PATH=$HOME/.local/lib/ollama:$LD_LIBRARY_PATH' ~/.bashrc || echo 'export LD_LIBRARY_PATH=$HOME/.local/lib/ollama:$LD_LIBRARY_PATH' >> ~/.bashrc
+
+# Clean up
+rm ollama-linux-amd64.tgz
+````
+
+The server can be started by running:
+```bash
+ollama serve
+````
+
+Pull the model you want:
+```bash
+ollama pull "hf.co/bartowski/Meta-Llama-3.1-8B-Instruct-GGUF:Q6_K"
+````
+### Running an Experiment
+
+To run Experiment 23, execute the following command from the `src` folder:
+
+```bash
+python3 -m experiments.experiment_23.run_experiment_23      
 ````
 
 ### Running an experiment on a server
 
-As the experiments do not require supervision, a way to make the exeriment run even when not using own computer is to run it from a server.
+As the experiments do not require supervision, a way to make the exeriment run even when not using your own computer is to run it from a server.
 Steps to doing this:
 
 1. Clone the git project to the server
 
-2. Download all training files intp NPSC folder
+2. Download all training files into asr-llm in an NPSC folder
 
 3. Run commands using tmux, nohup or window to let the program run even when current bash session is closed
 
